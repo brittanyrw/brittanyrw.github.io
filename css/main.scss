@@ -1,0 +1,73 @@
+//GENERAL
+
+$black: #212121;
+$white: #EAEAEA;
+$blue: #3454D1;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $black;
+  border: 1.5em solid white;
+  color: white;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 1em;
+}
+
+section {
+	width: 100%;
+}
+
+.section-title {
+  font-size: 4.2em;
+  color: $white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px $blue,
+  3px 3px $blue, 
+  2px 3px $blue, 
+  4px 4px $blue, 
+  5px 5px $blue;
+}
+
+//HEADER
+
+header {
+	background: $blue;
+	padding: 1em;
+}
+
+.page-title {
+  font-size: 3.1em;
+  color: $black;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 2px 2px $blue,
+  3px 3px $blue, 
+  4px 4px $blue, 
+  5px 5px $blue;
+}
+
+.page-subtitle {
+	padding-top: 1em;
+	font-size: .8em;
+}
+
+//WORK
+
+//ABOUT
+
+//CONTACT
+
+.fa {
+	color: white;
+	&:hover {
+		color: $blue;
+	}
+}

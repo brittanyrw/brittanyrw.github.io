@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #212121;
+  border: 1.5em solid white;
+  color: white;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 1em; }
+
+section {
+  width: 100%; }
+
+.section-title {
+  font-size: 4.2em;
+  color: #EAEAEA;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px #3454D1, 3px 3px #3454D1, 2px 3px #3454D1, 4px 4px #3454D1, 5px 5px #3454D1; }
+
+header {
+  background: #3454D1;
+  padding: 1em; }
+
+.page-title {
+  font-size: 3.1em;
+  color: #212121;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 2px 2px #3454D1, 3px 3px #3454D1, 4px 4px #3454D1, 5px 5px #3454D1; }
+
+.page-subtitle {
+  padding-top: 1em;
+  font-size: .8em; }
+
+.fa {
+  color: white; }
+  .fa:hover {
+    color: #3454D1; }
+
+/*# sourceMappingURL=main.css.map */
