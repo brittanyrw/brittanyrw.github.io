@@ -43,7 +43,7 @@ header {
 }
 
 .page-title {
-  font-size: 3.1em;
+  font-size: 2.6em;
   color: $black;
   font-family: 'Rubik', sans-serif;
   font-weight: 900;
@@ -71,3 +71,50 @@ header {
 		color: $blue;
 	}
 }
+
+//CSS IMAGES
+
+//CLOCK
+.css-clock, .css-phone, .css-office, .css-laptop, .css-keyboard, .css-zombie, .css-mushu, .css-penciljar {
+	width: 100%;
+	min-height: 500px;
+}
+
+.css-clock {
+	background: darkgray;
+}
+
+.css-phone {
+	background: darkblue;
+}
+
+.css-office {
+	background: blue;
+}
+
+.css-laptop {
+	background: lavender;
+}
+
+.css-keyboard {
+	background: yellow;
+}
+
+.css-zombie {
+	background: dark-blue;
+}
+
+.css-mushu {
+	background: white;
+}
+
+.css-penciljar {
+	background: gray;
+}
+
+
+
+
+
+
+

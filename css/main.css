@@ -26,7 +26,7 @@ header {
   padding: 1em; }
 
 .page-title {
-  font-size: 3.1em;
+  font-size: 2.6em;
   color: #212121;
   font-family: 'Rubik', sans-serif;
   font-weight: 900;
@@ -41,5 +41,33 @@ header {
   color: white; }
   .fa:hover {
     color: #3454D1; }
+
+.css-clock, .css-phone, .css-office, .css-laptop, .css-keyboard, .css-zombie, .css-mushu, .css-penciljar {
+  width: 100%;
+  min-height: 500px; }
+
+.css-clock {
+  background: darkgray; }
+
+.css-phone {
+  background: darkblue; }
+
+.css-office {
+  background: blue; }
+
+.css-laptop {
+  background: lavender; }
+
+.css-keyboard {
+  background: yellow; }
+
+.css-zombie {
+  background: dark-blue; }
+
+.css-mushu {
+  background: white; }
+
+.css-penciljar {
+  background: gray; }
 
 /*# sourceMappingURL=main.css.map */
