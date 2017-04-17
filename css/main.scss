@@ -76,19 +76,35 @@ header {
 
 //CLOCK
 
-$css-darkblue: #212F3D;
+$css-darkblue: #223546;
 $css-yellow: #FFD401;
+$css-purple: darken(#FAF9FA, 60%);
+
+.codepen {
+	background: white;
+	color: $black;
+	border: none;
+	margin: 2em 0;
+	padding: 1em;
+}
+
+.css-description {
+	height: 50px;
+	margin: 2em 0;
+}
 
 .css-clock, .css-phone, .css-office, .css-laptop, .css-keyboard, .css-zombie, .css-mushu, .css-penciljar {
 	width: 100%;
+	text-align: center;
+	margin: 1em 0;
 }
 
 .css-clock {
-	background: darkgray;
+	background: lighten(black, 5%);
 }
 
 .css-phone {
-	background: darkblue;
+	background: darken($css-darkblue, 2.9%);
 }
 
 .css-office {
@@ -96,7 +112,7 @@ $css-yellow: #FFD401;
 }
 
 .css-laptop {
-	background: lavender;
+	background: $css-purple;
 }
 
 .css-keyboard {
@@ -104,28 +120,14 @@ $css-yellow: #FFD401;
 }
 
 .css-zombie {
-	background: dark-blue;
+	background: $css-darkblue;
 }
 
 .css-mushu {
 	background: white;
 }
 
-.css-penciljar {
-	background: gray;
-}
-
-
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
+.css-image {
 	width: 100%;
-	height: 100%;
+	margin: 1em 0;
 }
