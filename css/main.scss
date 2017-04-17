@@ -75,9 +75,12 @@ header {
 //CSS IMAGES
 
 //CLOCK
+
+$css-darkblue: #212F3D;
+$css-yellow: #FFD401;
+
 .css-clock, .css-phone, .css-office, .css-laptop, .css-keyboard, .css-zombie, .css-mushu, .css-penciljar {
 	width: 100%;
-	min-height: 500px;
 }
 
 .css-clock {
@@ -89,7 +92,7 @@ header {
 }
 
 .css-office {
-	background: blue;
+	background: $css-darkblue;
 }
 
 .css-laptop {
@@ -97,7 +100,7 @@ header {
 }
 
 .css-keyboard {
-	background: yellow;
+	background: $css-yellow;
 }
 
 .css-zombie {

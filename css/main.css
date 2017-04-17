@@ -43,8 +43,7 @@ header {
     color: #3454D1; }
 
 .css-clock, .css-phone, .css-office, .css-laptop, .css-keyboard, .css-zombie, .css-mushu, .css-penciljar {
-  width: 100%;
-  min-height: 500px; }
+  width: 100%; }
 
 .css-clock {
   background: darkgray; }
@@ -53,13 +52,13 @@ header {
   background: darkblue; }
 
 .css-office {
-  background: blue; }
+  background: #212F3D; }
 
 .css-laptop {
   background: lavender; }
 
 .css-keyboard {
-  background: yellow; }
+  background: #FFD401; }
 
 .css-zombie {
   background: dark-blue; }
