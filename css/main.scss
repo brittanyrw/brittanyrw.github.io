@@ -28,6 +28,7 @@ section {
   color: $white;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
+  line-height: 1;
   text-shadow: 2px 2px $blue,
   3px 3px $blue, 
   2px 3px $blue, 
@@ -52,6 +53,13 @@ header {
   3px 3px $blue, 
   4px 4px $blue, 
   5px 5px $blue;
+  a {
+  	text-decoration: none;
+  	color: $black;
+  	&:hover {
+  		color: $white;
+  	}
+  }
 }
 
 .page-subtitle {
@@ -77,8 +85,18 @@ header {
 //CLOCK
 
 $css-darkblue: #223546;
+$css-darkblue2: #212F3D;
 $css-yellow: #FFD401;
 $css-purple: darken(#FAF9FA, 60%);
+$css-white: #FBFCFC;
+
+@mixin dark-text {
+	color: $black;
+	button {
+		background: $black;
+		color: $white;
+	}
+}
 
 .codepen {
 	background: white;
@@ -89,8 +107,23 @@ $css-purple: darken(#FAF9FA, 60%);
 }
 
 .css-description {
-	height: 50px;
-	margin: 2em 0;
+	margin: 2em 0 1.5em 0;
+	text-align: center;
+	p {
+		padding: 2em 1.5em;
+	}
+}
+
+.css-additional {
+	text-align: center;
+	a {
+		text-decoration: none;
+		color: $blue;
+		font-weight: bold;
+		&:hover {
+			color: white;
+		}
+	}
 }
 
 .css-clock, .css-phone, .css-office, .css-laptop, .css-keyboard, .css-zombie, .css-mushu, .css-penciljar {
@@ -117,17 +150,27 @@ $css-purple: darken(#FAF9FA, 60%);
 
 .css-keyboard {
 	background: $css-yellow;
+	@include dark-text;
 }
 
 .css-zombie {
-	background: $css-darkblue;
+	background: $css-darkblue2;
 }
 
 .css-mushu {
-	background: white;
+	background: $css-white;
+	@include dark-text;
 }
 
 .css-image {
 	width: 100%;
 	margin: 1em 0;
+	@media only screen and (min-width: 641px) {
+		width: 500px;
+	}
+}
+
+.csspage-social-icons {
+	text-align: center;
+	padding: 2em 0;
 }

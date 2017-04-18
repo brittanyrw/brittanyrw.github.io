@@ -19,6 +19,7 @@ section {
   color: #EAEAEA;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
+  line-height: 1;
   text-shadow: 2px 2px #3454D1, 3px 3px #3454D1, 2px 3px #3454D1, 4px 4px #3454D1, 5px 5px #3454D1; }
 
 header {
@@ -32,6 +33,11 @@ header {
   font-weight: 900;
   line-height: 1;
   text-shadow: 2px 2px #3454D1, 3px 3px #3454D1, 4px 4px #3454D1, 5px 5px #3454D1; }
+  .page-title a {
+    text-decoration: none;
+    color: #212121; }
+    .page-title a:hover {
+      color: #EAEAEA; }
 
 .page-subtitle {
   padding-top: 1em;
@@ -50,8 +56,19 @@ header {
   padding: 1em; }
 
 .css-description {
-  height: 50px;
-  margin: 2em 0; }
+  margin: 2em 0 1.5em 0;
+  text-align: center; }
+  .css-description p {
+    padding: 2em 1.5em; }
+
+.css-additional {
+  text-align: center; }
+  .css-additional a {
+    text-decoration: none;
+    color: #3454D1;
+    font-weight: bold; }
+    .css-additional a:hover {
+      color: white; }
 
 .css-clock, .css-phone, .css-office, .css-laptop, .css-keyboard, .css-zombie, .css-mushu, .css-penciljar {
   width: 100%;
@@ -71,16 +88,31 @@ header {
   background: #695869; }
 
 .css-keyboard {
-  background: #FFD401; }
+  background: #FFD401;
+  color: #212121; }
+  .css-keyboard button {
+    background: #212121;
+    color: #EAEAEA; }
 
 .css-zombie {
-  background: #223546; }
+  background: #212F3D; }
 
 .css-mushu {
-  background: white; }
+  background: #FBFCFC;
+  color: #212121; }
+  .css-mushu button {
+    background: #212121;
+    color: #EAEAEA; }
 
 .css-image {
   width: 100%;
   margin: 1em 0; }
+  @media only screen and (min-width: 641px) {
+    .css-image {
+      width: 500px; } }
+
+.csspage-social-icons {
+  text-align: center;
+  padding: 2em 0; }
 
 /*# sourceMappingURL=main.css.map */
