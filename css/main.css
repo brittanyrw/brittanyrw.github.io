@@ -43,6 +43,14 @@ header {
   padding-top: 1em;
   font-size: .8em; }
 
+.work-item-box {
+  text-align: center; }
+
+.work-image, .css-work-image {
+  border-radius: 25px;
+  border: 2px solid #EAEAEA;
+  width: 100%; }
+
 .fa {
   color: white; }
   .fa:hover {
