@@ -1,7 +1,7 @@
 //GENERAL
 
 $black: #212121;
-$white: #EAEAEA;
+$white: #FAFAFA;
 $blue: #3454D1;
 
 * {
@@ -10,49 +10,39 @@ $blue: #3454D1;
 
 body {
   background: $black;
-  border: 1.5em solid white;
-  color: white;
+  // border: 1.5em solid $black;
   font-family: 'Roboto Mono', sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.4;
-  padding: 1em;
 }
 
 section {
 	width: 100%;
+	padding: 1em;
 }
 
 .section-title {
-  font-size: 4.2em;
-  color: $white;
+  font-size: 3.9em;
   font-family: 'Rubik', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
-  text-shadow: 2px 2px $blue,
-  3px 3px $blue, 
-  2px 3px $blue, 
-  4px 4px $blue, 
-  5px 5px $blue;
+  margin: 0 0 .5em 0;
 }
 
 //HEADER
 
 header {
-	background: $blue;
 	padding: 1em;
+	background: $black;
 }
 
 .page-title {
   font-size: 2.6em;
-  color: $black;
+  color: $white;
   font-family: 'Rubik', sans-serif;
   font-weight: 900;
   line-height: 1;
-  text-shadow: 2px 2px $blue,
-  3px 3px $blue, 
-  4px 4px $blue, 
-  5px 5px $blue;
   a {
   	text-decoration: none;
   	color: $black;
@@ -65,35 +55,101 @@ header {
 .page-subtitle {
 	padding-top: 1em;
 	font-size: .8em;
+	color: $white;
 }
 
 //WORK
 
+.work {
+	background: $white;
+	color: $black;
+	.section-title {
+	color: $black;	
+	}
+}
+
 .work-item-box {
 	text-align: center;
+	margin: 1em 0;
 }
 
 .work-image, .css-work-image {
 	border-radius: 25px;
-	border: 2px solid $white;
+	border: 2px solid $black;
 	width: 100%;
 }
+
+.project-title {
+	font-weight: 400;
+	font-size: 2em;
+	padding: .3em;
+	text-align: left;
+}
+
+.project-text {
+	padding: .6em;
+	text-align: left;
+}
+
+.demo, .github {
+	background: $blue;
+	color: $white;
+	border: none;
+	margin: 2em .4em;
+	padding: 1em 1.5em;
+	font-size: 16px;
+	font-weight: bold;
+	width: 40%;
+	&:hover {
+		background: $black;
+	}
+}
+
 
 
 //ABOUT
 
+.about {
+	background: $black;
+	color: $white;
+	text-align: center;
+		.about-text, .section-title {
+		text-align: left;
+		}
+}
+
+
+
+.about-image {
+	width: 60%;
+	border: 5px solid $white;
+}
+
+
+
 //CONTACT
 
-.fa {
-	color: white;
-	&:hover {
-		color: $blue;
+.contact {
+	background: $white;
+	color: $black;
+	.section-title {
+		color: $black;
 	}
 }
 
-//CSS IMAGES
+.social-icons {
+	text-align: center;
+}
 
-//CLOCK
+.fa {
+	color: $blue;
+	padding: .3em .1em;
+	&:hover {
+		color: $white;
+	}
+}
+
+//CSS IMAGES PAGE
 
 $css-darkblue: #223546;
 $css-darkblue2: #212F3D;
