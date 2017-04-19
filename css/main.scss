@@ -9,7 +9,7 @@ $blue: #3454D1;
 }
 
 body {
-  background: $black;
+  background: $white;
   // border: 1.5em solid $black;
   font-family: 'Roboto Mono', sans-serif;
   font-size: 18px;
@@ -38,23 +38,20 @@ header {
 }
 
 .page-title {
-  font-size: 2.6em;
+  font-size: 3em;
   color: $white;
   font-family: 'Rubik', sans-serif;
   font-weight: 900;
   line-height: 1;
   a {
   	text-decoration: none;
-  	color: $black;
-  	&:hover {
-  		color: $white;
-  	}
+  	color: $white;
   }
 }
 
 .page-subtitle {
 	padding-top: 1em;
-	font-size: .8em;
+	font-size: 1em;
 	color: $white;
 }
 
@@ -83,7 +80,7 @@ header {
 	font-weight: 400;
 	font-size: 2em;
 	padding: .3em;
-	text-align: left;
+	text-align: center;
 }
 
 .project-text {
@@ -113,9 +110,9 @@ header {
 	background: $black;
 	color: $white;
 	text-align: center;
-		.about-text, .section-title {
-		text-align: left;
-		}
+	.about-text, .section-title {
+	text-align: left;
+	}
 }
 
 
@@ -174,8 +171,9 @@ $css-white: #FBFCFC;
 }
 
 .css-description {
-	margin: 2em 0 1.5em 0;
+	margin: 1.5em 0 1.5em 0;
 	text-align: center;
+	background: $white;
 	p {
 		padding: 2em 1.5em;
 	}
@@ -193,10 +191,11 @@ $css-white: #FBFCFC;
 	}
 }
 
-.css-clock, .css-phone, .css-office, .css-laptop, .css-keyboard, .css-zombie, .css-mushu, .css-penciljar {
+.css-image-section {
+	background: $white;
 	width: 100%;
 	text-align: center;
-	margin: 1em 0;
+	color: $white;
 }
 
 .css-clock {
@@ -235,9 +234,4 @@ $css-white: #FBFCFC;
 	@media only screen and (min-width: 641px) {
 		width: 500px;
 	}
-}
-
-.csspage-social-icons {
-	text-align: center;
-	padding: 2em 0;
 }

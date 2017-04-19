@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #212121;
+  background: #FAFAFA;
   font-family: 'Roboto Mono', sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -24,20 +24,18 @@ header {
   background: #212121; }
 
 .page-title {
-  font-size: 2.6em;
+  font-size: 3em;
   color: #FAFAFA;
   font-family: 'Rubik', sans-serif;
   font-weight: 900;
   line-height: 1; }
   .page-title a {
     text-decoration: none;
-    color: #212121; }
-    .page-title a:hover {
-      color: #FAFAFA; }
+    color: #FAFAFA; }
 
 .page-subtitle {
   padding-top: 1em;
-  font-size: .8em;
+  font-size: 1em;
   color: #FAFAFA; }
 
 .work {
@@ -59,7 +57,7 @@ header {
   font-weight: 400;
   font-size: 2em;
   padding: .3em;
-  text-align: left; }
+  text-align: center; }
 
 .project-text {
   padding: .6em;
@@ -111,8 +109,9 @@ header {
   padding: 1em; }
 
 .css-description {
-  margin: 2em 0 1.5em 0;
-  text-align: center; }
+  margin: 1.5em 0 1.5em 0;
+  text-align: center;
+  background: #FAFAFA; }
   .css-description p {
     padding: 2em 1.5em; }
 
@@ -125,10 +124,11 @@ header {
     .css-additional a:hover {
       color: white; }
 
-.css-clock, .css-phone, .css-office, .css-laptop, .css-keyboard, .css-zombie, .css-mushu, .css-penciljar {
+.css-image-section {
+  background: #FAFAFA;
   width: 100%;
   text-align: center;
-  margin: 1em 0; }
+  color: #FAFAFA; }
 
 .css-clock {
   background: #0d0d0d; }
@@ -165,9 +165,5 @@ header {
   @media only screen and (min-width: 641px) {
     .css-image {
       width: 500px; } }
-
-.csspage-social-icons {
-  text-align: center;
-  padding: 2em 0; }
 
 /*# sourceMappingURL=main.css.map */
