@@ -83,10 +83,24 @@ header {
 	text-align: center;
 }
 
-.project-text {
-	padding: .6em;
+.project-text, .technologies-list {
 	text-align: left;
 }
+
+.technologies-list {
+	font-weight: bold;
+	text-align: center;
+	padding: .6em;
+	margin-top: 1.5em;
+	li {
+		display: inline-block;
+	}
+}
+
+.line {
+	font-weight: 400;
+}
+
 
 .demo, .github {
 	background: $blue;
