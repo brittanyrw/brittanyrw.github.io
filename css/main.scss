@@ -147,9 +147,15 @@ header {
 	border: 5px solid $white;
 	margin: 0 0 2em 0;
 	width: 250px;
-		@media only screen and (min-width: 641px) {
+		@media only screen and (min-width: 700px) {
 		float: left;
 	}
+}
+
+.about-item {
+		@media only screen and (min-width: 1140px) {
+			padding: 0 0 5em 0;
+	}	
 }
 
 
@@ -166,25 +172,12 @@ header {
 		@media only screen and (min-width: 641px) {
 		margin-left: 15em;
 	}
-}
-
-.code-challenge {
-	text-align: left;
-	clear: both;
-		@media only screen and (min-width: 641px) {
-		margin: 5em 0 1em 0;
-	}
 	span {
-		display: block;
-		background: $white;
-		color: $black;
-		text-align: center;
-		padding: 1em 0;
-		margin: 1em 0;
 		font-weight: 600;
 		font-size: 1.2em;
-	}
+	}	
 }
+
 
 
 //CONTACT
