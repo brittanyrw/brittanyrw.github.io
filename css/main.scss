@@ -146,8 +146,8 @@ header {
 	width: 60%;
 	border: 5px solid $white;
 	margin: 0 0 2em 0;
+	width: 250px;
 		@media only screen and (min-width: 641px) {
-		width: 250px;
 		float: left;
 	}
 }
