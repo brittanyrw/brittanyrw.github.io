@@ -20,12 +20,9 @@ body {
 section {
 	width: 100%;
 	padding: 1.5em;
-}
-
-main {
-	@media only screen and (min-width: 1023px) {
-	width: 90%;
-	margin: 0 auto;
+	@media only screen and (min-width: 641px) {
+		width: 90%;
+		margin: 0 auto;
 	}
 }
 
@@ -75,11 +72,10 @@ header {
 .work-item-box {
 	text-align: center;
 	margin: 1em 0;
-	@media only screen and (min-width: 1023px) {
-	float: left;
-	margin: 1em;
-	width: 45%;
-	display: inline-block;
+	@media only screen and (min-width: 1024px) {
+		width: 45%;
+		display: inline-block;
+		margin: 0 1em;
 	}
 }
 
@@ -87,6 +83,7 @@ header {
 	border-radius: 25px;
 	border: 2px solid $black;
 	width: 100%; 
+	max-width: 500px;
 }
 
 .project-title {
@@ -140,9 +137,6 @@ header {
 		@media only screen and (min-width: 641px) {
 		text-align: left;
 	}
-		@media only screen and (min-width: 1023px) {
-		clear: both;
-	}
 	.about-text, .section-title {
 	text-align: left;
 	}
@@ -151,8 +145,9 @@ header {
 .about-image {
 	width: 60%;
 	border: 5px solid $white;
+	margin: 0 0 2em 0;
 		@media only screen and (min-width: 641px) {
-		width: 35%;
+		width: 250px;
 		float: left;
 	}
 }
@@ -175,6 +170,7 @@ header {
 
 .code-challenge {
 	text-align: left;
+	clear: both;
 		@media only screen and (min-width: 641px) {
 		margin: 5em 0 1em 0;
 	}
@@ -236,21 +232,12 @@ $css-white: #FBFCFC;
 	margin: 2em 0;
 	padding: 1em;
 	font-size: 1em;
-	width: 62%;
+	width: 250px;
 	height: 50px;
 }
 
 .css-description {
-	margin: 1.5em 0 1.5em 0;
-	text-align: center;
 	background: $white;
-	p {
-		padding: 2em 1.5em;
-	}
-}
-
-.css-additional {
-	text-align: center;
 	a {
 		text-decoration: none;
 		color: $blue;
