@@ -19,7 +19,14 @@ body {
 
 section {
 	width: 100%;
-	padding: 1em;
+	padding: 1.5em;
+}
+
+main {
+	@media only screen and (min-width: 1023px) {
+	width: 90%;
+	margin: 0 auto;
+	}
 }
 
 .section-title {
@@ -68,12 +75,18 @@ header {
 .work-item-box {
 	text-align: center;
 	margin: 1em 0;
+	@media only screen and (min-width: 1023px) {
+	float: left;
+	margin: 1em;
+	width: 45%;
+	display: inline-block;
+	}
 }
 
 .work-image, .css-work-image {
 	border-radius: 25px;
 	border: 2px solid $black;
-	width: 100%;
+	width: 100%; 
 }
 
 .project-title {
@@ -90,7 +103,6 @@ header {
 .technologies-list {
 	font-weight: bold;
 	text-align: center;
-	padding: .6em;
 	margin-top: 1.5em;
 	li {
 		display: inline-block;
@@ -98,7 +110,7 @@ header {
 }
 
 .line {
-	font-weight: 400;
+	font-weight: 300;
 }
 
 
@@ -108,9 +120,10 @@ header {
 	border: none;
 	margin: 2em .4em;
 	padding: 1em 1.5em;
-	font-size: 16px;
+	font-size: .7em;
 	font-weight: bold;
-	width: 40%;
+	width: 46%;
+	height: 50px;
 	&:hover {
 		background: $black;
 	}
@@ -124,18 +137,58 @@ header {
 	background: $black;
 	color: $white;
 	text-align: center;
+		@media only screen and (min-width: 641px) {
+		text-align: left;
+	}
+		@media only screen and (min-width: 1023px) {
+		clear: both;
+	}
 	.about-text, .section-title {
 	text-align: left;
 	}
 }
 
-
-
 .about-image {
 	width: 60%;
 	border: 5px solid $white;
+		@media only screen and (min-width: 641px) {
+		width: 35%;
+		float: left;
+	}
 }
 
+
+.about-text {
+	margin: 1.5em .5em;
+	a{
+		font-weight: bold;
+		color: $blue;
+		text-decoration: none;
+		&:hover {
+			color: $white;
+		}
+	}
+		@media only screen and (min-width: 641px) {
+		margin-left: 15em;
+	}
+}
+
+.code-challenge {
+	text-align: left;
+		@media only screen and (min-width: 641px) {
+		margin: 5em 0 1em 0;
+	}
+	span {
+		display: block;
+		background: $white;
+		color: $black;
+		text-align: center;
+		padding: 1em 0;
+		margin: 1em 0;
+		font-weight: 600;
+		font-size: 1.2em;
+	}
+}
 
 
 //CONTACT

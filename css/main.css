@@ -10,7 +10,12 @@ body {
 
 section {
   width: 100%;
-  padding: 1em; }
+  padding: 1.5em; }
+
+@media only screen and (min-width: 1023px) {
+  main {
+    width: 90%;
+    margin: 0 auto; } }
 
 .section-title {
   font-size: 3.9em;
@@ -47,6 +52,12 @@ header {
 .work-item-box {
   text-align: center;
   margin: 1em 0; }
+  @media only screen and (min-width: 1023px) {
+    .work-item-box {
+      float: left;
+      margin: 1em;
+      width: 45%;
+      display: inline-block; } }
 
 .work-image, .css-work-image {
   border-radius: 25px;
@@ -65,13 +76,12 @@ header {
 .technologies-list {
   font-weight: bold;
   text-align: center;
-  padding: .6em;
   margin-top: 1.5em; }
   .technologies-list li {
     display: inline-block; }
 
 .line {
-  font-weight: 400; }
+  font-weight: 300; }
 
 .demo, .github {
   background: #3454D1;
@@ -79,9 +89,10 @@ header {
   border: none;
   margin: 2em .4em;
   padding: 1em 1.5em;
-  font-size: 16px;
+  font-size: .7em;
   font-weight: bold;
-  width: 40%; }
+  width: 46%;
+  height: 50px; }
   .demo:hover, .github:hover {
     background: #212121; }
 
@@ -89,12 +100,49 @@ header {
   background: #212121;
   color: #FAFAFA;
   text-align: center; }
+  @media only screen and (min-width: 641px) {
+    .about {
+      text-align: left; } }
+  @media only screen and (min-width: 1023px) {
+    .about {
+      clear: both; } }
   .about .about-text, .about .section-title {
     text-align: left; }
 
 .about-image {
   width: 60%;
   border: 5px solid #FAFAFA; }
+  @media only screen and (min-width: 641px) {
+    .about-image {
+      width: 35%;
+      float: left; } }
+
+.about-text {
+  margin: 1.5em .5em; }
+  .about-text a {
+    font-weight: bold;
+    color: #3454D1;
+    text-decoration: none; }
+    .about-text a:hover {
+      color: #FAFAFA; }
+  @media only screen and (min-width: 641px) {
+    .about-text {
+      margin-left: 15em; } }
+
+.code-challenge {
+  text-align: left; }
+  @media only screen and (min-width: 641px) {
+    .code-challenge {
+      margin: 5em 0 1em 0; } }
+  .code-challenge span {
+    display: block;
+    background: #FAFAFA;
+    color: #212121;
+    text-align: center;
+    padding: 1em 0;
+    margin: 1em 0;
+    font-weight: 600;
+    font-size: 1.2em; }
 
 .contact {
   background: #FAFAFA;
