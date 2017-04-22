@@ -56,12 +56,17 @@ header {
       width: 45%;
       display: inline-block;
       margin: 0 1em; } }
+  @media only screen and (min-width: 1440px) {
+    .work-item-box {
+      width: 48%;
+      display: inline-block;
+      margin: 0 .5em; } }
 
 .work-image, .css-work-image {
   border-radius: 25px;
   border: 2px solid #212121;
   width: 100%;
-  max-width: 500px; }
+  max-width: 700px; }
 
 .project-title {
   font-weight: 400;
