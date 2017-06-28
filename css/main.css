@@ -50,19 +50,20 @@ header {
 
 .work-item-box {
   text-align: center;
-  margin: 1em 0; }
+  margin: 1em 0;
+  vertical-align: top; }
   @media only screen and (min-width: 1024px) {
     .work-item-box {
-      width: 45%;
+      width: 29%;
       display: inline-block;
       margin: 0 1em; } }
   @media only screen and (min-width: 1440px) {
     .work-item-box {
-      width: 48%;
+      width: 31%;
       display: inline-block;
       margin: 0 .5em; } }
 
-.work-image, .css-work-image {
+.work-image, .css-work-image, .bittheater-work-image {
   border-radius: 25px;
   border: 2px solid #212121;
   width: 100%;
@@ -95,10 +96,14 @@ header {
   padding: 1em 1.5em;
   font-size: .7em;
   font-weight: bold;
-  width: 46%;
-  height: 50px; }
+  width: 100%;
+  height: 50px;
+  vertical-align: top; }
   .demo:hover, .github:hover {
     background: #212121; }
+  @media only screen and (min-width: 1024px) {
+    .demo, .github {
+      width: 40%; } }
 
 .about {
   background: #212121;
@@ -183,6 +188,9 @@ header {
 
 .css-phone {
   background: #1d2d3c; }
+
+.css-pool {
+  background: #159075; }
 
 .css-office {
   background: #223546; }

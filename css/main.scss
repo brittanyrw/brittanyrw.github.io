@@ -72,19 +72,20 @@ header {
 .work-item-box {
 	text-align: center;
 	margin: 1em 0;
+	vertical-align: top;
 	@media only screen and (min-width: 1024px) {
-		width: 45%;
+		width: 29%;
 		display: inline-block;
 		margin: 0 1em;
 	}
 	@media only screen and (min-width: 1440px) {
-		width: 48%;
+		width: 31%;
 		display: inline-block;
 		margin: 0 .5em;
 	}
 }
 
-.work-image, .css-work-image {
+.work-image, .css-work-image, .bittheater-work-image {
 	border-radius: 25px;
 	border: 2px solid $black;
 	width: 100%; 
@@ -124,10 +125,14 @@ header {
 	padding: 1em 1.5em;
 	font-size: .7em;
 	font-weight: bold;
-	width: 46%;
+	width: 100%;
 	height: 50px;
+	vertical-align: top;
 	&:hover {
 		background: $black;
+	}
+	@media only screen and (min-width: 1024px) {
+		width: 40%;
 	}
 }
 
@@ -214,6 +219,7 @@ $css-darkblue2: #212F3D;
 $css-yellow: #FFD401;
 $css-purple: darken(#FAF9FA, 60%);
 $css-white: #FBFCFC;
+$css-green: #159075;
 
 @mixin dark-text {
 	color: $black;
@@ -259,6 +265,10 @@ $css-white: #FBFCFC;
 
 .css-phone {
 	background: darken($css-darkblue, 2.9%);
+}
+
+.css-pool {
+	background: $css-green;
 }
 
 .css-office {
