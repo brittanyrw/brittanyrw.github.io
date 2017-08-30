@@ -1,302 +1,301 @@
-//GENERAL
+// GENERAL
 
-$black: #212121;
-$white: #FAFAFA;
-$blue: #3454D1;
+$dark-blue: #17202A;
+$red: #C1272D;
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
+
+.visually-hidden { /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+} 
+body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .visually-hidden button { display: none !important; }
 
 body {
-  background: $white;
-  // border: 1.5em solid $black;
-  font-family: 'Roboto Mono', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.4;
+	font-family: 'Raleway', sans-serif;
+	border: 10px solid $dark-blue;
+	border-radius: 5px;
+	margin: 10px;
+	color: $dark-blue;
+	font-size: 20px;
+	 @media only screen and (min-width: 641px) {
+	    margin: 30px;
+  	}
+
 }
 
-section {
-	width: 100%;
-	padding: 1.5em;
-	@media only screen and (min-width: 641px) {
-		width: 90%;
-		margin: 0 auto;
-	}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 
-.section-title {
-  font-size: 3.9em;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  line-height: 1;
-  margin: 0 0 .5em 0;
-}
-
-//HEADER
-
-header {
-	padding: 1em;
-	background: $black;
-}
-
-.page-title {
-  font-size: 3em;
-  color: $white;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 900;
-  line-height: 1;
-  a {
-  	text-decoration: none;
-  	color: $white;
-  }
-}
-
-.page-subtitle {
-	padding-top: 1em;
-	font-size: 1em;
-	color: $white;
-}
-
-//WORK
-
-.work {
-	background: $white;
-	color: $black;
-	.section-title {
-	color: $black;	
-	}
-}
-
-.work-item-box {
-	text-align: center;
-	margin: 1em 0;
-	vertical-align: top;
-	@media only screen and (min-width: 1024px) {
-		width: 29%;
-		display: inline-block;
-		margin: 0 1em;
-	}
-	@media only screen and (min-width: 1440px) {
-		width: 31%;
-		display: inline-block;
-		margin: 0 .5em;
-	}
-}
-
-.work-image, .css-work-image, .bittheater-work-image {
-	border-radius: 25px;
-	border: 2px solid $black;
-	width: 100%; 
-	max-width: 700px;
-}
-
-.project-title {
-	font-weight: 400;
-	font-size: 2em;
-	padding: .3em;
-	text-align: center;
-}
-
-.project-text, .technologies-list {
-	text-align: left;
-}
-
-.technologies-list {
-	font-weight: bold;
-	text-align: center;
-	margin-top: 1.5em;
-	li {
-		display: inline-block;
-	}
-}
-
-.line {
-	font-weight: 300;
-}
-
-
-.demo, .github {
-	background: $blue;
-	color: $white;
-	border: none;
-	margin: 2em .4em;
-	padding: 1em 1.5em;
-	font-size: .7em;
-	font-weight: bold;
-	width: 100%;
+button {
+	width: 90%;
 	height: 50px;
-	vertical-align: top;
-	&:hover {
-		background: $black;
-	}
-	@media only screen and (min-width: 1024px) {
-		width: 40%;
-	}
+	border: none;
+	margin: 40px 20px 20px 20px;
+	font-size: 20px;	
+	max-width: 250px;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
 }
 
-
-
-//ABOUT
-
-.about {
-	background: $black;
-	color: $white;
-	text-align: center;
-		@media only screen and (min-width: 641px) {
-		text-align: left;
-	}
-	.about-text, .section-title {
-	text-align: left;
-	}
+span {
+	font-weight: 700;
 }
 
-.about-image {
-	width: 60%;
-	border: 5px solid $white;
-	margin: 0 0 2em 0;
-	width: 250px;
-		@media only screen and (min-width: 700px) {
-		float: left;
-	}
+.dark {
+	background: $dark-blue;
+	color: white;
 }
 
-.about-item {
-		@media only screen and (min-width: 1140px) {
-			padding: 0 0 5em 0;
-	}	
-}
-
-
-.about-text {
-	margin: 1.5em .5em;
-	a{
-		font-weight: bold;
-		color: $blue;
-		text-decoration: none;
-		&:hover {
-			color: $white;
-		}
-	}
-		@media only screen and (min-width: 641px) {
-		margin-left: 15em;
-	}
-	span {
-		font-weight: 600;
-		font-size: 1.2em;
-	}	
-}
-
-
-
-//CONTACT
-
-.contact {
-	background: $white;
-	color: $black;
-	.section-title {
-		color: $black;
-	}
-}
-
-.social-icons {
-	text-align: center;
-}
-
-.fa {
-	color: $blue;
-	padding: .3em .1em;
-	&:hover {
-		color: $black;
-	}
-}
-
-//CSS IMAGES PAGE
-
-$css-darkblue: #223546;
-$css-darkblue2: #212F3D;
-$css-yellow: #FFD401;
-$css-purple: darken(#FAF9FA, 60%);
-$css-white: #FBFCFC;
-$css-green: #159075;
-
-@mixin dark-text {
-	color: $black;
-	button {
-		background: $black;
-		color: $white;
-	}
-}
-
-.codepen {
+.light {
 	background: white;
-	color: $black;
-	border: none;
-	margin: 2em 0;
-	padding: 1em;
-	font-size: 1em;
-	width: 250px;
-	height: 50px;
+	color: $dark-blue;
 }
 
-.css-description {
-	background: $white;
+// NAVIGATION
+
+nav {
+
+	text-align: center;
+
+	h1 {
+		font-size: 95px;
+  		margin-bottom: 0;
+  		font-weight: normal;
+  		font-family: 'Sacramento', cursive;	
+  		padding: 0 10px 0 0;
+	}
 	a {
 		text-decoration: none;
-		color: $blue;
-		font-weight: bold;
+		color: $dark-blue;
+  	}
+
+	.subtitle {
+		font-weight: normal;
+  		font-size: 23px;
+  		font-weight: 300;
+  		letter-spacing: 5px;
+  		  &:before, &:after {
+    		content: " ";
+    		display: block;
+    		margin: 8px 2px 8px 0;
+    		height: 1px;
+    		background-color: $dark-blue;
+    		width: 100%;
+    
+  		}
+	}
+}
+
+// ABOUT
+
+.about {
+	padding: 30px 20px;
+	text-align: center;
+	background: $dark-blue;
+	color: white;
+	.about-wrapper {
+		max-width: 800px;
+		margin: auto;
+	}
+	img {
+		width: 60%;
+		max-width: 200px;
+		border: 5px solid white;
+	}
+	p {
+		text-align: left;
+		letter-spacing: 1px;
+		line-height: 1.3;
+		font-weight: 300;
+	}
+	li {
+		padding: 10px;
+		display: inline-block;
+		margin: 5px 1px;
+		border: 1px solid white;
 		&:hover {
-			color: white;
+			background: white;
+			color: $dark-blue;
+			transform: translateY(-5px);
+			box-shadow: 1px 1px 0px gray;
 		}
 	}
 }
 
-.css-image-section {
-	background: $white;
-	width: 100%;
+// WORK
+
+.work {
 	text-align: center;
-	color: $white;
+	h2 {
+		font-weight: 400;
+		letter-spacing: 5px;
+		padding-top: 10px;
+		text-align: left;
+		font-size: 34px;
+		margin: 0;
+	}
+	p {
+		text-align: left;
+	}
+
+	.work-item-wrapper {
+		max-width: 700px;
+		margin: auto;
+	}
+	.css-work-item-wrapper {
+		max-width: 700px;
+		margin: auto;
+	}
+	.work-item {
+		padding: 20px;
+	}
+	.work-images {
+		text-align: center;
+	}
+
+	.bit-home {
+		border: 1px solid $dark-blue;
+		width: 48%;
+		max-width: 250px;
+		display: inline-block;
+		margin-bottom: -6px;
+
+	}
+
+	.bit-graphics {
+		width: 65%;
+		border: 1px solid $dark-blue;
+		display: inline-block;
+		margin: 0 -130px 20px 0;
+	}
+
+	.musical-picks {
+		width: 100%;
+	}
+
+	.css-one, .css-two{
+		text-align: center;
+		width: 49%;
+		margin: 10px 0 0 0;
+		display: inline-block;
+	}
+
+	.css-images {
+		border-radius: 5px;
+	}
+
+	.css-two {
+		padding: 0 0 40px 0;
+	}
+
 }
 
-.css-clock {
-	background: lighten(black, 5%);
+.work-buttons {
+	text-align: center;
 }
 
-.css-phone {
-	background: darken($css-darkblue, 2.9%);
+// CONTACT
+
+footer {
+	text-align: center;
+	padding: 20px;
+	i {
+		color: $dark-blue;
+		padding: 5px;
+		&:hover {
+			color: $red;
+		}
+	}
 }
 
-.css-pool {
-	background: $css-green;
+//CSS IMAGES
+
+.light-css {
+	color: white;
 }
 
-.css-office {
-	background: $css-darkblue;
-}
-
-.css-laptop {
-	background: $css-purple;
-}
-
-.css-keyboard {
-	background: $css-yellow;
-	@include dark-text;
-}
-
-.css-zombie {
-	background: $css-darkblue2;
-}
-
-.css-mushu {
-	background: $css-white;
-	@include dark-text;
+.css-image-page {
+	text-align: center;
+	p {
+		margin: 20px auto;
+		max-width: 700px;
+	}
+	a {
+		color: $dark-blue;
+		text-decoration: none;
+		font-weight: 600;
+		&:hover {
+			color: $red;
+		}
+	}
 }
 
 .css-image {
 	width: 100%;
-	margin: 1em 0;
-	@media only screen and (min-width: 641px) {
-		width: 500px;
+	padding: 20px;
+	h2 {
+		font-weight: 400;
+		letter-spacing: 5px;
+		padding-top: 10px;
+		font-size: 34px;
+		margin: 20px 0;
 	}
+	img {
+		width: 80%;
+			 @media only screen and (min-width: 641px) {
+	    		width: 45%;
+  			}
+	}
+	button {
+		display: block;
+		margin: 20px auto;
+	}
+}
+
+.css-clawgame, .css-zombie, .css-tiger, .css-green-lantern {
+	img {
+		max-width: 350px;
+	}
+}
+
+.css-clawgame {
+	background: #354D80;
+}
+
+.css-pool {
+	background: #019175
+}
+
+.css-cat-iphone {
+	background: #222E3D;
+}
+
+.css-keyboard {
+	background:#FFD401;
+	img {
+		width: 70%;
+	}
+}
+
+.css-tiger {
+	background: #34495E;
+}
+.css-laptop {
+	background: #695869;
+}
+
+.css-green-lantern, .css-zombie {
+	background: #212F3D;
 }
