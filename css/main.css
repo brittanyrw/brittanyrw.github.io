@@ -190,15 +190,19 @@ footer {
     margin: 20px 0; }
   .css-image img {
     width: 80%; }
-    @media only screen and (min-width: 641px) {
-      .css-image img {
-        width: 45%; } }
   .css-image button {
     display: block;
-    margin: 20px auto; }
+    margin: 20px auto;
+    max-width: 450px; }
+    @media only screen and (min-width: 641px) {
+      .css-image button {
+        max-width: 250px; } }
 
-.css-clawgame img, .css-zombie img, .css-tiger img, .css-green-lantern img {
-  max-width: 350px; }
+.css-clawgame img, .css-cat-iphone img, .css-green-lantern img, .css-zombie img, .css-tiger img {
+  max-width: 450px; }
+
+.css-pool img, .css-laptop img, .css-clock img {
+  max-width: 600px; }
 
 .css-clawgame {
   background: #354D80; }
@@ -212,7 +216,7 @@ footer {
 .css-keyboard {
   background: #FFD401; }
   .css-keyboard img {
-    width: 70%; }
+    max-width: 1000px; }
 
 .css-tiger {
   background: #34495E; }

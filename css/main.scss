@@ -258,19 +258,26 @@ footer {
 	}
 	img {
 		width: 80%;
-			 @media only screen and (min-width: 641px) {
-	    		width: 45%;
-  			}
 	}
 	button {
 		display: block;
 		margin: 20px auto;
+		max-width: 450px;
+		@media only screen and (min-width: 641px) {
+	    	max-width: 250px;
+  		}
 	}
 }
 
-.css-clawgame, .css-zombie, .css-tiger, .css-green-lantern {
+.css-clawgame, .css-cat-iphone, .css-green-lantern, .css-zombie, .css-tiger {
 	img {
-		max-width: 350px;
+		max-width: 450px;
+	}
+}
+
+.css-pool, .css-laptop, .css-clock {
+	img {
+		max-width: 600px;
 	}
 }
 
@@ -288,8 +295,8 @@ footer {
 
 .css-keyboard {
 	background:#FFD401;
-	img {
-		width: 70%;
+		img {
+		max-width: 1000px;
 	}
 }
 
