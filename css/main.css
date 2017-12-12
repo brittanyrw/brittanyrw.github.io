@@ -36,7 +36,7 @@ button {
   width: 90%;
   height: 50px;
   border: none;
-  margin: 40px 20px 20px 20px;
+  margin: 20px 20px 20px;
   font-size: 20px;
   max-width: 250px;
   cursor: pointer;
@@ -48,6 +48,15 @@ span {
 h3 {
   font-weight: 300; }
 
+.section-title {
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 30px 0;
+  color: #17202A;
+  padding: 10px;
+  display: inline-block;
+  border: 3px solid #17202A; }
+
 .dark {
   background: #17202A;
   color: white; }
@@ -55,6 +64,12 @@ h3 {
 .light {
   background: white;
   color: #17202A; }
+
+.divider-dark {
+  border-bottom: 1px solid #17202A; }
+
+.divider-light {
+  border-bottom: 1px solid white; }
 
 nav {
   text-align: center; }
@@ -111,22 +126,21 @@ nav {
 .work {
   text-align: center; }
   .work h2 {
-    font-weight: 400;
     letter-spacing: 5px;
     padding-top: 10px;
-    text-align: left;
-    font-size: 34px;
-    margin: 0; }
+    font-size: 34px; }
   .work p {
-    text-align: left; }
+    text-align: center; }
+  .work .project-title {
+    font-weight: 400;
+    margin: 0; }
   .work .work-item-wrapper {
     max-width: 700px;
-    margin: auto; }
-  .work .css-work-item-wrapper {
-    max-width: 700px;
-    margin: auto; }
+    margin: 0 auto 30px auto;
+    padding-bottom: 20px; }
   .work .work-item {
-    padding: 20px; }
+    padding: 20px;
+    text-align: center; }
   .work .work-images {
     text-align: center; }
   .work .bit-home {
@@ -140,8 +154,10 @@ nav {
     border: 1px solid #17202A;
     display: inline-block;
     margin: 0 -130px 20px 0; }
-  .work .musical-picks {
+  .work .musical-picks, .work .codejournal-image, .work .mapping-musicals-gif {
     width: 100%; }
+  .work .what-the-css-image, .work .techlady-gif {
+    max-width: 300px; }
   .work .css-one, .work .css-two {
     text-align: center;
     width: 49%;

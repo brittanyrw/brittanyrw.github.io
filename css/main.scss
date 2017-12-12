@@ -42,7 +42,7 @@ button {
 	width: 90%;
 	height: 50px;
 	border: none;
-	margin: 40px 20px 20px 20px;
+	margin: 20px 20px 20px;
 	font-size: 20px;	
 	max-width: 250px;
 	cursor: pointer;
@@ -57,6 +57,16 @@ h3 {
 	font-weight: 300;
 }
 
+.section-title {
+	font-weight: 700;
+	text-align: center;
+	margin: 0 0 30px 0;
+	color: $dark-blue;
+	padding: 10px;
+	display: inline-block;
+	border: 3px solid $dark-blue;
+}
+
 .dark {
 	background: $dark-blue;
 	color: white;
@@ -66,6 +76,14 @@ h3 {
 	background: white;
 	color: $dark-blue;
 }
+
+.divider-dark {
+		border-bottom: 1px solid $dark-blue;
+	}
+
+.divider-light {
+		border-bottom: 1px solid white;
+	}
 
 // NAVIGATION
 
@@ -143,27 +161,26 @@ nav {
 .work {
 	text-align: center;
 	h2 {
-		font-weight: 400;
 		letter-spacing: 5px;
 		padding-top: 10px;
-		text-align: left;
 		font-size: 34px;
-		margin: 0;
 	}
 	p {
-		text-align: left;
+		text-align: center;
+	}
+	.project-title {
+		font-weight: 400;
+		margin: 0;
 	}
 
 	.work-item-wrapper {
 		max-width: 700px;
-		margin: auto;
-	}
-	.css-work-item-wrapper {
-		max-width: 700px;
-		margin: auto;
+		margin: 0 auto 30px auto;
+		padding-bottom: 20px;
 	}
 	.work-item {
 		padding: 20px;
+		text-align: center;
 	}
 	.work-images {
 		text-align: center;
@@ -185,8 +202,12 @@ nav {
 		margin: 0 -130px 20px 0;
 	}
 
-	.musical-picks {
+	.musical-picks, .codejournal-image, .mapping-musicals-gif {
 		width: 100%;
+	}
+
+	.what-the-css-image, .techlady-gif{
+		max-width: 300px;
 	}
 
 	.css-one, .css-two{
