@@ -143,17 +143,20 @@ nav {
     text-align: center; }
   .work .work-images {
     text-align: center; }
-  .work .bit-home {
+  .work .bit-home, .work .what-the-css-animated {
     border: 1px solid #17202A;
     width: 48%;
     max-width: 250px;
     display: inline-block;
     margin-bottom: -6px; }
   .work .bit-graphics {
+    margin: 0 -130px 20px 0; }
+  .work .bit-graphics, .work .what-the-css-home {
     width: 65%;
     border: 1px solid #17202A;
-    display: inline-block;
-    margin: 0 -130px 20px 0; }
+    display: inline-block; }
+  .work .what-the-css-home {
+    margin: 0 -60px 20px 0; }
   .work .musical-picks, .work .codejournal-image, .work .mapping-musicals-gif {
     width: 100%; }
   .work .what-the-css-image, .work .techlady-gif {

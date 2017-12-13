@@ -185,8 +185,7 @@ nav {
 	.work-images {
 		text-align: center;
 	}
-
-	.bit-home {
+	.bit-home, .what-the-css-animated {
 		border: 1px solid $dark-blue;
 		width: 48%;
 		max-width: 250px;
@@ -195,11 +194,18 @@ nav {
 
 	}
 
-	.bit-graphics {
+	.bit-graphics { 
+		margin: 0 -130px 20px 0;
+	}
+
+	.bit-graphics, .what-the-css-home {
 		width: 65%;
 		border: 1px solid $dark-blue;
 		display: inline-block;
-		margin: 0 -130px 20px 0;
+	}
+
+	.what-the-css-home {
+		margin: 0 -60px 20px 0;
 	}
 
 	.musical-picks, .codejournal-image, .mapping-musicals-gif {
