@@ -19,6 +19,7 @@ body {
 	background-image: url('../imgs/music-note-background.svg');
 	background-repeat: no-repeat;
 	background-position: 25% 49%;
+	cursor: url(../imgs/cursor.png), crosshair;
 }
 
 a {
@@ -90,11 +91,10 @@ ul {
 	background-color: #FFC96B;
 	color: black;
 	padding: 20px 30px;
-	margin-right: -20px;
 }
 
 .main-navigation ul {
-	padding: 25px;
+	padding: 0 25px;
 }
 
 .main-navigation li {
@@ -105,6 +105,39 @@ ul {
 	grid-area: Side; 
 	height: 100%;
 
+}
+
+.secondary-navigation .social-media-links {
+	float: right;
+}
+
+.secondary-navigation .social-media-links i {
+	color: black;
+	font-size: 15px;
+}
+
+.secondary-navigation .social-media-links a {
+	background-color: #FFC96B;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	display: inline-block;
+	padding: 2px 5px 5px 6px;
+	margin-bottom: 10px;
+	transition: .5s;
+}
+
+.secondary-navigation .social-media-links a:hover {
+	box-shadow: 4px 5px rgba(255,201,107,.25);
+
+}
+
+.secondary-navigation .social-media-links a:after {
+	display: none;
+}
+
+.custom {
+  cursor: url(../imgs/cursor.svg), auto;
 }
 
 /* PAGES */
@@ -216,6 +249,9 @@ main {
 		float: right;
 		margin-right: 100px;
 		margin-top: -20px;
+	}
+	.main-navigation header {
+		margin-right: -20px;
 	}
 }
 
