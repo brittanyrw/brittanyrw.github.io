@@ -16,6 +16,9 @@ body {
 	color: #FFC96B;
 	font-size: 21px;
 	/*border: 2px solid #FFC96B;*/
+	background-image: url('../imgs/music-note-background.svg');
+	background-repeat: no-repeat;
+	background-position: 25% 49%;
 }
 
 a {
@@ -48,8 +51,12 @@ main {
 	height: 100%;
 }
 
-.playbill {
-	height: calc(100% - 25px);
+.playbill-container {
+	height: calc(100% - 30px);
+}
+
+.main-navigation, .secondary-navigation {
+	padding: 25px;
 }
 
 @media screen and (max-width: 776px){
@@ -57,12 +64,12 @@ main {
 		border: 2px solid #FFC96B;
 	}
 
-	.marquee, .playbill {
+	.marquee, .playbill-container {
 		border-left: 2px solid #FFC96B;
 		border-right: 2px solid #FFC96B;
 	}
 
-	.playbill {
+	.playbill-container {
 		border-bottom: 2px solid #FFC96B;
 	}
 }
@@ -91,6 +98,39 @@ ul {
 
 /* PLAYBILL */
 
+.playbill-container {
+	padding: 25px;
+	padding-left: 40px;
+
+}
+
+.playbill {
+	border: 2px solid #FFC96B;
+	max-width: 450px;
+	position: relative;
+	min-height: 530px;
+	margin-top: -10px;
+	background-color: black;
+}
+
+.playbill header {
+	background-color: #FFC96B;
+	text-align: center;
+	padding: 30px 20px;
+	color: black;
+	text-transform: uppercase;
+	border: 2px solid #FFC96B;
+}
+
+.playbill header h2 {
+	font-size: 50px;
+}
+
+.playbill header h3 {
+	font-size: 20px;
+	font-weight: normal;
+}
+
 /* TERMINAL */
 
 /* MARQUEE */
@@ -101,21 +141,26 @@ ul {
 }
 
 .marquee {
-	height: 25px;
+	height: 30px;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
+	padding: 5px;
 }
 
 .marquee .lyrics {
   display: block;
   width: 200%;
-  height: 25px;
+  height: 30px;
 
   position: absolute;
   overflow: hidden;
 
-  animation: marquee 20s linear infinite;
+  /*animation: marquee 20s linear infinite;*/
+}
+
+main {
+
 }
 
 .marquee span {
@@ -125,6 +170,55 @@ ul {
 
 .marquee i {
 	font-size: 15px;
+}
+
+.terminal {
+	border: 5px solid #FFC96B;
+	border-radius: 4px;
+	max-width: 500px;
+	padding: 0 15px;
+	right: -20%;
+	bottom: 10%;
+	background-color: black;
+	font-size: 18px;
+}
+
+.playbill-content {
+	padding: 15px 20px;
+}
+
+.playbill h1 {
+	font-size: 90px;
+	max-width: 300px;
+}
+
+@media screen and (min-width: 992px){
+	.terminal {
+		position: absolute;
+	}
+	.playbill {
+		transform: rotate(-6deg);
+		width: 430px;
+		float: right;
+		margin-right: 100px;
+	}
+}
+
+.terminal i {
+	font-size: 13px;
+}
+
+.terminal span {
+	background-color: #FFC96B;
+	height: 17px;
+	width: 8px;
+	display: inline-block;
+	/*animation: blink 2s infinite;*/
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes marquee {
@@ -155,7 +249,7 @@ ul {
 		border-bottom: 1px solid #FFC96B;
 	}
 
-	.playbill {
+	.playbill-container {
 		border-top: 2px solid #FFC96B;
 	}
 
