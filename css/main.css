@@ -1,11 +1,193 @@
-/* VARIABLES */
-
 /* GENERAL STYLES */
 
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 25px;
+	font-family: 'Inconsolata', monospace;
+	background-color: black;
+	color: #FFC96B;
+	font-size: 21px;
+	/*border: 2px solid #FFC96B;*/
+}
+
+a {
+	color: #FFC96B;
+	position: relative;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+a:after {
+	position: absolute;
+	content: '';
+	background-color: rgba(255,201,107,.25);
+	height: 10px;
+	left: -6px;
+	bottom: -2px;
+	width: 0;
+	transition: 1s;
+}
+
+a:hover:after {
+	width: 110%;
+}
+
+main {
+	grid-area: Main; 
+	height: 100%;
+}
+
+.playbill {
+	height: calc(100% - 25px);
+}
+
+@media screen and (max-width: 776px){
+	.main-navigation, .secondary-navigation {
+		border: 2px solid #FFC96B;
+	}
+
+	.marquee, .playbill {
+		border-left: 2px solid #FFC96B;
+		border-right: 2px solid #FFC96B;
+	}
+
+	.playbill {
+		border-bottom: 2px solid #FFC96B;
+	}
+}
+
 /* NAVIGATION */
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.main-navigation {
+	grid-area: Nav; 
+	height: 100%;
+}
+
+.secondary-navigation {
+	grid-area: Side; 
+	height: 100%;
+
+}
+
+/* PAGES */
+
+/* Home */
 
 /* PLAYBILL */
 
 /* TERMINAL */
 
+/* MARQUEE */
+
+.marquee .lyrics span {
+	display: inline;
+	padding-right: 10px;
+}
+
+.marquee {
+	height: 25px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.marquee .lyrics {
+  display: block;
+  width: 200%;
+  height: 25px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 20s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  font-size: 16px;
+}
+
+.marquee i {
+	font-size: 15px;
+}
+
+@keyframes marquee {
+  0% { left: 5%; }
+  100% { left: -150%; }
+}
+
 /* BLOG */
+
+@media screen and (min-width: 776px){
+	body {
+	display: grid;
+  	grid-template-columns: 0.3fr 1fr 0.2fr;
+  	grid-template-rows: 1fr;
+  	grid-template-areas: "Nav Main Side";
+  	height: 93vh;
+	}
+	body.home, body.project {
+		overflow: hidden;
+	}
+
+	.main-navigation, .secondary-navigation {
+		border: 2px solid #FFC96B;
+	}
+
+	.marquee {
+		border-top: 1px solid #FFC96B;
+		border-bottom: 1px solid #FFC96B;
+	}
+
+	.playbill {
+		border-top: 2px solid #FFC96B;
+	}
+
+	@media all and (-ms-high-contrast:none) {
+	  .grid-container {
+	    display: -ms-grid;
+	    -ms-grid-columns: 0.4fr 1fr 0.2fr;
+	    -ms-grid-rows: 1fr 1fr 1fr;
+	  }
+
+	  .main-navigation {
+	    -ms-grid-row: 1;
+	    -ms-grid-row-span: 3;
+	    -ms-grid-col: 1;
+	    -ms-grid-col-span: 1;
+	  }
+
+	  .secondary-navigation {
+	    -ms-grid-row: 1;
+	    -ms-grid-row-span: 3;
+	    -ms-grid-col: 3;
+	    -ms-grid-col-span: 1;
+	  }
+
+	  main {
+	    -ms-grid-row: 1;
+	    -ms-grid-row-span: 3;
+	    -ms-grid-col: 2;
+	    -ms-grid-col-span: 1;
+	  }
+
+	}
+}
+
+
