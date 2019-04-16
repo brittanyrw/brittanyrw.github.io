@@ -19,7 +19,6 @@ body {
 	background-image: url('../imgs/music-note-background.svg');
 	background-repeat: no-repeat;
 	background-position: 25% 49%;
-	cursor: url(../imgs/cursor.png), crosshair;
 }
 
 a {
@@ -107,6 +106,15 @@ ul {
 
 }
 
+.secondary-navigation .me {
+	writing-mode: vertical-rl;
+	min-height: 200px;
+}
+
+.secondary-navigation nav li {
+	text-align: right;
+}
+
 .secondary-navigation .social-media-links {
 	float: right;
 }
@@ -126,7 +134,6 @@ ul {
 	margin-bottom: 10px;
 	transition: .5s;
 }
-
 .secondary-navigation .social-media-links a:hover {
 	box-shadow: 4px 5px rgba(255,201,107,.25);
 
@@ -134,10 +141,6 @@ ul {
 
 .secondary-navigation .social-media-links a:after {
 	display: none;
-}
-
-.custom {
-  cursor: url(../imgs/cursor.svg), auto;
 }
 
 /* PAGES */
@@ -158,6 +161,7 @@ ul {
 	position: relative;
 	min-height: 530px;
 	background-color: black;
+	z-index: 9999;
 }
 
 .playbill header {
@@ -203,12 +207,9 @@ ul {
   position: absolute;
   overflow: hidden;
 
-  /*animation: marquee 20s linear infinite;*/
+  animation: marquee 20s linear infinite;
 }
 
-main {
-
-}
 
 .marquee span {
   float: left;
@@ -235,6 +236,10 @@ main {
 .playbill h1 {
 	font-size: 90px;
 	max-width: 300px;
+}
+
+.marquee .lyrics:hover {
+  animation-play-state: paused;
 }
 
 @media screen and (min-width: 992px){
@@ -264,7 +269,7 @@ main {
 	height: 17px;
 	width: 8px;
 	display: inline-block;
-	/*animation: blink 2s infinite;*/
+	animation: blink 2s infinite;
 }
 
 @keyframes blink {
@@ -282,7 +287,7 @@ main {
 @media screen and (min-width: 776px){
 	body {
 	display: grid;
-  	grid-template-columns: 0.3fr 1fr 0.2fr;
+  	grid-template-columns: 0.3fr 1fr 0.1fr;
   	grid-template-rows: 1fr;
   	grid-template-areas: "Nav Main Side";
   	height: 93vh;
@@ -334,5 +339,3 @@ main {
 
 	}
 }
-
-
