@@ -157,9 +157,9 @@ ul {
 
 .playbill {
 	border: 2px solid #FFC96B;
-	max-width: 450px;
+	max-width: 480px;
 	position: relative;
-	min-height: 530px;
+	min-height: 600px;
 	background-color: black;
 	z-index: 9999;
 }
@@ -230,7 +230,7 @@ ul {
 }
 
 .playbill-content {
-	padding: 15px 20px;
+	padding: 15px 40px;
 }
 
 .playbill h1 {
@@ -242,6 +242,19 @@ ul {
   animation-play-state: paused;
 }
 
+@media screen and (min-width: 1441px){
+	body.home  {
+		
+	}
+	body.home .playbill-container {
+		height: 100%;
+  		display: grid;
+	}
+	body.home .playbill {
+		margin: auto;
+	}
+}
+
 @media screen and (min-width: 992px){
 	.terminal {
 		position: absolute;
@@ -250,15 +263,16 @@ ul {
 	}
 	body.home .playbill {
 		transform: rotate(-6deg);
-		width: 430px;
+		width: 480px;
 		float: right;
-		margin-right: 100px;
-		margin-top: -20px;
+		margin-right: 140px;
+		margin-top: -1.5%;
 	}
 	.main-navigation header {
 		margin-right: -20px;
 	}
 }
+
 
 .terminal i {
 	font-size: 13px;
