@@ -210,6 +210,9 @@ ul {
 		margin-top: 20px;
 
 	}
+	.marquee {
+		margin-top: -30px;
+	}
 }
 
 /*@media screen and (min-width: )*/
@@ -217,6 +220,8 @@ ul {
 /* TERMINAL */
 
 /* MARQUEE */
+
+
 
 .marquee .lyrics span {
 	display: inline;
