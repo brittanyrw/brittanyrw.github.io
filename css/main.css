@@ -157,6 +157,10 @@ ul {
 	display: none;
 }
 
+.secondary-navigation nav li a, .main-navigation nav li a {
+	font-size: 26px;
+}
+
 /* PAGES */
 
 /* Home */
@@ -405,6 +409,6 @@ ul {
 		margin-top: -30px;
 	}
 	body {
-		grid-template-columns: 0.2fr 1fr 0.1fr;
+		grid-template-columns: 0.24fr 1fr 0.1fr;
 	}
 }
