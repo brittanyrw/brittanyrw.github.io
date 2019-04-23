@@ -25,6 +25,7 @@ a {
 	color: #FFC96B;
 	position: relative;
 	text-decoration: none;
+	padding: 3px;
 }
 
 h1, h2, h3 {
@@ -34,16 +35,24 @@ h1, h2, h3 {
 a:after {
 	position: absolute;
 	content: '';
-	background-color: rgba(255,201,107,.25);
-	height: 10px;
+/*	background-color: rgba(255,201,107,1);*/
+	border: 0;
+	height: 100%;
 	left: -6px;
 	bottom: -2px;
 	width: 0;
 	transition: 1s;
+	z-index: 0;
 }
 
 a:hover:after {
-	width: 110%;
+	width: 115%;
+	border: 1px solid #FFC96B;
+	border-right: 5px solid #FFC96B;
+}
+a:hover {
+	/*color: black;*/
+	/*border: 1px solid #FFC96B;*/
 }
 
 main {
@@ -113,6 +122,11 @@ ul {
 
 .secondary-navigation nav li {
 	text-align: right;
+	margin-bottom: 10px;
+}
+
+.secondary-navigation nav li a {
+	padding: 3px;
 }
 
 .secondary-navigation .social-media-links {
@@ -182,38 +196,6 @@ ul {
 	font-weight: normal;
 }
 
-@media screen and (min-width: 1441px){
-	body.home .playbill-container {
-		position: relative;
-	}
-	body.home .playbill {
-		position: absolute;
-		transform: rotate(-6deg) !important;
-    	width: 530px;
-    	float: right;
-   	 	margin-right: 100px;
-    	top: 13%;
-    	left: 32%;
-    	margin-top: -20px;
-    	min-height: 74%;
-	}
-	body.home .terminal {
-		right: -100px;
-		position: absolute;
-		width: 78%;
-		max-width: 700px;
-		min-height: 250px;
-		bottom: -90px;
-	}
-	body.home .playbill .playbill-content h1 {
-		font-size: 100px;
-		margin-top: 20px;
-
-	}
-	.marquee {
-		margin-top: -30px;
-	}
-}
 
 /*@media screen and (min-width: )*/
 
@@ -388,5 +370,41 @@ ul {
 	    -ms-grid-col-span: 1;
 	  }
 
+	}
+}
+
+@media screen and (min-width: 1441px){
+	body.home .playbill-container {
+		position: relative;
+	}
+	body.home .playbill {
+		position: absolute;
+		transform: rotate(-6deg) !important;
+    	width: 530px;
+    	float: right;
+   	 	margin-right: 100px;
+    	top: 13%;
+    	left: 32%;
+    	margin-top: -20px;
+    	min-height: 74%;
+	}
+	body.home .terminal {
+		right: -100px;
+		position: absolute;
+		width: 78%;
+		max-width: 700px;
+		min-height: 250px;
+		bottom: -90px;
+	}
+	body.home .playbill .playbill-content h1 {
+		font-size: 100px;
+		margin-top: 20px;
+
+	}
+	.marquee {
+		margin-top: -30px;
+	}
+	body {
+		grid-template-columns: 0.2fr 1fr 0.1fr;
 	}
 }
