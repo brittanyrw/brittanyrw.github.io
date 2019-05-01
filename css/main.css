@@ -62,6 +62,8 @@ a:hover {
 main {
 	grid-area: Main; 
 	height: 100%;
+	border-top: 2px solid #FFC96B;
+	border-bottom: 2px solid #FFC96B;
 }
 
 .playbill-container {
@@ -128,6 +130,10 @@ ul {
 	right: 25px;
 }
 
+.secondary-navigation .me h3 a:hover:after {
+	display: none;
+}
+
 .secondary-navigation .me p {
 	margin: 0;
 }
@@ -190,12 +196,13 @@ ul {
 }
 
 .playbill {
-	border: 2px solid #FFC96B;
-	max-width: 480px;
-	position: relative;
-	min-height: 565px;
-	background-color: black;
-	z-index: 9999;
+    border: 2px solid #FFC96B;
+    max-width: 435px;
+    position: relative;
+    min-height: 510px;
+    background-color: black;
+    z-index: 9999;
+    margin: 15px auto;
 }
 
 .playbill header {
@@ -289,9 +296,6 @@ ul {
 		height: 100%;
   		display: grid;
 	}
-	body.home .playbill {
-		margin: auto;
-	}
 }
 
 @media screen and (min-width: 992px){
@@ -303,7 +307,6 @@ ul {
 	body.home .playbill {
 		transform: rotate(-6deg);
 		width: 480px;
-		margin: auto;
 	}
 	.main-navigation header {
 		margin-right: -20px;
