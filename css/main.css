@@ -116,12 +116,24 @@ ul {
 .secondary-navigation {
 	grid-area: Side; 
 	height: 100%;
+	position: relative;
+	padding-top: 300px;
 
 }
 
 .secondary-navigation .me {
 	writing-mode: vertical-rl;
 	min-height: 200px;
+	position: absolute;
+	right: 25px;
+}
+
+.secondary-navigation .me p {
+	margin: 0;
+}
+
+.secondary-navigation .me h3 {
+	font-size: 30px;
 }
 
 .secondary-navigation nav li {
@@ -161,8 +173,8 @@ ul {
 	display: none;
 }
 
-.secondary-navigation nav li a, .main-navigation nav li a {
-	font-size: 26px;
+.main-navigation nav li a {
+	font-size: 23px;
 }
 
 /* PAGES */
@@ -181,7 +193,7 @@ ul {
 	border: 2px solid #FFC96B;
 	max-width: 480px;
 	position: relative;
-	min-height: 600px;
+	min-height: 565px;
 	background-color: black;
 	z-index: 9999;
 }
@@ -291,9 +303,7 @@ ul {
 	body.home .playbill {
 		transform: rotate(-6deg);
 		width: 480px;
-		float: right;
-		margin-right: 140px;
-		margin-top: -1.5%;
+		margin: auto;
 	}
 	.main-navigation header {
 		margin-right: -20px;
@@ -339,6 +349,10 @@ ul {
 
 	.main-navigation, .secondary-navigation {
 		border: 2px solid #FFC96B;
+	}
+
+	main, .main-navigation, .secondary-navigation {
+		height: 93vh;
 	}
 
 	.marquee {
