@@ -19,6 +19,7 @@ body {
 	background-image: url('../imgs/music-note-background.svg');
 	background-repeat: no-repeat;
 	background-position: 25% 49%;
+	text-transform: lowercase;
 }
 
 a {
@@ -135,7 +136,7 @@ ul {
 }
 
 .secondary-navigation .me p {
-	margin: 0;
+	margin: 5px 0;
 }
 
 .secondary-navigation .me h3 {
@@ -192,7 +193,7 @@ ul {
 .playbill-container {
 	padding: 25px;
 	padding-left: 40px;
-
+	border-top: 2px solid #FFC96B;
 }
 
 .playbill {
@@ -301,7 +302,7 @@ ul {
 @media screen and (min-width: 992px){
 	.terminal {
 		position: absolute;
-		right: -20%;
+		right: -28%;
 		bottom: 10%;
 	}
 	body.home .playbill {
@@ -364,7 +365,7 @@ ul {
 	}
 
 	.playbill-container {
-		border-top: 2px solid #FFC96B;
+		
 	}
 
 	@media all and (-ms-high-contrast:none) {
@@ -432,4 +433,43 @@ ul {
 	body {
 		grid-template-columns: 0.24fr 1fr 0.1fr;
 	}
+}
+
+
+body.project .playbill-container {
+	align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: calc(100% - 30px);
+}
+
+body.project .playbill-container .terminal {
+    position: relative;
+    right: unset;
+    bottom: unset;
+    grid-column: 3/6;
+    grid-row: 4/5;
+    z-index: 20;
+}
+
+body.project .playbill-container .terminal .terminal-content {
+	padding: 15px;
+}
+
+body.project .playbill-container .playbill {
+	border: 2px solid #FFC96B;
+	max-width: 435px;
+	position: relative;
+	min-height: 510px;
+	background-color: black;
+	margin: 15px auto;
+	grid-column: 1/4;
+	grid-row: 2/5;
+	z-index: 1;
+}
+
+body.project .playbill-container .playbill h1 {
+    font-size: 77px;
+    max-width: 313px;
 }
