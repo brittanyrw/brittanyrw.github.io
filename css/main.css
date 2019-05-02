@@ -19,7 +19,6 @@ body {
 	background-image: url('../imgs/music-note-background.svg');
 	background-repeat: no-repeat;
 	background-position: 25% 49%;
-	text-transform: lowercase;
 }
 
 a {
@@ -37,7 +36,7 @@ p {
 	margin: 10px auto;
 }
 
-a:after {
+.main-navigation a:after, .secondary-navigation a:after {
 	position: absolute;
 	content: '';
 /*	background-color: rgba(255,201,107,1);*/
@@ -50,7 +49,7 @@ a:after {
 	z-index: 0;
 }
 
-a:hover:after {
+.main-navigation a:hover:after, .secondary-navigation a:hover:after {
 	width: 115%;
 	border: 1px solid #FFC96B;
 	border-right: 5px solid #FFC96B;
@@ -120,8 +119,19 @@ ul {
 	grid-area: Side; 
 	height: 100%;
 	position: relative;
-	padding-top: 300px;
+	padding-top: 280px;
+	border-top: 2px solid #FFC96B;
 
+}
+
+.secondary-navigation:after {
+	position: absolute;
+    content: '';
+    height: 95px;
+    width: 115px;
+    right: -30px;
+    bottom: 20px;
+    background-color: rgba(255, 201, 107,.5);
 }
 
 .secondary-navigation .me {
@@ -143,9 +153,14 @@ ul {
 	font-size: 30px;
 }
 
+.secondary-navigation nav ul {
+	margin-bottom: 0;
+}
+
 .secondary-navigation nav li {
 	text-align: right;
 	margin-bottom: 10px;
+	font-size: 18px;
 }
 
 .secondary-navigation nav li a {
@@ -154,6 +169,7 @@ ul {
 
 .secondary-navigation .social-media-links {
 	float: right;
+	text-align: right;
 }
 
 .secondary-navigation .social-media-links i {
@@ -178,6 +194,10 @@ ul {
 
 .secondary-navigation .social-media-links a:after {
 	display: none;
+}
+
+.secondary-navigation .social-media-links li {
+	display: inline-block;
 }
 
 .main-navigation nav li a {
@@ -451,6 +471,8 @@ body.project .playbill-container .terminal {
     grid-column: 3/6;
     grid-row: 4/5;
     z-index: 20;
+    max-width: 400px;
+    margin-top: 50px;
 }
 
 body.project .playbill-container .terminal .terminal-content {
@@ -472,4 +494,29 @@ body.project .playbill-container .playbill {
 body.project .playbill-container .playbill h1 {
     font-size: 77px;
     max-width: 313px;
+}
+
+.playbill-links {
+    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+}
+
+.playbill-links a {
+	background-color: #FFC96B;
+	color: black;
+	box-shadow: 5px 5px 0 rgba(255,201,107,.5);
+	padding: 10px 20px;
+	text-transform: lowercase;
+	transition: .5s;
+}
+
+.playbill-links a:first-child {
+	margin-right: 10px;
+}
+
+.playbill-links a:hover {
+	box-shadow: none;
+	transition: .5s;
 }
