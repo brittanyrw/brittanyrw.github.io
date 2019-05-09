@@ -62,12 +62,7 @@ a:hover {
 main {
 	grid-area: Main; 
 	height: 100%;
-	border-top: 2px solid #FFC96B;
-	border-bottom: 2px solid #FFC96B;
-}
-
-.playbill-container {
-	height: calc(100% - 30px);
+	border: 2px solid #FFC96B;
 }
 
 .secondary-navigation {
@@ -300,9 +295,6 @@ ul {
 }
 
 @media screen and (min-width: 1441px){
-	body.home  {
-		
-	}
 	body.home .playbill-container {
 		height: 100%;
   		display: grid;
@@ -355,18 +347,10 @@ ul {
   	grid-template-columns: 0.3fr 1fr 0.1fr;
   	grid-template-rows: 1fr;
   	grid-template-areas: "Nav Main Side";
-  	height: 93vh;
-	}
-	body.home, body.project {
-		overflow: hidden;
 	}
 
 	.main-navigation, .secondary-navigation {
 		border: 2px solid #FFC96B;
-	}
-
-	main, .main-navigation, .secondary-navigation {
-		height: 93vh;
 	}
 
 	.marquee {
@@ -376,6 +360,10 @@ ul {
 
 	.playbill-container {
 		
+	}
+
+	section.project, section.teach, section.me {
+		padding: 20px;
 	}
 
 	@media all and (-ms-high-contrast:none) {
