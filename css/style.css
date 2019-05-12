@@ -21,13 +21,44 @@ a {
     color:  #FFC96B;
 }
 
+.projects h2, .teaching h2, .about h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
 /* Hero */
 
 .hero {
     background-image: url('../imgs/music-note-background.svg');
 	background-repeat: no-repeat;
-	background-position: 25% 49%;
+    background-position: 25% 49%;
+    border: 2px solid #FFC96B;
 }
 
 /* Navigation */
+
+
+
+/* Projects */
+
+.projects {
+    border: 2px solid #FFC96B;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+
+/* Teaching */
+.teaching {
+    border: 2px solid #FFC96B;
+    background-color: #FFC96B;
+    color: black;
+    padding: 30px;
+}
+/* About */
+
+.about {
+    border: 2px solid #FFC96B;
+    padding: 30px;
+}
 
