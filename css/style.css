@@ -1,0 +1,33 @@
+/* General Styles */
+
+* {
+    text-transform: lowercase;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 25px;
+	font-family: 'Inconsolata', monospace;
+	background-color: black;
+	color: #FFC96B;
+	font-size: 21px;
+	/*border: 2px solid #FFC96B;*/
+	background-image: url('../imgs/music-note-background.svg');
+	background-repeat: no-repeat;
+	background-position: 25% 49%;
+}
+
+a {
+    color:  #FFC96B;
+}
+
+/* Hero */
+
+.hero {
+    background-image: url('../imgs/music-note-background.svg');
+	background-repeat: no-repeat;
+	background-position: 25% 49%;
+}
+
+/* Navigation */
+
