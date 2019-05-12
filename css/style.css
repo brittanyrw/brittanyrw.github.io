@@ -75,6 +75,7 @@ a {
 
 .teaching-blocks .content-block {
     border: 2px solid black;
+    box-shadow: 5px 5px 0 rgba(0,0,0,.4);
 }
 
 .teaching-blocks header {
@@ -94,7 +95,7 @@ a {
 }
 
 .teaching-blocks .teaching-description {
-    padding: 15px;
+    padding: 20px;
 }
 
 .teaching-blocks .teaching-description span {
