@@ -152,39 +152,6 @@ ul {
 	padding: 3px;
 }
 
-.secondary-navigation .social-media-links {
-	float: right;
-	text-align: right;
-}
-
-.secondary-navigation .social-media-links i {
-	color: black;
-	font-size: 15px;
-}
-
-.secondary-navigation .social-media-links a {
-	background-color: #FFC96B;
-	border-radius: 50%;
-	height: 25px;
-	width: 25px;
-	display: inline-block;
-	padding: 2px 5px 5px 6px;
-	margin-bottom: 10px;
-	transition: .5s;
-}
-.secondary-navigation .social-media-links a:hover {
-	box-shadow: 4px 5px rgba(255,201,107,.25);
-
-}
-
-.secondary-navigation .social-media-links a:after {
-	display: none;
-}
-
-.secondary-navigation .social-media-links li {
-	display: inline-block;
-}
-
 .main-navigation nav li a {
 	font-size: 23px;
 }
@@ -341,12 +308,30 @@ ul {
 
 /* BLOG */
 
+.me, .teach {
+	border: 2px solid #FFC96B;
+}
+
+.teach {
+	margin-bottom: 40px;
+	background-color: #FFC96B;
+	color: black;
+	border: 10px solid black;
+	outline: 2px solid #FFC96B;; 
+}
+
 @media screen and (min-width: 776px){
-	body {
+	.wrapper {
 	display: grid;
   	grid-template-columns: 0.3fr 1fr 0.1fr;
   	grid-template-rows: 1fr;
   	grid-template-areas: "Nav Main Side";
+	}
+
+	.teaching-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 20px;
 	}
 
 	.main-navigation, .secondary-navigation {
