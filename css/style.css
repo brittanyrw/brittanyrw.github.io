@@ -12,18 +12,28 @@ body {
 	color: #FFC96B;
 	font-size: 21px;
 	/*border: 2px solid #FFC96B;*/
-	background-image: url('../imgs/music-note-background.svg');
-	background-repeat: no-repeat;
-	background-position: 25% 49%;
 }
 
 a {
     color:  #FFC96B;
+    text-decoration: none;
 }
 
 .projects h2, .teaching h2, .about h2 {
     font-size: 40px;
-    margin: 0;
+    margin: 0 0 20px 0;
+}
+
+.projects, .about {
+    background-image: url('../imgs/music-note-background.svg');
+	background-repeat: no-repeat;
+    background-position: 2% 0%;
+    background-size: 29%;
+}
+
+.about .about-content, .teaching .teaching-content {
+    max-width: 1000px;
+    margin: auto;
 }
 
 /* Hero */
@@ -49,12 +59,71 @@ a {
 
 
 /* Teaching */
+
 .teaching {
     border: 2px solid #FFC96B;
     background-color: #FFC96B;
     color: black;
     padding: 30px;
 }
+
+.teaching-blocks {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.teaching-blocks .content-block {
+    border: 2px solid black;
+}
+
+.teaching-blocks header {
+    background-color: black;
+    color: #FFC96B;
+    text-align: center;
+    padding: 20px;
+}
+
+.teaching-blocks header h3, .teaching-blocks header h4 {
+    margin: 0;
+}
+
+.teaching-blocks header h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.teaching-blocks .teaching-description {
+    padding: 15px;
+}
+
+.teaching-blocks .teaching-description span {
+    background-color: black;
+    color: #FFC96B;
+    padding: 0 5px;
+}
+
+.teaching-blocks .teaching-description a {
+    background-color: black;
+	color: #FFC96B;
+	box-shadow: 5px 5px 0 rgba(0,0,0,.5);
+	padding: 10px 20px;
+    transition: .5s;
+    display: inline-block;
+    margin: 10px 0 20px 0;
+}
+
+.teaching-blocks .teaching-description a:hover {
+	box-shadow: none;
+    transition: .5s;
+}
+
+@media screen and (min-width: 992px){
+    .teaching-blocks {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 /* About */
 
 .about {
@@ -62,3 +131,36 @@ a {
     padding: 30px;
 }
 
+.social-media-links ul{
+    list-style: none;
+    padding: 0;
+}
+
+.social-media-links li {
+    display: inline-block;
+}
+
+.social-media-links i {
+    font-size: 30px;
+}
+
+.social-media-links a {
+    transition: .5s;
+}
+
+.social-media-links a:hover {
+    color: rgba(255, 201, 107, .5);
+    transition: .5s;
+}
+
+
+
+@media all and (-ms-high-contrast:none) and (min-width: 992px) {
+    .teaching-blocks {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr 1fr;
+      -ms-grid-rows: 1fr;
+      -ms-grid-gap: 20px;
+    }
+  
+  }
