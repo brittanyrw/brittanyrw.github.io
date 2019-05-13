@@ -31,6 +31,11 @@ a {
     background-size: 29%;
 }
 
+.hero {
+    background-size: 29%;
+    background-position: 94% 5%;
+}
+
 .about .about-content, .teaching .teaching-content {
     max-width: 1000px;
     margin: auto;
@@ -94,28 +99,6 @@ a {
     top: 5px;
 }
 
-
-@media screen and (min-width: 992px){
-    .hero {
-        grid-template-columns: 0.4fr 1fr 0.2fr;
-        grid-template-areas: "project-navigation hero-playbill secondary-navigation";
-        grid-template-rows: 1fr;
-    }
-    .secondary-navigation {
-        grid-area: secondary-navigation;
-        padding: 20px;
-    }
-    
-    .hero-playbill {
-        grid-area: hero-playbill;
-    }
-
-    .main-navigation{
-        grid-area: project-navigation;
-    }
-    
-}
-
 @media all and (-ms-high-contrast:none) {
     .grid-container {
       display: -ms-grid;
@@ -149,13 +132,11 @@ a {
   
   }
 
-
 /* Hero */
 
 .hero {
     background-image: url('../imgs/music-note-background.svg');
 	background-repeat: no-repeat;
-    background-position: 25% 49%;
     border: 2px solid #FFC96B;
     display: grid;
     grid-template-columns: 1fr;
@@ -205,14 +186,17 @@ padding-left: 10px;
 
 .playbill-container {
     padding: 40px 20px;
+    position: relative;
 }
 
 .playbill-container .playbill {
     border: 2px solid #FFC96B;
     box-shadow: 5px 5px 0 rgba(255, 201, 107, 1);
     outline: 2px solid black;
-    max-width: 500px;
+    max-width: 400px;
     margin: auto;
+    position: relative;
+    background-color: rgba(0,0,0,.5);
 }
 
 .playbill-container .playbill header {
@@ -220,6 +204,10 @@ padding-left: 10px;
     color: black;
     padding: 20px;
     text-align: center;
+}
+
+.playbill-container .playbill .playbill-content {
+    padding: 10px;
 }
 
 .playbill-container .playbill header h2, .playbill-container .playbill header h3{
@@ -240,6 +228,7 @@ padding-left: 10px;
     font-size: 70px;
     margin: 15px 0;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .playbill-container .playbill .terminal {
@@ -247,8 +236,32 @@ padding-left: 10px;
     border-radius: 5px;
     width: 90%;
     margin: 20px auto;
-    max-width: 450px;
+    max-width: 300px;
     padding: 10px;
+    background-color: rgba(0,0,0,.8);
+}
+
+.playbill-container .playbill:after {
+    position: absolute;
+    content: '';
+    height: 140px;
+    width: 120px;
+    background-color: rgba(255, 201, 107, .4);
+    z-index: 0;
+    right: 20px;
+    top: 280px;
+}
+
+.playbill-container .playbill:before {
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 150px;
+    background-color: black;
+    border: 3px solid #FFC96B;
+    z-index: 0;
+    left: 20px;
+    bottom: 30px;
 }
 
 .playbill-container .playbill .terminal ul {
@@ -310,7 +323,6 @@ padding-left: 10px;
     padding: 20px;
 }
 
-
 .project .playbill header h3 {
     font-size: 30px;
     margin: 0 0 10px 0;
@@ -339,13 +351,6 @@ padding-left: 10px;
 .project .playbill .playbill-content .playbill-links a:hover {
 	box-shadow: none;
     transition: .5s;
-}
-
-
-@media screen and (min-width: 992px){
-    .projects-wrapper {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 
@@ -411,12 +416,6 @@ padding-left: 10px;
     transition: .5s;
 }
 
-@media screen and (min-width: 992px){
-    .teaching-blocks {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
 /* About */
 
 .about {
@@ -457,3 +456,86 @@ padding-left: 10px;
     }
   
   }
+
+  /* Media Queries */
+
+
+
+  @media screen and (min-width: 992px){
+    
+    .main-navigation{
+        grid-area: project-navigation;
+        border-right: 2px solid #FFC96B;
+    }
+    
+    .secondary-navigation {
+        grid-area: secondary-navigation;
+        padding: 20px;
+        border-left: 2px solid #FFC96B;
+    }
+    
+    .hero {
+        grid-template-columns: 0.3fr 1fr 0.2fr;
+        grid-template-areas: "project-navigation hero-playbill secondary-navigation";
+        grid-template-rows: 1fr;
+        background-position: 25% 49%;
+        background-size: 49%;
+    }
+    
+    .marquee {
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+    }
+
+    .hero-playbill {
+        grid-area: hero-playbill;
+    }
+    
+    .playbill-container {
+        transform: rotate(-7deg);
+    }
+
+    .playbill-container .playbill {
+        min-height: 480px;
+        background-color: black;
+    }
+
+    .playbill-container .playbill .playbill-content {
+        padding: 0 10px 10px 40px;
+    }
+
+    .playbill-container .playbill-content h1 {
+        text-align: left;
+    }
+
+    .playbill-container .playbill .terminal {
+        position: absolute;
+        right: -15%;
+        bottom: 0%;
+        padding: 20px;
+        z-index: 999;
+    }
+
+    .playbill-container .playbill:after {
+        top: 190px;
+    }
+
+    .playbill-container .playbill .terminal .terminal-content li {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .playbill-container .playbill .terminal ul {
+        margin: 0;
+    }
+
+    .projects-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .teaching-blocks {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
