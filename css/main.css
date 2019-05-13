@@ -466,10 +466,6 @@ ul {
 		border-bottom: 2px solid #FFC96B;
 	}
 
-	.playbill-container {
-		
-	}
-
 	@media all and (-ms-high-contrast:none) {
 	  .grid-container {
 	    display: -ms-grid;
@@ -478,21 +474,24 @@ ul {
 	  }
 
 	  .main-navigation {
-	    -ms-grid-row: 1;
+		-ms-grid-row: 1;
+		grid-row: 1;
 	    -ms-grid-row-span: 3;
 	    -ms-grid-col: 1;
 	    -ms-grid-col-span: 1;
 	  }
 
 	  .secondary-navigation {
-	    -ms-grid-row: 1;
+		-ms-grid-row: 1;
+		grid-row: 1;
 	    -ms-grid-row-span: 3;
 	    -ms-grid-col: 3;
 	    -ms-grid-col-span: 1;
 	  }
 
 	  main {
-	    -ms-grid-row: 1;
+		-ms-grid-row: 1;
+		grid-row: 1;
 	    -ms-grid-row-span: 3;
 	    -ms-grid-col: 2;
 	    -ms-grid-col-span: 1;

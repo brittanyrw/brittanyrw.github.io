@@ -44,28 +44,43 @@ a {
     background-position: 25% 49%;
     border: 2px solid #FFC96B;
     display: grid;
-    grid-template-columns: 0.4fr 1fr 0.2fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "Project-Navigation Hero-Playbill Secondary-Navigation";
+    grid-template-columns: 1fr;
+}
+
+.main-navigation header {
+	background-color: #FFC96B;
+	color: black;
+	padding: 20px 30px;
+}
+
+.main-navigation header h2 {
+    margin: 0;
 }
 
 .secondary-navigation {
-    grid-area: Secondary-Navigation;
-}
-
-.hero-playbill {
-    grid-area: Hero-Playbill;
-}
-
-.main-navigation{
-    grid-area: Project-Navigation;
+    padding: 20px;
 }
 
 
-@media screen and (max-width: 425px){
+@media screen and (min-width: 426px){
     .hero {
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.4fr 1fr 0.2fr;
+        grid-template-areas: "project-navigation hero-playbill secondary-navigation";
+        grid-template-rows: 1fr;
     }
+    .secondary-navigation {
+        grid-area: secondary-navigation;
+        padding: 20px;
+    }
+    
+    .hero-playbill {
+        grid-area: hero-playbill;
+    }
+
+    .main-navigation{
+        grid-area: project-navigation;
+    }
+    
 }
 
 @media all and (-ms-high-contrast:none) {
@@ -77,6 +92,7 @@ a {
   
     .Project-Navigation {
       -ms-grid-row: 1;
+      grid-row: 1;
       -ms-grid-row-span: 1;
       -ms-grid-col: 1;
       -ms-grid-col-span: 1;
@@ -84,6 +100,7 @@ a {
   
     .Hero-Playbill {
       -ms-grid-row: 1;
+      grid-row: 1;
       -ms-grid-row-span: 1;
       -ms-grid-col: 2;
       -ms-grid-col-span: 1;
@@ -91,18 +108,13 @@ a {
   
     .Secondary-Navigation {
       -ms-grid-row: 1;
+      grid-row: 1;
       -ms-grid-row-span: 1;
       -ms-grid-col: 3;
       -ms-grid-col-span: 1;
     }
   
   }
-
-
-
-/* Navigation */
-
-
 
 /* Projects */
 
