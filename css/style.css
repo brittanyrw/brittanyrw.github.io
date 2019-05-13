@@ -36,16 +36,7 @@ a {
     margin: auto;
 }
 
-/* Hero */
-
-.hero {
-    background-image: url('../imgs/music-note-background.svg');
-	background-repeat: no-repeat;
-    background-position: 25% 49%;
-    border: 2px solid #FFC96B;
-    display: grid;
-    grid-template-columns: 1fr;
-}
+/* Navigation */
 
 .main-navigation header {
 	background-color: #FFC96B;
@@ -57,8 +48,49 @@ a {
     margin: 0;
 }
 
+.main-navigation nav {
+    padding: 20px;
+}
+
+.secondary-navigation a, .main-navigation a { 
+    display: block;
+}
+
 .secondary-navigation {
     padding: 20px;
+}
+
+.secondary-navigation h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.secondary-navigation p {
+    margin: 5px 5px 5px 0;
+}
+
+.secondary-navigation ul, .main-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.secondary-navigation li:hover, .main-navigation li:hover {
+    border: 1px solid #FFC96B;
+}
+
+.secondary-navigation li, .main-navigation li {
+    padding-left: 30px;
+    position: relative;
+    padding: 5px 5px 5px 30px;
+}
+
+.secondary-navigation li:before, .main-navigation li:before {
+    position: absolute;
+    font-weight: bold;
+    color: #FFC96B;
+    content: "\266A";
+    left: 5px;
+    top: 5px;
 }
 
 
@@ -115,6 +147,54 @@ a {
     }
   
   }
+
+
+/* Hero */
+
+.hero {
+    background-image: url('../imgs/music-note-background.svg');
+	background-repeat: no-repeat;
+    background-position: 25% 49%;
+    border: 2px solid #FFC96B;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+}
+
+.marquee {
+    border: 1px solid #FFC96B;
+    padding: 10px 0;
+}
+
+.marquee .lyrics {
+    animation: marquee 40s linear infinite;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    will-change: transform;
+    -moz-animation: marquee 40s linear infinite;
+    -webkit-animation: marquee 40s linear infinite;
+}
+
+.marquee .lyrics:hover {
+    animation: none;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+}
 
 /* Projects */
 
