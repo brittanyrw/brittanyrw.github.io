@@ -72,6 +72,7 @@ a {
 .secondary-navigation ul, .main-navigation ul {
     list-style: none;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .secondary-navigation li:hover, .main-navigation li:hover {
@@ -94,7 +95,7 @@ a {
 }
 
 
-@media screen and (min-width: 426px){
+@media screen and (min-width: 992px){
     .hero {
         grid-template-columns: 0.4fr 1fr 0.2fr;
         grid-template-areas: "project-navigation hero-playbill secondary-navigation";
@@ -122,7 +123,7 @@ a {
       -ms-grid-rows: 1fr;
     }
   
-    .Project-Navigation {
+    .project-navigation {
       -ms-grid-row: 1;
       grid-row: 1;
       -ms-grid-row-span: 1;
@@ -130,7 +131,7 @@ a {
       -ms-grid-col-span: 1;
     }
   
-    .Hero-Playbill {
+    .hero-playbill {
       -ms-grid-row: 1;
       grid-row: 1;
       -ms-grid-row-span: 1;
@@ -138,7 +139,7 @@ a {
       -ms-grid-col-span: 1;
     }
   
-    .Secondary-Navigation {
+    .secondary-navigation {
       -ms-grid-row: 1;
       grid-row: 1;
       -ms-grid-row-span: 1;
@@ -161,23 +162,29 @@ a {
     overflow: hidden;
 }
 
+.marquee .lyrics span {
+    display: inline;
+}
+
 .marquee {
-    border: 1px solid #FFC96B;
-    padding: 10px 0;
+    height: 30px;
+    width: 100%;
+	overflow: hidden;
+	position: relative;
+    padding: 0;
+    border: 2px solid #FFC96B;
 }
 
 .marquee .lyrics {
+    display: block;
+    width: 200%;
+    overflow: hidden;
     animation: marquee 40s linear infinite;
-    display: inline-block;
-    position: relative;
-    white-space: nowrap;
-    will-change: transform;
-    -moz-animation: marquee 40s linear infinite;
-    -webkit-animation: marquee 40s linear infinite;
 }
-
-.marquee .lyrics:hover {
-    animation: none;
+  
+.marquee span {
+font-size: 16px;
+padding-left: 10px;
 }
 
 @keyframes marquee {
@@ -195,6 +202,76 @@ a {
         -webkit-transform: translateX(-100%);
     }
 }
+
+.playbill-container {
+    padding: 40px 20px;
+}
+
+.playbill-container .playbill {
+    border: 2px solid #FFC96B;
+    box-shadow: 5px 5px 0 rgba(255, 201, 107, 1);
+    outline: 2px solid black;
+    max-width: 500px;
+    margin: auto;
+}
+
+.playbill-container .playbill header {
+    background-color: #FFC96B;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.playbill-container .playbill header h2, .playbill-container .playbill header h3{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.playbill-container .playbill header h2 {
+    font-size: 40px;
+}
+
+.playbill-container .playbill header h3 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.playbill-container h1 {
+    font-size: 70px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.playbill-container .playbill .terminal {
+    border: 5px solid #FFC96B;
+    border-radius: 5px;
+    width: 90%;
+    margin: 20px auto;
+    max-width: 450px;
+    padding: 10px;
+}
+
+.playbill-container .playbill .terminal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.playbill-container .playbill .terminal li {
+    font-size: 15px;
+}
+
+.terminal span {
+	background-color: #FFC96B;
+	height: 17px;
+	width: 8px;
+	display: inline-block;
+	animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 /* Projects */
 
