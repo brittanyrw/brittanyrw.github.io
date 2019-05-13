@@ -43,7 +43,62 @@ a {
 	background-repeat: no-repeat;
     background-position: 25% 49%;
     border: 2px solid #FFC96B;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 0.2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Project-Navigation Hero-Playbill Secondary-Navigation";
 }
+
+.secondary-navigation {
+    grid-area: Secondary-Navigation;
+}
+
+.hero-playbill {
+    grid-area: Hero-Playbill;
+}
+
+.main-navigation{
+    grid-area: Project-Navigation;
+}
+
+
+@media screen and (max-width: 425px){
+    .hero {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (-ms-high-contrast:none) {
+    .grid-container {
+      display: -ms-grid;
+      -ms-grid-columns: 0.4fr 1fr 0.2fr;
+      -ms-grid-rows: 1fr;
+    }
+  
+    .Project-Navigation {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 1;
+      -ms-grid-col-span: 1;
+    }
+  
+    .Hero-Playbill {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 2;
+      -ms-grid-col-span: 1;
+    }
+  
+    .Secondary-Navigation {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 3;
+      -ms-grid-col-span: 1;
+    }
+  
+  }
+
+
 
 /* Navigation */
 
