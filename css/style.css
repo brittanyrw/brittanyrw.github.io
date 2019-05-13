@@ -1,0 +1,541 @@
+/* General Styles */
+
+* {
+    text-transform: lowercase;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 25px;
+	font-family: 'Inconsolata', monospace;
+	background-color: black;
+	color: #FFC96B;
+	font-size: 21px;
+	/*border: 2px solid #FFC96B;*/
+}
+
+a {
+    color:  #FFC96B;
+    text-decoration: none;
+}
+
+.projects h2, .teaching h2, .about h2 {
+    font-size: 40px;
+    margin: 0 0 20px 0;
+}
+
+.projects, .about {
+    background-image: url('../imgs/music-note-background.svg');
+	background-repeat: no-repeat;
+    background-position: 2% 0%;
+    background-size: 29%;
+}
+
+.hero {
+    background-size: 29%;
+    background-position: 94% 5%;
+}
+
+.about .about-content, .teaching .teaching-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Navigation */
+
+.main-navigation header {
+	background-color: #FFC96B;
+	color: black;
+	padding: 20px 30px;
+}
+
+.main-navigation header h2 {
+    margin: 0;
+}
+
+.main-navigation nav {
+    padding: 20px;
+}
+
+.secondary-navigation a, .main-navigation a { 
+    display: block;
+}
+
+.secondary-navigation {
+    padding: 20px;
+}
+
+.secondary-navigation h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.secondary-navigation p {
+    margin: 5px 5px 20px 0;
+}
+
+.secondary-navigation ul, .main-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.secondary-navigation li:hover, .main-navigation li:hover {
+    border: 1px solid #FFC96B;
+}
+
+.secondary-navigation li, .main-navigation li {
+    padding-left: 30px;
+    position: relative;
+    padding: 5px 5px 5px 30px;
+}
+
+.secondary-navigation li:before, .main-navigation li:before {
+    position: absolute;
+    font-weight: bold;
+    color: #FFC96B;
+    content: "\266A";
+    left: 5px;
+    top: 5px;
+}
+
+@media all and (-ms-high-contrast:none) {
+    .grid-container {
+      display: -ms-grid;
+      -ms-grid-columns: 0.4fr 1fr 0.2fr;
+      -ms-grid-rows: 1fr;
+    }
+  
+    .project-navigation {
+      -ms-grid-row: 1;
+      grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 1;
+      -ms-grid-col-span: 1;
+    }
+  
+    .hero-playbill {
+      -ms-grid-row: 1;
+      grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 2;
+      -ms-grid-col-span: 1;
+    }
+  
+    .secondary-navigation {
+      -ms-grid-row: 1;
+      grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 3;
+      -ms-grid-col-span: 1;
+    }
+  
+  }
+
+/* Hero */
+
+.hero {
+    background-image: url('../imgs/music-note-background.svg');
+	background-repeat: no-repeat;
+    border: 2px solid #FFC96B;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+}
+
+.marquee .lyrics span {
+    display: inline;
+}
+
+.marquee {
+    height: 30px;
+    width: 100%;
+	overflow: hidden;
+	position: relative;
+    padding: 0;
+    border: 2px solid #FFC96B;
+}
+
+.marquee .lyrics {
+    display: block;
+    width: 200%;
+    overflow: hidden;
+    animation: marquee 40s linear infinite;
+}
+  
+.marquee span {
+font-size: 16px;
+padding-left: 10px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+.playbill-container {
+    padding: 40px 20px;
+    position: relative;
+}
+
+.playbill-container .playbill {
+    border: 2px solid #FFC96B;
+    box-shadow: 5px 5px 0 rgba(255, 201, 107, 1);
+    outline: 2px solid black;
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+    background-color: rgba(0,0,0,.5);
+}
+
+.playbill-container .playbill header {
+    background-color: #FFC96B;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.playbill-container .playbill .playbill-content {
+    padding: 10px;
+}
+
+.playbill-container .playbill header h2, .playbill-container .playbill header h3{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.playbill-container .playbill header h2 {
+    font-size: 40px;
+}
+
+.playbill-container .playbill header h3 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.playbill-container h1 {
+    font-size: 70px;
+    margin: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.playbill-container .playbill .terminal {
+    border: 5px solid #FFC96B;
+    border-radius: 5px;
+    width: 90%;
+    margin: 20px auto;
+    max-width: 300px;
+    padding: 10px;
+    background-color: rgba(0,0,0,.8);
+}
+
+.playbill-container .playbill:after {
+    position: absolute;
+    content: '';
+    height: 140px;
+    width: 120px;
+    background-color: rgba(255, 201, 107, .4);
+    z-index: 0;
+    right: 20px;
+    top: 280px;
+}
+
+.playbill-container .playbill:before {
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 150px;
+    background-color: black;
+    border: 3px solid #FFC96B;
+    z-index: 0;
+    left: 20px;
+    bottom: 30px;
+}
+
+.playbill-container .playbill .terminal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.playbill-container .playbill .terminal li {
+    font-size: 15px;
+}
+
+.terminal span {
+	background-color: #FFC96B;
+	height: 17px;
+	width: 8px;
+	display: inline-block;
+	animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+/* Projects */
+
+.projects {
+    border: 2px solid #FFC96B;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.projects-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project:last-child {
+    margin-bottom: 0;
+}
+
+.project .playbill {
+    border: 2px solid #FFC96B;
+    box-shadow: 5px 5px 0 rgba(255, 201, 107, 1);
+    outline: 2px solid black;
+}
+
+.project .playbill header {
+    background-color: #FFC96B;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.project .playbill header h3 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.project .playbill header p {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+}
+
+.project .playbill .playbill-content {
+    padding: 20px;
+}
+
+.project .playbill .playbill-content .playbill-links a {
+    background-color: #FFC96B;
+	color: black;
+	box-shadow: 5px 5px 0 rgba(255, 201, 107, .5);
+	padding: 10px 20px;
+    transition: .5s;
+    display: inline-block;
+    margin: 10px 0 20px 0;
+}
+
+.project .playbill .playbill-content .playbill-links a:hover {
+	box-shadow: none;
+    transition: .5s;
+}
+
+
+/* Teaching */
+
+.teaching {
+    border: 2px solid #FFC96B;
+    background-color: #FFC96B;
+    color: black;
+    padding: 30px;
+}
+
+.teaching-blocks {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.teaching-blocks .content-block {
+    border: 2px solid black;
+    outline: 2px solid #FFC96B;
+    box-shadow: 5px 5px 0 rgba(0,0,0,1);
+}
+
+.teaching-blocks header {
+    background-color: black;
+    color: #FFC96B;
+    text-align: center;
+    padding: 20px;
+}
+
+.teaching-blocks header h3, .teaching-blocks header h4 {
+    margin: 0;
+}
+
+.teaching-blocks header h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.teaching-blocks .teaching-description {
+    padding: 20px;
+}
+
+.teaching-blocks .teaching-description span {
+    background-color: black;
+    color: #FFC96B;
+    padding: 0 5px;
+}
+
+.teaching-blocks .teaching-description a {
+    background-color: black;
+	color: #FFC96B;
+	box-shadow: 5px 5px 0 rgba(0,0,0,.5);
+	padding: 10px 20px;
+    transition: .5s;
+    display: inline-block;
+    margin: 10px 0 20px 0;
+}
+
+.teaching-blocks .teaching-description a:hover {
+	box-shadow: none;
+    transition: .5s;
+}
+
+/* About */
+
+.about {
+    border: 2px solid #FFC96B;
+    padding: 30px;
+}
+
+.social-media-links ul{
+    list-style: none;
+    padding: 0;
+}
+
+.social-media-links li {
+    display: inline-block;
+}
+
+.social-media-links i {
+    font-size: 30px;
+}
+
+.social-media-links a {
+    transition: .5s;
+}
+
+.social-media-links a:hover {
+    color: rgba(255, 201, 107, .5);
+    transition: .5s;
+}
+
+
+
+@media all and (-ms-high-contrast:none) and (min-width: 992px) {
+    .teaching-blocks {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr 1fr;
+      -ms-grid-rows: 1fr;
+      -ms-grid-gap: 20px;
+    }
+  
+  }
+
+  /* Media Queries */
+
+
+
+  @media screen and (min-width: 992px){
+    
+    .main-navigation{
+        grid-area: project-navigation;
+        border-right: 2px solid #FFC96B;
+    }
+    
+    .secondary-navigation {
+        grid-area: secondary-navigation;
+        padding: 20px;
+        border-left: 2px solid #FFC96B;
+    }
+    
+    .hero {
+        grid-template-columns: 0.3fr 1fr 0.2fr;
+        grid-template-areas: "project-navigation hero-playbill secondary-navigation";
+        grid-template-rows: 1fr;
+        background-position: 25% 49%;
+        background-size: 49%;
+    }
+    
+    .marquee {
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+    }
+
+    .hero-playbill {
+        grid-area: hero-playbill;
+    }
+    
+    .playbill-container {
+        transform: rotate(-7deg);
+    }
+
+    .playbill-container .playbill {
+        min-height: 480px;
+        background-color: black;
+    }
+
+    .playbill-container .playbill .playbill-content {
+        padding: 0 10px 10px 40px;
+    }
+
+    .playbill-container .playbill-content h1 {
+        text-align: left;
+    }
+
+    .playbill-container .playbill .terminal {
+        position: absolute;
+        right: -15%;
+        bottom: 0%;
+        padding: 20px;
+        z-index: 999;
+    }
+
+    .playbill-container .playbill:after {
+        top: 190px;
+    }
+
+    .playbill-container .playbill .terminal .terminal-content li {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .playbill-container .playbill .terminal ul {
+        margin: 0;
+    }
+
+    .projects-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .teaching-blocks {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
