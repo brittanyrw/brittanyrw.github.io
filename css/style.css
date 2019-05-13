@@ -57,6 +57,73 @@ a {
     margin-top: 40px;
 }
 
+.projects-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project:last-child {
+    margin-bottom: 0;
+}
+
+.project .playbill {
+    border: 2px solid #FFC96B;
+    box-shadow: 5px 5px 0 rgba(255, 201, 107, 1);
+    outline: 2px solid black;
+}
+
+.project .playbill header {
+    background-color: #FFC96B;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.project .playbill header h3 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.project .playbill header p {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+}
+
+.project .playbill .playbill-content {
+    padding: 20px;
+}
+
+.project .playbill .playbill-content .playbill-links a {
+    background-color: #FFC96B;
+	color: black;
+	box-shadow: 5px 5px 0 rgba(255, 201, 107, .5);
+	padding: 10px 20px;
+    transition: .5s;
+    display: inline-block;
+    margin: 10px 0 20px 0;
+}
+
+.project .playbill .playbill-content .playbill-links a:hover {
+	box-shadow: none;
+    transition: .5s;
+}
+
+
+@media screen and (min-width: 992px){
+    .projects-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 
 /* Teaching */
 
@@ -75,7 +142,8 @@ a {
 
 .teaching-blocks .content-block {
     border: 2px solid black;
-    box-shadow: 5px 5px 0 rgba(0,0,0,.4);
+    outline: 2px solid #FFC96B;
+    box-shadow: 5px 5px 0 rgba(0,0,0,1);
 }
 
 .teaching-blocks header {

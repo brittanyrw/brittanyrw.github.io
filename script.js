@@ -14,6 +14,3 @@ function randomMusicalLyrics(lyrics){
 
 randomMusicalLyrics(lyrics)
 
-
-// Songs to find lyrics: Matilda (Quite), Natash Pierre (Pierre), Heathers (??), Hamilton, Dear Evan Hansen, Once In the Heights, American Idiot, Fun Home (Telephone Wire)
-
