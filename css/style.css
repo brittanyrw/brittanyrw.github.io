@@ -66,13 +66,13 @@ a {
 }
 
 .secondary-navigation p {
-    margin: 5px 5px 5px 0;
+    margin: 5px 5px 20px 0;
 }
 
 .secondary-navigation ul, .main-navigation ul {
     list-style: none;
     padding: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .secondary-navigation li:hover, .main-navigation li:hover {
