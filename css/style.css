@@ -16,6 +16,12 @@ body {
 a {
     color:  #FFC96B;
     text-decoration: none;
+    outline: 3px solid transparent;
+}
+
+a:focus {
+    outline: 3px solid #FFC96B;
+    outline-offset: 3px;
 }
 
 .projects h2, .teaching h2, .about h2 {
@@ -419,6 +425,11 @@ padding-left: 10px;
     transition: .5s;
     display: inline-block;
     margin: 10px 0 20px 0;
+}
+
+.teaching-blocks .teaching-description a:focus {
+    outline: 3px solid black;
+    outline-offset: 3px;
 }
 
 .teaching-blocks .teaching-description a:hover {

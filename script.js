@@ -15,15 +15,25 @@ function randomMusicalLyrics(lyrics){
 randomMusicalLyrics(lyrics)
 
 $(document).ready(function(){
-	$("a").on('click', function(event) {
-	  if (this.hash !== "") {
-		event.preventDefault();
-		var hash = this.hash;
-		$('html, body').animate({
-		  scrollTop: $(hash).offset().top
-		}, 1000, function(){
-		  window.location.hash = hash;
+	$(function() {
+		$('a[href*="#"]:not([href="#"])').click(function() {
+		  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+			  $('html, body').animate({
+				scrollTop: target.offset().top
+			  }, 1000);
+			  target.focus(); 
+			  if (target.is(":focus")){ 
+				return false;
+			  } else {
+				target.attr('tabindex','-1'); 
+				target.focus(); 
+			  };
+			  return false;
+			}
+		  }
 		});
-	  } 
-	});
+	  });
   });
