@@ -164,7 +164,7 @@ a:focus {
 
 .marquee .lyrics {
     display: block;
-    width: 200%;
+    width: 235%;
     overflow: hidden;
     -webkit-animation: marquee 40s linear infinite;
     animation: marquee 40s linear infinite;
