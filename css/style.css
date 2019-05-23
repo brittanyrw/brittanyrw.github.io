@@ -315,6 +315,10 @@ padding-left: 10px;
     margin-top: 20px;
 }
 
+.project-wip a {
+    text-decoration: underline;
+}
+
 .project {
     margin-bottom: 30px;
 }
