@@ -13,33 +13,13 @@ header {
 }
 
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     padding: 20px;
 }
 
-h1 {
+h1, .resources h3, ul  {
     margin: 0;
-}
-
-
-.resources {
-display: grid;
-grid-template-columns: 1fr;
-grid-auto-rows: auto;
-padding: 25px 10px;
-
-}
-
-@media screen and (min-width: 992px){
-    .resources {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-ul {
-    margin: 0;
-    
 }
 
 h2 {
@@ -48,24 +28,81 @@ h2 {
     display: inline-block;
 }
 
-h2:first-child, h2:nth-child(5) {
+
+.dc-resources .resource-lists {
+display: grid;
+grid-template-columns: 1fr;
+grid-auto-rows: auto;
+padding: 25px 10px;
+}
+
+.dc-resources .resource-lists li {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 992px){
+    .dc-resources .resource-lists {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.resources {
+    margin: auto;
+}
+
+.resources a {
+    color: #292932;
+}
+
+.resources p {
+    margin-top: 0;
+}
+
+.resources ul {
+    list-style:none;
+}
+
+.resources ul li {
+    padding-left: 10px;
+    position: relative;
+    font-size: 21px;
+}
+
+.resources ul li:before {
+    display: inline-block;
+    content: '';
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    margin-right: 8px;
+    left: -10px;
+    position: absolute;
+    top: 11px;
+}
+
+.general-resources h2, .general-resources ul li:before, .cool-resources h2, .cool-resources ul li:before {
     background-color: #ffc0cb;
-    transform: rotate(2deg);
 }
 
-h2:nth-child(2), h2:nth-child(6){
+.community-resources h2, .community-resources ul li:before, .dc-resources h2, .dc-resources ul li:before {
     background-color: #c0c4ff;
-    transform: rotate(-2deg);
 }
 
-h2:nth-child(3), h2:nth-child(7) {
+.coding-resources h2 , .coding-resources ul li:before, .about h2 {
     background-color: #ffd6c0;
-    transform: rotate(2deg);
 }
 
-h2:nth-child(4){
+.project-resources h2 , .project-resources ul li:before {
     background-color: #c0e9ff;
+}
+
+.project-resources h2, .community-resources h2, .dc-resources h2  {
     transform: rotate(-2deg);
+}
+
+.general-resources h2, .cool-resources h2, .coding-resources h2, .about h2 {
+    transform: rotate(2deg);
 }
 
 .about {
@@ -73,11 +110,15 @@ h2:nth-child(4){
     padding: 30px 35px;
 }
 
+.about-wrapper {
+    max-width: 900px;
+    margin: auto;
+}
+
 .about p {
     color: lavender;
-    max-width: 700px;
-    margin: 20px auto;
     font-size: 21px;
+    margin: 20px 0;
 }
 
 .about p:first-child {
@@ -88,7 +129,7 @@ h2:nth-child(4){
 .about .social-media-links ul {
     padding: 0;
     list-style: none;
-    max-width: 700px;
+    max-width: 900px;
     margin: auto;
     text-align: center;
 }
