@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 	randomMusicalLyrics(lyrics);
 	
-      let lastColor = 0;
+      let lastColor = 5;
       var randomColor = function(colors) {
         var getRandomColor = Math.floor(Math.random() * colors.length);
 		console.log('random color:' + getRandomColor);
