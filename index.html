@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="css/style.css">
        
     </head>
-    <body>
+    <body id="body">
         <section class="hero">
             <section class="secondary-navigation">
                 <div class="me">
@@ -44,6 +44,7 @@
                         <li><a href="/#about">me</a></li>
                     </ul>
                 </nav>
+                <button id="color-scheme">Change Color!</button>
             </section>
             <section class="hero-playbill">
                 <section class="marquee">
@@ -100,184 +101,186 @@
             </section>            
         </section>
         <section class="projects">
-            <h2>Projects</h2>
-            <div class="projects-wrapper">
-                <div class="project" id="whatthecss">
-                    <div class="playbill">
-                        <header>
-                            <h3>What the CSS?!</h3>
-                            <p>Web Development Course</p>
-                        </header>
-                        <div class="playbill-content">
-                            <div class="terminal">
-                                <div class="terminal-content">
-                                    <p>What the CSS?! is a 30 day course that teaches the fundamentals of CSS via daily challenges and quirky exercises.</p>  
-                                    <ul>
-                                        <li>Co-Founder & Web Developer</li>
-                                    </ul>                    
-                                </div>
-                            </div> 
-                            <div class="playbill-links">
-                                    <a href="https://whatthecss.com" target="_blank">Website</a>
-                                    <a href="https://github.com/WhatTheCSS/WhatTheCSS" target="_blank">Code</a>
-                            </div>                     
-                        </div>
-                    </div>
-                </div>
-                <div class="project" id="emojiscreen">
-                    <div class="playbill">
-                        <header>
-                            <h3>EmojiScreen</h3>
-                            <p>Open Source Project</p>
-                        </header>
-                        <div class="playbill-content">
-                            <div class="terminal">
-                                <div class="terminal-content">
-                                    <p>EmojiScreen is a listing of movies, TV shows and musicals depicted through emojis.</p>  
-                                    <ul>
-                                        <li>Open source, Git/Github teaching tool.</li>
-                                    </ul>                    
-                                </div>
-                            </div> 
-                            <div class="playbill-links">
-                                    <a href="https://emojiscreen.com/" target="_blank">Website</a>
-                                    <a href="https://github.com/brittanyrw/emojiscreen" target="_blank">Code</a>
-                            </div>                     
-                        </div>
-                    </div>
-                </div>		    
-                <div class="project" id="theaterlog">
-                    <div class="playbill">
-                        <header>
-                            <h3>Theater Log</h3>
-                            <p>Theater Show Tracker</p>
-                        </header>
-                        <div class="playbill-content">
-                            <div class="terminal">
-                                <div class="terminal-content">
-                                    <p>Theater Log is a personal musical and play tracker, documenting every show I have seen live since 2010.</p>  
-                                    <ul>
-                                            <li>Built with: Vue.js</li>
-                                    </ul>                    
-                                </div>
-                            </div> 
-                            <div class="playbill-links">
-                                    <a href="https://theaterlog.com" target="_blank">Website</a>
-                                    <a href="https://github.com/brittanyrw/theaterlog" target="_blank">Code</a>
-                            </div>                     
-                        </div>
-                    </div>
-                </div>
-                <div class="project" id="mapping-musicals">
-                    <div class="playbill">
-                        <header>
-                            <h3>Mapping Musicals</h3>
-                            <p>Tony Winner Locations</p>
-                        </header>
-                        <div class="playbill-content">
-                            <div class="terminal">
-                                <div class="terminal-content">
-                                    <p>An interactive map of musicals that won or were nominated for Best Musical at the Tony Awards.</p>  
-                                    <ul>
-                                        <li>Built with: JavaScript, MapBox</li>
-                                    </ul>                    
-                                </div>
-                            </div> 
-                            <div class="playbill-links">
-                                    <a href="https://brittanyrw.github.io/mappingmusicals/" target="_blank">Website</a>
-                                    <a href="https://github.com/brittanyrw/mappingmusicals" target="_blank">Code</a>
+            <section class="project-container">
+                <h2>Projects</h2>
+                <div class="projects-wrapper">
+                    <div class="project" id="whatthecss">
+                        <div class="playbill">
+                            <header>
+                                <h3>What the CSS?!</h3>
+                                <p>Web Development Course</p>
+                            </header>
+                            <div class="playbill-content">
+                                <div class="terminal">
+                                    <div class="terminal-content">
+                                        <p>What the CSS?! is a 30 day course that teaches the fundamentals of CSS via daily challenges and quirky exercises.</p>  
+                                        <ul>
+                                            <li>Co-Founder & Web Developer</li>
+                                        </ul>                    
+                                    </div>
+                                </div> 
+                                <div class="playbill-links">
+                                        <a href="https://whatthecss.com" target="_blank">Website</a>
+                                        <a href="https://github.com/WhatTheCSS/WhatTheCSS" target="_blank">Code</a>
+                                </div>                     
                             </div>
-                        </div>                     
+                        </div>
                     </div>
-                </div>                 
-                <div class="project" id="bittheater">
-                    <div class="playbill">
-                        <header>
-                            <h3>Bit Theater</h3>
-                            <p>Theater Review Website</p>
-                        </header>
-                        <div class="playbill-content">
-                            <div class="terminal">
-                                <div class="terminal-content">
-                                    <p>BitTheater is your ultimate theater show resource. Track your shows, share reviews and collect badges.</p> 
-                                    <ul>
-                                        <li>Built with: JavaScript, SCSS, Node, MongoDB</li>
-                                    </ul>                    
+                    <div class="project" id="emojiscreen">
+                        <div class="playbill">
+                            <header>
+                                <h3>EmojiScreen</h3>
+                                <p>Open Source Project</p>
+                            </header>
+                            <div class="playbill-content">
+                                <div class="terminal">
+                                    <div class="terminal-content">
+                                        <p>EmojiScreen is a listing of movies, TV shows and musicals depicted through emojis.</p>  
+                                        <ul>
+                                            <li>Open source, Git/Github teaching tool.</li>
+                                        </ul>                    
+                                    </div>
+                                </div> 
+                                <div class="playbill-links">
+                                        <a href="https://emojiscreen.com/" target="_blank">Website</a>
+                                        <a href="https://github.com/brittanyrw/emojiscreen" target="_blank">Code</a>
+                                </div>                     
+                            </div>
+                        </div>
+                    </div>		    
+                    <div class="project" id="theaterlog">
+                        <div class="playbill">
+                            <header>
+                                <h3>Theater Log</h3>
+                                <p>Theater Show Tracker</p>
+                            </header>
+                            <div class="playbill-content">
+                                <div class="terminal">
+                                    <div class="terminal-content">
+                                        <p>Theater Log is a personal musical and play tracker, documenting every show I have seen live since 2010.</p>  
+                                        <ul>
+                                                <li>Built with: Vue.js</li>
+                                        </ul>                    
+                                    </div>
+                                </div> 
+                                <div class="playbill-links">
+                                        <a href="https://theaterlog.com" target="_blank">Website</a>
+                                        <a href="https://github.com/brittanyrw/theaterlog" target="_blank">Code</a>
+                                </div>                     
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project" id="mapping-musicals">
+                        <div class="playbill">
+                            <header>
+                                <h3>Mapping Musicals</h3>
+                                <p>Tony Winner Locations</p>
+                            </header>
+                            <div class="playbill-content">
+                                <div class="terminal">
+                                    <div class="terminal-content">
+                                        <p>An interactive map of musicals that won or were nominated for Best Musical at the Tony Awards.</p>  
+                                        <ul>
+                                            <li>Built with: JavaScript, MapBox</li>
+                                        </ul>                    
+                                    </div>
+                                </div> 
+                                <div class="playbill-links">
+                                        <a href="https://brittanyrw.github.io/mappingmusicals/" target="_blank">Website</a>
+                                        <a href="https://github.com/brittanyrw/mappingmusicals" target="_blank">Code</a>
                                 </div>
-                            </div> 
-                            <div class="playbill-links">
-                                    <a href="https://bittheater.herokuapp.com/" target="_blank">Website</a>
-                                    <a href="https://github.com/brittanyrw/bittheater" target="_blank">Code</a>
-                            </div> 
-                        </div>                    
-                    </div>
-                </div>                 
+                            </div>                     
+                        </div>
+                    </div>                 
+                    <div class="project" id="bittheater">
+                        <div class="playbill">
+                            <header>
+                                <h3>Bit Theater</h3>
+                                <p>Theater Review Website</p>
+                            </header>
+                            <div class="playbill-content">
+                                <div class="terminal">
+                                    <div class="terminal-content">
+                                        <p>BitTheater is your ultimate theater show resource. Track your shows, share reviews and collect badges.</p> 
+                                        <ul>
+                                            <li>Built with: JavaScript, SCSS, Node, MongoDB</li>
+                                        </ul>                    
+                                    </div>
+                                </div> 
+                                <div class="playbill-links">
+                                        <a href="https://bittheater.herokuapp.com/" target="_blank">Website</a>
+                                        <a href="https://github.com/brittanyrw/bittheater" target="_blank">Code</a>
+                                </div> 
+                            </div>                    
+                        </div>
+                    </div>                 
 
-                <div class="project" id="musicalpicks">
-                    <div class="playbill">
-                        <header>
-                            <h3>Musical Picks</h3>
-                            <p>Musical Recommendation Quiz</p>
-                        </header>
-                        <div class="playbill-content">
-                            <div class="terminal">
-                                <div class="terminal-content">
-                                    <p>An illustrated quiz app that will recommend movie musicals based on your responses to questions about you.</p>  
-                                    <ul>
-                                        <li>Built with: JavaScript, jQuery, The Movie Database API</li>
-                                    </ul>                    
+                    <div class="project" id="musicalpicks">
+                        <div class="playbill">
+                            <header>
+                                <h3>Musical Picks</h3>
+                                <p>Musical Recommendation Quiz</p>
+                            </header>
+                            <div class="playbill-content">
+                                <div class="terminal">
+                                    <div class="terminal-content">
+                                        <p>An illustrated quiz app that will recommend movie musicals based on your responses to questions about you.</p>  
+                                        <ul>
+                                            <li>Built with: JavaScript, jQuery, The Movie Database API</li>
+                                        </ul>                    
+                                    </div>
+                                </div> 
+                                <div class="playbill-links">
+                                        <a href="https://brittanyrw.github.io/musicalpicks/" target="_blank">Website</a>
+                                        <a href="https://github.com/brittanyrw/musicalpicks" target="_blank">Code</a>
                                 </div>
-                            </div> 
-                            <div class="playbill-links">
-                                    <a href="https://brittanyrw.github.io/musicalpicks/" target="_blank">Website</a>
-                                    <a href="https://github.com/brittanyrw/musicalpicks" target="_blank">Code</a>
-                            </div>
-                        </div>                     
+                            </div>                     
+                        </div>
+                    </div> 
+                    <div class="project" id="css-images">
+                        <div class="playbill">
+                            <header>
+                                <h3>CSS Images</h3>
+                                <p>Images Created With CSS</p>
+                            </header>
+                            <div class="playbill-content">
+                                <div class="terminal">
+                                    <div class="terminal-content">
+                                        <p>A colorful collection of various images and animations created using only CSS and HTML.</p>  
+                                        <ul>
+                                            <li>Built using HTML and CSS, sometimes Pug and SCSS</li>
+                                        </ul>                    
+                                    </div>
+                                </div> 
+                                <div class="playbill-links">
+                                        <a href="https://codepen.io/collection/nxLKYO/#0" target="_blank">View on Codepen</a>
+                                </div> 
+                            </div>                    
+                        </div>
                     </div>
-                </div> 
-                <div class="project" id="css-images">
-                    <div class="playbill">
-                        <header>
-                            <h3>CSS Images</h3>
-                            <p>Images Created With CSS</p>
-                        </header>
-                        <div class="playbill-content">
-                            <div class="terminal">
-                                <div class="terminal-content">
-                                    <p>A colorful collection of various images and animations created using only CSS and HTML.</p>  
-                                    <ul>
-                                        <li>Built using HTML and CSS, sometimes Pug and SCSS</li>
-                                    </ul>                    
-                                </div>
-                            </div> 
-                            <div class="playbill-links">
-                                    <a href="https://codepen.io/collection/nxLKYO/#0" target="_blank">View on Codepen</a>
-                            </div> 
-                        </div>                    
-                    </div>
-                </div>                   
-            </div>
-            <div class="project project-wip" id="wip">
-                <div class="playbill">
-                    <header>
-                        <h3>WIP</h3>
-                        <p>Upcoming Projects</p>
-                    </header>
-                    <div class="playbill-content">
-                        <div class="terminal">
-                            <div class="terminal-content">
-                                <p>Below is a list of projects that are currently in progress.</p>  
-                                <ul>
-                                    <li><strong><a href="https://accioes6.com" target="_blank">Accio ES6</a></strong> - A Wizard themed guide to ES6.</li>
-                                    <li><strong>Just Dance</strong> - A filterable directory of Youtube dance crews.</li>
-                                    <li><strong>Broadway in CSS</strong> - A series of CSS only animated scenes from my favorite musicals.</li>
-                                    <li><strong>Millennials Slay</strong> - A directory of all of the industries and products millennials have 'killed'.</li>
-                                </ul>                    
-                            </div>
-                        </div> 
-                    </div>                     
+                    <div class="project" id="wip">
+                        <div class="playbill">
+                            <header>
+                                <h3>WIP</h3>
+                                <p>Upcoming Projects</p>
+                            </header>
+                            <div class="playbill-content">
+                                <div class="terminal">
+                                    <div class="terminal-content">
+                                        <p>Below is a list of projects that are currently in progress.</p>  
+                                        <ul>
+                                            <li><strong><a href="https://accioes6.com" target="_blank">Accio ES6</a></strong> - Wizard guide to ES6.</li>
+                                            <li><strong>Just Dance</strong> - Directory of dance crews.</li>
+                                            <li><strong>Broadway in CSS</strong> - CSS musical scenes.</li>
+                                            <li><strong>Millennials Slay</strong> - A directory of all of the industries millennials have 'killed'.</li>
+                                        </ul>                    
+                                    </div>
+                                </div> 
+                            </div>                     
+                        </div>
+                    </div>                   
                 </div>
-            </div> 
+            </section> 
         </section> 
         <section class="teaching" id="teaching">
             <div class="teaching-content">

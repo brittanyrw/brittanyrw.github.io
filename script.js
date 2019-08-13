@@ -8,13 +8,36 @@ const lyrics = [
 ]
 
 function randomMusicalLyrics(lyrics){
-	console.log("Random Musical Theater Lyric:")
-	console.log("%c" + lyrics[Math.floor(Math.random() * lyrics.length)], "color: black; font-size: 20px; font-weight: bold; text-transform: lowercase;")
+	console.log(
+    "%c" + "Random Musical Theater Lyric: \n" +
+      lyrics[Math.floor(Math.random() * lyrics.length)],
+    "color: black; font-size: 15px; font-family: arial;"
+  );
 }
 
-randomMusicalLyrics(lyrics)
+const colorScheme = ["purple","pink","green","blue","yellow"];
 
 $(document).ready(function(){
+
+	randomMusicalLyrics(lyrics);
+	
+      let lastColor = 0;
+      var randomColor = function(colors) {
+        var getRandomColor = Math.floor(Math.random() * colors.length);
+        if (getRandomColor != lastColor) {
+          var random = colorScheme[getRandomColor];
+          document.getElementById("body").className = random;
+          lastColor = getRandomColor;
+        } else {
+          randomColor(colorScheme);
+        }
+      };
+    randomColor(colorScheme);
+
+	$("#color-scheme").on("click", function() {
+      randomColor(colorScheme);
+    });
+
 	$(function() {
 		$('a[href*="#"]:not([href="#"])').click(function() {
 		  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

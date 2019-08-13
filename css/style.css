@@ -1,618 +1,880 @@
-/* General Styles */
+@charset "UTF-8";
+/* COLORS */
+/* COLOR SCHEMES */
+body.purple {
+  background-color: #e5e5f9;
+}
+body.purple .main-navigation header, body.purple .playbill-container .playbill header, body.purple .playbill-container .playbill .terminal ul, body.purple .project .playbill header, body.purple .project .playbill .playbill-content .playbill-links a {
+  color: #e5e5f9;
+}
+body.purple .projects, body.purple .about {
+  background-image: url("../imgs/music-note-background-purple.svg");
+}
+body.purple .secondary-navigation button {
+  color: #e5e5f9;
+  border: 2px solid #e5e5f9;
+}
+body.purple .playbill-container .playbill {
+  outline: 7px solid #e5e5f9;
+  background-color: #e5e5f9;
+}
+body.purple .terminal span, body.purple .teaching-blocks header, body.purple .teaching-resources header, body.purple .teaching-blocks .teaching-description span {
+  background-color: #e5e5f9;
+}
+body.purple .project .playbill, body.purple .teaching {
+  outline: 3px solid #e5e5f9;
+}
+body.purple .teaching-blocks .content-block, body.purple .teaching-resources {
+  border: 2px solid #e5e5f9;
+  -webkit-box-shadow: 5px 5px 0 #e5e5f9;
+  box-shadow: 9px 9px 0 #e5e5f9;
+  color: #e5e5f9;
+}
+body.purple .teaching-blocks .teaching-description a, body.purple .teaching-resources .teaching-description a {
+  background-color: #e5e5f9;
+  -webkit-box-shadow: 5px 5px 0 rgba(229, 229, 249, 0.5);
+  box-shadow: 5px 5px 0 rgba(229, 229, 249, 0.5);
+}
+@media screen and (min-width: 997px) {
+  body.purple .playbill-container .playbill {
+    background-color: #e5e5f9;
+  }
+  body.purple .playbill-container .playbill:after {
+    background-color: #a7a7eb;
+  }
+  body.purple .playbill-container .playbill:before {
+    background-color: #e5e5f9;
+    border: 7px solid #bcbcef;
+  }
+}
 
+body.pink {
+  background-color: #fae6e9;
+}
+body.pink .main-navigation header, body.pink .playbill-container .playbill header, body.pink .playbill-container .playbill .terminal ul, body.pink .project .playbill header, body.pink .project .playbill .playbill-content .playbill-links a {
+  color: #fae6e9;
+}
+body.pink .projects, body.pink .about, body.pink .hero {
+  background-image: url("../imgs/music-note-background-pink.svg");
+}
+body.pink .secondary-navigation button {
+  color: #fae6e9;
+  border: 2px solid #fae6e9;
+}
+body.pink .playbill-container .playbill {
+  outline: 7px solid #fae6e9;
+  background-color: #fae6e9;
+}
+body.pink .terminal span, body.pink .teaching-blocks header, body.pink .teaching-resources header, body.pink .teaching-blocks .teaching-description span {
+  background-color: #fae6e9;
+}
+body.pink .project .playbill, body.pink .teaching {
+  outline: 3px solid #fae6e9;
+}
+body.pink .teaching-blocks .content-block, body.pink .teaching-resources {
+  border: 2px solid #fae6e9;
+  -webkit-box-shadow: 5px 5px 0 #fae6e9;
+  box-shadow: 9px 9px 0 #fae6e9;
+  color: #fae6e9;
+}
+body.pink .teaching-blocks .teaching-description a, body.pink .teaching-resources .teaching-description a {
+  background-color: #fae6e9;
+  -webkit-box-shadow: 5px 5px 0 rgba(250, 230, 233, 0.5);
+  box-shadow: 5px 5px 0 rgba(250, 230, 233, 0.5);
+}
+@media screen and (min-width: 997px) {
+  body.pink .playbill-container .playbill {
+    background-color: #fae6e9;
+  }
+  body.pink .playbill-container .playbill:after {
+    background-color: #eda6b1;
+  }
+  body.pink .playbill-container .playbill:before {
+    background-color: #fae6e9;
+    border: 7px solid #f2bcc4;
+  }
+}
+
+body.blue {
+  background-color: #cbeaf2;
+}
+body.blue .main-navigation header, body.blue .playbill-container .playbill header, body.blue .playbill-container .playbill .terminal ul, body.blue .project .playbill header, body.blue .project .playbill .playbill-content .playbill-links a {
+  color: #cbeaf2;
+}
+body.blue .projects, body.blue .about, body.blue .hero {
+  background-image: url("../imgs/music-note-background-blue.svg");
+}
+body.blue .secondary-navigation button {
+  color: #cbeaf2;
+  border: 2px solid #cbeaf2;
+}
+body.blue .playbill-container .playbill {
+  outline: 7px solid #cbeaf2;
+  background-color: #cbeaf2;
+}
+body.blue .terminal span, body.blue .teaching-blocks header, body.blue .teaching-resources header, body.blue .teaching-blocks .teaching-description span {
+  background-color: #cbeaf2;
+}
+body.blue .project .playbill, body.blue .teaching {
+  outline: 3px solid #cbeaf2;
+}
+body.blue .teaching-blocks .content-block, body.blue .teaching-resources {
+  border: 2px solid #cbeaf2;
+  -webkit-box-shadow: 5px 5px 0 #cbeaf2;
+  box-shadow: 9px 9px 0 #cbeaf2;
+  color: #cbeaf2;
+}
+body.blue .teaching-blocks .teaching-description a, body.blue .teaching-resources .teaching-description a {
+  background-color: #cbeaf2;
+  -webkit-box-shadow: 5px 5px 0 rgba(203, 234, 242, 0.5);
+  box-shadow: 5px 5px 0 rgba(203, 234, 242, 0.5);
+}
+@media screen and (min-width: 997px) {
+  body.blue .playbill-container .playbill {
+    background-color: #cbeaf2;
+  }
+  body.blue .playbill-container .playbill:after {
+    background-color: #8ed1e3;
+  }
+  body.blue .playbill-container .playbill:before {
+    background-color: #cbeaf2;
+    border: 7px solid #a2dae8;
+  }
+}
+
+body.yellow {
+  background-color: #faf9e6;
+}
+body.yellow .main-navigation header, body.yellow .playbill-container .playbill header, body.yellow .playbill-container .playbill .terminal ul, body.yellow .project .playbill header, body.yellow .project .playbill .playbill-content .playbill-links a {
+  color: #faf9e6;
+}
+body.yellow .projects, body.yellow .about, body.yellow .hero {
+  background-image: url("../imgs/music-note-background-yellow.svg");
+}
+body.yellow .secondary-navigation button {
+  color: #faf9e6;
+  border: 2px solid #faf9e6;
+}
+body.yellow .playbill-container .playbill {
+  outline: 7px solid #faf9e6;
+  background-color: #faf9e6;
+}
+body.yellow .terminal span, body.yellow .teaching-blocks header, body.yellow .teaching-resources header, body.yellow .teaching-blocks .teaching-description span {
+  background-color: #faf9e6;
+}
+body.yellow .project .playbill, body.yellow .teaching {
+  outline: 3px solid #faf9e6;
+}
+body.yellow .teaching-blocks .content-block, body.yellow .teaching-resources {
+  border: 2px solid #faf9e6;
+  -webkit-box-shadow: 5px 5px 0 #faf9e6;
+  box-shadow: 9px 9px 0 #faf9e6;
+  color: #faf9e6;
+}
+body.yellow .teaching-blocks .teaching-description a, body.yellow .teaching-resources .teaching-description a {
+  background-color: #faf9e6;
+  -webkit-box-shadow: 5px 5px 0 rgba(250, 249, 230, 0.5);
+  box-shadow: 5px 5px 0 rgba(250, 249, 230, 0.5);
+}
+@media screen and (min-width: 997px) {
+  body.yellow .playbill-container .playbill {
+    background-color: #faf9e6;
+  }
+  body.yellow .playbill-container .playbill:after {
+    background-color: #edeaa6;
+  }
+  body.yellow .playbill-container .playbill:before {
+    background-color: #faf9e6;
+    border: 7px solid #f2efbc;
+  }
+}
+
+body.green {
+  background-color: #e7f7da;
+}
+body.green .main-navigation header, body.green .playbill-container .playbill header, body.green .playbill-container .playbill .terminal ul, body.green .project .playbill header, body.green .project .playbill .playbill-content .playbill-links a {
+  color: #e7f7da;
+}
+body.green .projects, body.green .about, body.green .hero {
+  background-image: url("../imgs/music-note-background-green.svg");
+}
+body.green .secondary-navigation button {
+  color: #e7f7da;
+  border: 2px solid #e7f7da;
+}
+body.green .playbill-container .playbill {
+  outline: 7px solid #e7f7da;
+  background-color: #e7f7da;
+}
+body.green .terminal span, body.green .teaching-blocks header, body.green .teaching-resources header, body.green .teaching-blocks .teaching-description span {
+  background-color: #e7f7da;
+}
+body.green .project .playbill, body.green .teaching {
+  outline: 3px solid #e7f7da;
+}
+body.green .teaching-blocks .content-block, body.green .teaching-resources {
+  border: 2px solid #e7f7da;
+  -webkit-box-shadow: 5px 5px 0 #e7f7da;
+  box-shadow: 9px 9px 0 #e7f7da;
+  color: #e7f7da;
+}
+body.green .teaching-blocks .teaching-description a, body.green .teaching-resources .teaching-description a {
+  background-color: #e7f7da;
+  -webkit-box-shadow: 5px 5px 0 rgba(231, 247, 218, 0.5);
+  box-shadow: 5px 5px 0 rgba(231, 247, 218, 0.5);
+}
+@media screen and (min-width: 997px) {
+  body.green .playbill-container .playbill {
+    background-color: #e7f7da;
+  }
+  body.green .playbill-container .playbill:after {
+    background-color: #bee99b;
+  }
+  body.green .playbill-container .playbill:before {
+    background-color: #e7f7da;
+    border: 7px solid #cceeb0;
+  }
+}
+
+/* GENERAL STYLES */
 * {
-    text-transform: lowercase;
-    box-sizing: border-box;
+  text-transform: lowercase;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 10px;
-	font-family: 'Inconsolata', monospace;
-	background-color: black;
-	color: #FFC96B;
-	font-size: 21px;
+  margin: 10px;
+  font-family: "Inconsolata", monospace;
+  font-size: 21px;
+  color: #292932;
+  background-color: #e5e5f9;
 }
 
 a {
-    color:  #FFC96B;
-    text-decoration: none;
-    outline: 3px solid transparent;
+  text-decoration: none;
+  outline: 7px solid transparent;
+  color: #292932;
 }
 
-a:focus {
-    outline: 3px solid #FFC96B;
-    outline-offset: 3px;
+a:focus, a:hover {
+  outline-offset: 3px;
+  outline: 3px solid #292932;
 }
 
 .projects h2, .teaching h2, .about h2 {
-    font-size: 40px;
-    margin: 0 0 20px 0;
+  font-size: 40px;
+  margin: 0 0 20px 0;
 }
 
 .projects, .about {
-    background-image: url('../imgs/music-note-background.svg');
-	background-repeat: no-repeat;
-    background-position: 2% 0%;
-    background-size: 29%;
+  background-image: url("../imgs/music-note-background-purple.svg");
+  background-repeat: no-repeat;
+  background-position: 2% 0%;
+  background-size: 29%;
 }
 
 .hero {
-    background-size: 29%;
-    background-position: 94% 5%;
+  background-size: 29%;
+  background-position: 94% 5%;
 }
 
 .about .about-content, .teaching .teaching-content {
-    max-width: 1000px;
-    margin: auto;
+  max-width: 1000px;
+  margin: auto;
 }
 
 /* Navigation */
-
 .main-navigation header {
-	background-color: #FFC96B;
-	color: black;
-	padding: 20px 30px;
+  background-color: #292932;
+  padding: 20px 30px;
+  color: #e5e5f9;
 }
 
 .main-navigation header h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .main-navigation nav {
-    padding: 20px;
+  padding: 20px;
 }
 
-.secondary-navigation a, .main-navigation a { 
-    display: block;
+.secondary-navigation a, .main-navigation a {
+  display: block;
 }
 
 .secondary-navigation {
-    padding: 20px;
+  padding: 20px;
 }
 
 .secondary-navigation h3 {
-    font-size: 30px;
-    margin: 0;
+  font-size: 30px;
+  margin: 0;
 }
 
 .secondary-navigation p {
-    margin: 5px 5px 20px 0;
+  margin: 5px 5px 20px 0;
 }
 
 .secondary-navigation ul, .main-navigation ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.secondary-navigation li:hover, .main-navigation li:hover {
-    border: 1px solid #FFC96B;
+.secondary-navigation li.color-scheme {
+  padding: 0;
+  text-align: center;
+}
+
+.secondary-navigation li.color-scheme:before {
+  display: none;
+}
+
+.secondary-navigation button {
+  background-color: #292932;
+  color: #e5e5f9;
+  font-size: 15px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  outline: 3px solid transparent;
+  cursor: pointer;
+  border-radius: 7px;
+  box-shadow: 7px 7px 0 #292932;
+  border: 2px solid #e5e5f9;
+  transition: 0.5s;
+}
+
+.secondary-navigation button:hover {
+  box-shadow: 7px 7px 0 rgba(41, 41, 50, 0.9);
+  transition: 0.5s;
 }
 
 .secondary-navigation li, .main-navigation li {
-    padding-left: 30px;
-    position: relative;
-    padding: 5px 5px 5px 30px;
+  padding-left: 30px;
+  position: relative;
+  padding: 5px 5px 5px 30px;
 }
 
 .secondary-navigation li:before, .main-navigation li:before {
-    position: absolute;
-    font-weight: bold;
-    color: #FFC96B;
-    content: "\266A";
-    left: 5px;
-    top: 5px;
+  position: absolute;
+  font-weight: bold;
+  color: #292932;
+  content: "♪";
+  left: 5px;
+  top: 5px;
 }
 
-@media all and (-ms-high-contrast:none) {
-    .grid-container {
-      display: -ms-grid;
-      -ms-grid-columns: 0.4fr 1fr 0.2fr;
-      -ms-grid-rows: 1fr;
-    }
-  
-    .project-navigation {
-      -ms-grid-row: 1;
-      grid-row: 1;
-      -ms-grid-row-span: 1;
-      -ms-grid-col: 1;
-      -ms-grid-col-span: 1;
-    }
-  
-    .hero-playbill {
-      -ms-grid-row: 1;
-      grid-row: 1;
-      -ms-grid-row-span: 1;
-      -ms-grid-col: 2;
-      -ms-grid-col-span: 1;
-    }
-  
-    .secondary-navigation {
-      -ms-grid-row: 1;
-      grid-row: 1;
-      -ms-grid-row-span: 1;
-      -ms-grid-col: 3;
-      -ms-grid-col-span: 1;
-    }
-  
+@media all and (-ms-high-contrast: none) {
+  .grid-container {
+    display: -ms-grid;
+    -ms-grid-columns: 0.4fr 1fr 0.2fr;
+    -ms-grid-rows: 1fr;
   }
 
-/* Hero */
+  .project-navigation {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 1;
+    -ms-grid-col-span: 1;
+  }
 
+  .hero-playbill {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 2;
+    -ms-grid-col-span: 1;
+  }
+
+  .secondary-navigation {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 3;
+    -ms-grid-col-span: 1;
+  }
+}
+/* Hero */
 .hero {
-    background-image: url('../imgs/music-note-background.svg');
-	background-repeat: no-repeat;
-    border: 2px solid #FFC96B;
-    display: grid;
-    grid-template-columns: 1fr;
-    overflow: hidden;
+  background-image: url("../imgs/music-note-background-purple.svg");
+  background-repeat: no-repeat;
+  border: 7px solid #292932;
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  box-shadow: 10px 10px 0 #292932;
+  border-radius: 7px 7px 0 7px;
 }
 
 .marquee .lyrics span {
-    display: inline;
+  display: inline;
 }
 
 .marquee {
-    height: 30px;
-    width: 100%;
-	overflow: hidden;
-	position: relative;
-    padding: 0;
-    border-top: 2px solid #FFC96B;
-    border-bottom: 2px solid #FFC96B;
+  height: 35px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  border-top: 7px solid #292932;
+  border-bottom: 3px solid #292932;
 }
 
 .marquee .lyrics {
-    display: block;
-    width: 359%;
-    overflow: hidden;
-    -webkit-animation: marquee 40s linear infinite;
-    animation: marquee 40s linear infinite;
+  display: block;
+  width: 359%;
+  overflow: hidden;
+  -webkit-animation: marquee 40s linear infinite;
+  animation: marquee 40s linear infinite;
 }
-  
+
 .marquee span {
-font-size: 16px;
-padding-left: 10px;
+  font-size: 16px;
+  padding-left: 10px;
 }
 
 @keyframes marquee {
-    0% {
-        transform: translateX(0);
-        -moz-transform: translateX(0);
-        -o-transform: translateX(0);
-        -webkit-transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-        -moz-transform: translateX(-100%);
-        -o-transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
 }
-
 .playbill-container {
-    padding: 40px 20px;
-    position: relative;
+  padding: 40px 20px;
+  position: relative;
 }
 
 .playbill-container .playbill {
-    border: 2px solid #FFC96B;
-    -webkit-box-shadow: 5px 5px 0 rgba(255, 201, 107, 1);
-    box-shadow: 5px 5px 0 rgba(255, 201, 107, 1);
-    outline: 2px solid black;
-    max-width: 400px;
-    margin: auto;
-    position: relative;
-    background-color: rgba(0,0,0,.5);
+  border: 7px solid #292932;
+  -webkit-box-shadow: 5px 5px 0 #292932;
+  box-shadow: 5px 5px 0 #292932;
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+  outline: 7px solid #e5e5f9;
+  background-color: #e5e5f9;
 }
 
 .playbill-container .playbill header {
-    background-color: #FFC96B;
-    color: black;
-    padding: 20px;
-    text-align: center;
+  background-color: #292932;
+  color: #e5e5f9;
+  padding: 20px;
+  text-align: center;
 }
 
 .playbill-container .playbill .playbill-content {
-    padding: 10px;
+  padding: 10px;
 }
 
-.playbill-container .playbill header h2, .playbill-container .playbill header h3{
-    margin: 0;
-    text-transform: uppercase;
+.playbill-container .playbill header h2, .playbill-container .playbill header h3 {
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .playbill-container .playbill header h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .playbill-container .playbill header h3 {
-    font-weight: 400;
-    font-size: 20px;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .playbill-container h1 {
-    font-size: 70px;
-    margin: 15px 0;
-    text-align: center;
-    text-transform: uppercase;
+  font-size: 70px;
+  margin: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .playbill-container .playbill .terminal {
-    border: 5px solid #FFC96B;
-    border-radius: 5px;
-    width: 90%;
-    margin: 20px auto;
-    max-width: 300px;
-    padding: 10px;
-    background-color: rgba(0,0,0,.8);
-}
-
-.playbill-container .playbill:after {
-    position: absolute;
-    content: '';
-    height: 140px;
-    width: 120px;
-    background-color: rgba(255, 201, 107, .9);
-    z-index: -1;
-    right: 20px;
-    top: 280px;
-}
-
-.playbill-container .playbill:before {
-    position: absolute;
-    content: '';
-    height: 100px;
-    width: 150px;
-    background-color: black;
-    border: 3px solid #FFC96B;
-    z-index: -1;
-    left: 10px;
-    bottom: 30px;
+  border: 5px solid #292932;
+  border-radius: 5px;
+  width: 90%;
+  margin: 20px auto;
+  max-width: 300px;
+  padding: 10px;
+  background-color: #292932;
 }
 
 .playbill-container .playbill .terminal ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  color: #e5e5f9;
 }
 
 .playbill-container .playbill .terminal li {
-    font-size: 15px;
+  font-size: 14px;
+  margin: 2px auto;
 }
 
 .terminal span {
-	background-color: #FFC96B;
-	height: 17px;
-	width: 8px;
-	display: inline-block;
-	-webkit-animation: blink 2s infinite;
-	animation: blink 2s infinite;
+  background-color: #e5e5f9;
+  height: 17px;
+  width: 8px;
+  display: inline-block;
+  -webkit-animation: blink 2s infinite;
+  animation: blink 2s infinite;
 }
 
 @keyframes blink {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
   }
-
+  100% {
+    opacity: 1;
+  }
+}
 /* Projects */
-
 .projects {
-    border: 2px solid #FFC96B;
-    padding: 30px;
-    margin-top: 40px;
+  border: 7px solid #292932;
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 10px 10px 0 #292932;
+  border-radius: 7px 7px 0 0;
+}
+
+.project-container {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .projects-wrapper, .project-wip {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
-    max-width: 1000px;
-    margin: auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
 }
 
 .project-wip {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .project-wip a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .project {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .project:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .project .playbill {
-    border: 2px solid #FFC96B;
-    -webkit-box-shadow: 5px 5px 0 rgba(255, 201, 107, 1);
-    box-shadow: 5px 5px 0 rgba(255, 201, 107, 1);
-    outline: 2px solid black;
+  border: 5px solid #292932;
+  -webkit-box-shadow: 5px 5px 0 #292932;
+  box-shadow: 9px 9px 0 #292932;
+  outline: 3px solid #e5e5f9;
+  border-radius: 7px;
 }
 
 .project .playbill header {
-    background-color: #FFC96B;
-    color: black;
-    text-align: center;
-    padding: 20px;
+  background-color: #292932;
+  color: #e5e5f9;
+  text-align: center;
+  padding: 20px;
 }
 
 .project .playbill header h3 {
-    font-size: 30px;
-    margin: 0 0 10px 0;
+  font-size: 30px;
+  margin: 0 0 10px 0;
 }
 
 .project .playbill header p {
-    margin: 0;
-    font-size: 18px;
-    letter-spacing: 1.1px;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 1.1px;
 }
 
 .project .playbill .playbill-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .project .playbill .playbill-content .playbill-links a {
-    background-color: #FFC96B;
-	color: black;
-	-webkit-box-shadow: 5px 5px 0 rgba(255, 201, 107, .5);
-	box-shadow: 5px 5px 0 rgba(255, 201, 107, .5);
-	padding: 10px 20px;
-    transition: .5s;
-    display: inline-block;
-    margin: 10px 0 20px 0;
+  background-color: #292932;
+  color: #e5e5f9;
+  -webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
+  box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
+  padding: 10px 20px;
+  transition: 0.5s;
+  display: inline-block;
+  margin: 10px 0 20px 0;
 }
 
 .project .playbill .playbill-content .playbill-links a:hover {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
-
 /* Teaching */
-
 .teaching {
-    border: 2px solid #FFC96B;
-    background-color: #FFC96B;
-    color: black;
-    padding: 30px;
+  margin: 30px auto;
+  padding: 30px;
+  border: 7px solid #292932;
+  background-color: #292932;
+  color: #292932;
+  box-shadow: 10px 10px 0 #292932;
+  outline: 3px solid #e5e5f9;
+  border-radius: 7px 7px 0 7px;
 }
 
 .teaching-blocks {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
 }
 
 .teaching-blocks .content-block {
-    border: 2px solid black;
-    outline: 2px solid #FFC96B;
-    -webkit-box-shadow: 5px 5px 0 rgba(0,0,0,1);
-    box-shadow: 5px 5px 0 rgba(0,0,0,1);
+  border: 2px solid #e5e5f9;
+  -webkit-box-shadow: 5px 5px 0 #e5e5f9;
+  box-shadow: 9px 9px 0 #e5e5f9;
+  outline: 3px solid #292932;
+  border-radius: 7px;
+  background-color: #292932;
+  color: #e5e5f9;
 }
 
 .teaching-blocks header, .teaching-resources header {
-    background-color: black;
-    color: #FFC96B;
-    text-align: center;
-    padding: 20px;
+  background-color: #e5e5f9;
+  color: #292932;
+  text-align: center;
+  padding: 20px;
 }
 
 .teaching-blocks header h3, .teaching-blocks header h4, .teaching-resources header h3, .teaching-resources header h4 {
-    margin: 0;
+  margin: 0;
 }
 
 .teaching-resources {
-    margin-top: 20px;
-    border: 2px solid black;
-    outline: 2px solid #FFC96B;
-    -webkit-box-shadow: 5px 5px 0 rgba(0,0,0,1);
-    box-shadow: 5px 5px 0 rgba(0,0,0,1);
-    display: grid;
-    
+  margin-top: 40px;
+  display: grid;
+  border: 2px solid #e5e5f9;
+  -webkit-box-shadow: 5px 5px 0 #e5e5f9;
+  box-shadow: 9px 9px 0 #e5e5f9;
+  outline: 3px solid #292932;
+  border-radius: 7px;
+  background-color: #292932;
+  color: #e5e5f9;
 }
 
 .teaching-resources .teaching-description {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .teaching-blocks header h4, .teaching-resources header h4 {
-    font-weight: normal;
-    text-transform: uppercase;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .teaching-blocks .teaching-description {
-    padding: 20px;
+  padding: 20px;
 }
 
 .teaching-blocks .teaching-description span {
-    background-color: black;
-    color: #FFC96B;
-    padding: 0 5px;
+  background-color: #e5e5f9;
+  color: #292932;
+  padding: 0 5px;
 }
 
 .teaching-blocks .teaching-description a, .teaching-resources .teaching-description a {
-    background-color: black;
-	color: #FFC96B;
-	-webkit-box-shadow: 5px 5px 0 rgba(0,0,0,.5);
-	box-shadow: 5px 5px 0 rgba(0,0,0,.5);
-	padding: 10px 20px;
-    transition: .5s;
-    display: inline-block;
-    margin: 10px 0 20px 0;
+  background-color: #e5e5f9;
+  color: #292932;
+  -webkit-box-shadow: 5px 5px 0 rgba(229, 229, 249, 0.5);
+  box-shadow: 5px 5px 0 rgba(229, 229, 249, 0.5);
+  padding: 10px 20px;
+  transition: 0.5s;
+  display: inline-block;
+  margin: 10px 0 20px 0;
 }
 
 .teaching-blocks .teaching-description a:focus, .teaching-resources .teaching-description a:focus {
-    outline: 3px solid black;
-    outline-offset: 3px;
+  outline: 7px solid #292932;
+  outline-offset: 7px;
 }
 
-.teaching-blocks .teaching-description a:hover, , .teaching-resources .teaching-description a:hover {
-	-webkit-box-shadow: none;
-	box-shadow: none;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
+.teaching-blocks .teaching-description a:hover, .teaching-resources .teaching-description a:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /* About */
-
 .about {
-    border: 2px solid #FFC96B;
-    padding: 30px;
+  border: 7px solid #292932;
+  padding: 30px;
+  box-shadow: 10px 10px 0 #292932;
+  border-radius: 7px 7px 0 7px;
 }
 
-.social-media-links ul{
-    list-style: none;
-    padding: 0;
+.social-media-links ul {
+  list-style: none;
+  padding: 0;
 }
 
 .social-media-links li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .social-media-links i {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .social-media-links a {
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .social-media-links a:hover {
-    color: rgba(255, 201, 107, .5);
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
+  color: rgba(41, 41, 50, 0.5);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
-
-
-@media all and (-ms-high-contrast:none) {
-    .teaching-blocks {
-      display: -ms-grid;
-      -ms-grid-columns: 1fr 1fr 1fr;
-      -ms-grid-rows: 1fr;
-      -ms-grid-gap: 20px;
-    }
-  
+@media all and (-ms-high-contrast: none) {
+  .teaching-blocks {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+    -ms-grid-gap: 20px;
   }
-
-  /* Media Queries */
-
-
-  @media screen and (min-width: 426px){
-      body {
-          margin: 25px;
-      }
-  }
-
-  @media screen and (min-width: 992px){
-    
-    .main-navigation{
-        grid-area: project-navigation;
-        border-right: 2px solid #FFC96B;
-    }
-    
-    .secondary-navigation {
-        grid-area: secondary-navigation;
-        padding: 20px;
-        border-left: 2px solid #FFC96B;
-        position: relative;
-        padding-top: 280px;
-    }
-
-    .secondary-navigation .me {
-        writing-mode: vertical-rl;
-        -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
-        min-height: 200px;
-        position: absolute;
-        right: 25px;
-    }
-    
-    .hero {
-        grid-template-columns: 0.3fr 1fr 0.2fr;
-        grid-template-areas: "project-navigation hero-playbill secondary-navigation";
-        grid-template-rows: 1fr;
-        background-position: 25% 49%;
-        background-size: 49%;
-    }
-    
-    .marquee {
-        border-top: 0;
-    }
-
-    .hero-playbill {
-        grid-area: hero-playbill;
-    }
-    
-    .playbill-container {
-        -webkit-transform: rotate(-7deg);
-            -ms-transform: rotate(-7deg);
-                transform: rotate(-7deg);
-    }
-
-    .playbill-container .playbill {
-        min-height: 480px;
-        background-color: black;
-    }
-
-    .playbill-container .playbill .playbill-content {
-        padding: 0 10px 10px 40px;
-    }
-
-    .playbill-container .playbill-content h1 {
-        text-align: left;
-    }
-
-    .playbill-container .playbill .terminal {
-        position: absolute;
-        right: -15%;
-        bottom: 0%;
-        padding: 20px;
-        z-index: 999;
-    }
-
-    .playbill-container .playbill:before {
-        bottom: 50px;
-        z-index: 0;
-        left: 30px;
-    }
-    .playbill-container .playbill:after {
-        top: 190px;
-        z-index: 0;
-        background-color: rgba(255, 201, 107, .5);
-
-    }
-
-    .playbill-container .playbill .terminal .terminal-content li {
-        font-size: 15px;
-        margin-bottom: 5px;
-    }
-
-    .playbill-container .playbill .terminal ul {
-        margin: 0;
-    }
-
-    .projects-wrapper {
-        -ms-grid-columns: 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .teaching-blocks {
-        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    
 }
+/* Media Queries */
+@media screen and (min-width: 426px) {
+  body {
+    margin: 25px;
+  }
+}
+@media screen and (min-width: 997px) {
+  .main-navigation {
+    grid-area: project-navigation;
+    border-right: 7px solid #292932;
+  }
+
+  .secondary-navigation {
+    grid-area: secondary-navigation;
+    padding: 20px;
+    border-left: 7px solid #292932;
+    position: relative;
+    padding-top: 280px;
+  }
+
+  .secondary-navigation .me {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    min-height: 200px;
+    position: absolute;
+    right: 25px;
+  }
+
+  .secondary-navigation button {
+    position: absolute;
+    bottom: 25px;
+  }
+
+  .hero {
+    grid-template-columns: 0.3fr 1fr 0.2fr;
+    grid-template-areas: "project-navigation hero-playbill secondary-navigation";
+    grid-template-rows: 1fr;
+    background-position: 25% 49%;
+    background-size: 49%;
+  }
+
+  .marquee {
+    border-top: 0;
+    height: 30px;
+  }
+
+  .hero-playbill {
+    grid-area: hero-playbill;
+  }
+
+  .playbill-container {
+    -webkit-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+  }
+
+  .playbill-container .playbill {
+    min-height: 480px;
+    background-color: #e5e5f9;
+  }
+
+  .playbill-container .playbill .playbill-content {
+    padding: 0 10px 10px 40px;
+  }
+
+  .playbill-container .playbill-content h1 {
+    text-align: left;
+  }
+
+  .playbill-container .playbill .terminal {
+    position: absolute;
+    right: -15%;
+    bottom: 0%;
+    padding: 20px;
+    z-index: 999;
+  }
+
+  .playbill-container .playbill:after {
+    position: absolute;
+    content: "";
+    height: 140px;
+    width: 120px;
+    background-color: #a7a7eb;
+    z-index: 0;
+    right: -30px;
+    top: 200px;
+    opacity: 0.5;
+  }
+
+  .playbill-container .playbill:before {
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 150px;
+    background-color: #e5e5f9;
+    border: 7px solid #bcbcef;
+    z-index: 0;
+    left: 10px;
+    bottom: 30px;
+  }
+
+  .playbill-container .playbill .terminal .terminal-content li {
+    margin-bottom: 5px;
+  }
+
+  .playbill-container .playbill .terminal ul {
+    margin: 0;
+  }
+
+  .projects-wrapper {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .teaching-blocks {
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
