@@ -15,7 +15,7 @@ function randomMusicalLyrics(lyrics){
   );
 }
 
-const colorScheme = ["purple","pink","green","blue","yellow"];
+const colorScheme = ["purple","pink","green","blue","yellow","purple"];
 
 $(document).ready(function(){
 
@@ -24,15 +24,16 @@ $(document).ready(function(){
       let lastColor = 0;
       var randomColor = function(colors) {
         var getRandomColor = Math.floor(Math.random() * colors.length);
+		console.log('random color:' + getRandomColor);
         if (getRandomColor != lastColor) {
           var random = colorScheme[getRandomColor];
           document.getElementById("body").className = random;
           lastColor = getRandomColor;
+		  console.log("last color:" + lastColor);
         } else {
           randomColor(colorScheme);
         }
       };
-    randomColor(colorScheme);
 
 	$("#color-scheme").on("click", function() {
       randomColor(colorScheme);
