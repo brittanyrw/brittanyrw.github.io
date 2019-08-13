@@ -15,7 +15,7 @@ function randomMusicalLyrics(lyrics){
   );
 }
 
-const colorScheme = ["purple","pink","green","blue","yellow","purple"];
+const colorScheme = ["purple","pink","green","blue","yellow"];
 
 $(document).ready(function(){
 
@@ -31,9 +31,11 @@ $(document).ready(function(){
           lastColor = getRandomColor;
 		  console.log("last color:" + lastColor);
         } else {
-          randomColor(colorScheme);
+          randomColor(colors);
         }
       };
+
+	  randomColor(colorScheme);
 
 	$("#color-scheme").on("click", function() {
       randomColor(colorScheme);
