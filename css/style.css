@@ -247,7 +247,7 @@ body {
   font-family: "Inconsolata", monospace;
   font-size: 21px;
   color: #292932;
-  background-color: #e5e5f9;
+  background-color: #fae6e9;
 }
 
 a {
@@ -267,7 +267,7 @@ a:focus, a:hover {
 }
 
 .projects, .about {
-  background-image: url("../imgs/music-note-background-purple.svg");
+  background-image: url("../imgs/music-note-background-pink.svg");
   background-repeat: no-repeat;
   background-position: 2% 0%;
   background-size: 29%;
@@ -287,7 +287,7 @@ a:focus, a:hover {
 .main-navigation header {
   background-color: #292932;
   padding: 20px 30px;
-  color: #e5e5f9;
+  color: #fae6e9;
 }
 
 .main-navigation header h2 {
@@ -332,7 +332,7 @@ a:focus, a:hover {
 
 .secondary-navigation button {
   background-color: #292932;
-  color: #e5e5f9;
+  color: #fae6e9;
   font-size: 15px;
   padding: 5px 10px;
   margin-top: 15px;
@@ -340,7 +340,7 @@ a:focus, a:hover {
   cursor: pointer;
   border-radius: 7px;
   box-shadow: 7px 7px 0 #292932;
-  border: 2px solid #e5e5f9;
+  border: 2px solid #fae6e9;
   transition: 0.5s;
 }
 
@@ -397,7 +397,7 @@ a:focus, a:hover {
 }
 /* Hero */
 .hero {
-  background-image: url("../imgs/music-note-background-purple.svg");
+  background-image: url("../imgs/music-note-background-pink.svg");
   background-repeat: no-repeat;
   border: 7px solid #292932;
   display: grid;
@@ -460,13 +460,13 @@ a:focus, a:hover {
   max-width: 400px;
   margin: auto;
   position: relative;
-  outline: 7px solid #e5e5f9;
-  background-color: #e5e5f9;
+  outline: 7px solid #fae6e9;
+  background-color: #fae6e9;
 }
 
 .playbill-container .playbill header {
   background-color: #292932;
-  color: #e5e5f9;
+  color: #fae6e9;
   padding: 20px;
   text-align: center;
 }
@@ -509,7 +509,7 @@ a:focus, a:hover {
 .playbill-container .playbill .terminal ul {
   list-style: none;
   padding: 0;
-  color: #e5e5f9;
+  color: #fae6e9;
 }
 
 .playbill-container .playbill .terminal li {
@@ -518,7 +518,7 @@ a:focus, a:hover {
 }
 
 .terminal span {
-  background-color: #e5e5f9;
+  background-color: #fae6e9;
   height: 17px;
   width: 8px;
   display: inline-block;
@@ -574,13 +574,13 @@ a:focus, a:hover {
   border: 5px solid #292932;
   -webkit-box-shadow: 5px 5px 0 #292932;
   box-shadow: 9px 9px 0 #292932;
-  outline: 3px solid #e5e5f9;
+  outline: 3px solid #fae6e9;
   border-radius: 7px;
 }
 
 .project .playbill header {
   background-color: #292932;
-  color: #e5e5f9;
+  color: #fae6e9;
   text-align: center;
   padding: 20px;
 }
@@ -602,7 +602,7 @@ a:focus, a:hover {
 
 .project .playbill .playbill-content .playbill-links a {
   background-color: #292932;
-  color: #e5e5f9;
+  color: #fae6e9;
   -webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
   box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
   padding: 10px 20px;
@@ -627,7 +627,7 @@ a:focus, a:hover {
   background-color: #292932;
   color: #292932;
   box-shadow: 10px 10px 0 #292932;
-  outline: 3px solid #e5e5f9;
+  outline: 3px solid #fae6e9;
   border-radius: 7px 7px 0 7px;
 }
 
@@ -638,17 +638,17 @@ a:focus, a:hover {
 }
 
 .teaching-blocks .content-block {
-  border: 2px solid #e5e5f9;
-  -webkit-box-shadow: 5px 5px 0 #e5e5f9;
-  box-shadow: 9px 9px 0 #e5e5f9;
+  border: 2px solid #fae6e9;
+  -webkit-box-shadow: 5px 5px 0 #fae6e9;
+  box-shadow: 9px 9px 0 #fae6e9;
   outline: 3px solid #292932;
   border-radius: 7px;
   background-color: #292932;
-  color: #e5e5f9;
+  color: #fae6e9;
 }
 
 .teaching-blocks header, .teaching-resources header {
-  background-color: #e5e5f9;
+  background-color: #fae6e9;
   color: #292932;
   text-align: center;
   padding: 20px;
@@ -661,13 +661,13 @@ a:focus, a:hover {
 .teaching-resources {
   margin-top: 40px;
   display: grid;
-  border: 2px solid #e5e5f9;
-  -webkit-box-shadow: 5px 5px 0 #e5e5f9;
-  box-shadow: 9px 9px 0 #e5e5f9;
+  border: 2px solid #fae6e9;
+  -webkit-box-shadow: 5px 5px 0 #fae6e9;
+  box-shadow: 9px 9px 0 #fae6e9;
   outline: 3px solid #292932;
   border-radius: 7px;
   background-color: #292932;
-  color: #e5e5f9;
+  color: #fae6e9;
 }
 
 .teaching-resources .teaching-description {
@@ -684,13 +684,13 @@ a:focus, a:hover {
 }
 
 .teaching-blocks .teaching-description span {
-  background-color: #e5e5f9;
+  background-color: #fae6e9;
   color: #292932;
   padding: 0 5px;
 }
 
 .teaching-blocks .teaching-description a, .teaching-resources .teaching-description a {
-  background-color: #e5e5f9;
+  background-color: #fae6e9;
   color: #292932;
   -webkit-box-shadow: 5px 5px 0 rgba(229, 229, 249, 0.5);
   box-shadow: 5px 5px 0 rgba(229, 229, 249, 0.5);
@@ -815,7 +815,7 @@ a:focus, a:hover {
 
   .playbill-container .playbill {
     min-height: 480px;
-    background-color: #e5e5f9;
+    background-color: #fae6e9;
   }
 
   .playbill-container .playbill .playbill-content {
@@ -839,7 +839,7 @@ a:focus, a:hover {
     content: "";
     height: 140px;
     width: 120px;
-    background-color: #a7a7eb;
+    background-color: #eda6b1;
     z-index: 0;
     right: -30px;
     top: 200px;
@@ -851,8 +851,8 @@ a:focus, a:hover {
     content: "";
     height: 100px;
     width: 150px;
-    background-color: #e5e5f9;
-    border: 7px solid #bcbcef;
+    background-color: #fae6e9;
+    border: 7px solid #f2bcc4;
     z-index: 0;
     left: 10px;
     bottom: 30px;

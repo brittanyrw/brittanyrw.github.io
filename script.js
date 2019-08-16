@@ -35,8 +35,6 @@ $(document).ready(function(){
         }
       };
 
-	  randomColor(colorScheme);
-
 	$("#color-scheme").on("click", function() {
       randomColor(colorScheme);
     });
