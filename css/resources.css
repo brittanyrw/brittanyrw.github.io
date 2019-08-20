@@ -1,8 +1,10 @@
 body {
     font-family: avenir;
     padding: 0;
-    margin: 0;
-    background-color: white;
+    margin: 30px;
+    background-color: #292932;
+    box-shadow: 7px 7px 0 #292932;
+    border: 5px solid #292932;
 }
   
 header {
@@ -47,7 +49,10 @@ padding: 25px 10px;
 }
 
 .resources {
-    margin: auto;
+    margin: 0 auto 40px auto;
+    background-color: white;
+    border-radius: 7px 7px 0 0;
+    padding: 20px;
 }
 
 .resources a {
@@ -80,6 +85,23 @@ padding: 25px 10px;
     position: absolute;
     top: 11px;
 }
+
+.general-resources, .cool-resources {
+    box-shadow: 10px 10px 0 #ffc0cb;
+}
+
+.community-resources, .dc-resources {
+    box-shadow: 10px 10px 0 #c0c4ff;
+}
+
+.coding-resources {
+    box-shadow: 10px 10px 0 #ffd6c0;
+}
+
+.project-resources {
+    box-shadow: 10px 10px 0 #c0e9ff;
+}
+
 
 .general-resources h2, .general-resources ul li:before, .cool-resources h2, .cool-resources ul li:before {
     background-color: #ffc0cb;
