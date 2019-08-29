@@ -127,6 +127,11 @@ padding: 25px 10px;
     transform: rotate(2deg);
 }
 
+.cool-resources .subhead {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
 .about {
     background-color: #292932;
     padding: 30px 35px;
