@@ -627,7 +627,8 @@ a:focus, a:hover {
     writing-mode: vertical-rl;
     min-height: 200px;
     position: absolute;
-    right: 25px; }
+    right: 25px;
+    top: 35px; }
 
   .secondary-navigation button {
     position: absolute;
