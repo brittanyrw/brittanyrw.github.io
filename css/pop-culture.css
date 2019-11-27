@@ -1,3 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 section {
     margin: 20px auto;
+    max-width: 1000px;
+}
+
+.tv-shows-container, .movies-container, .tv-movie-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.tv-card, .movie-card {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+h3 {
+    margin: 5px 0;
 }
