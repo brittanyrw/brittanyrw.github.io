@@ -83,6 +83,10 @@ h3 {
     box-shadow: 5px 5px #F1DA35;
 }
 
+.green-shadow {
+    box-shadow: 5px 5px #1FC155;
+}
+
 .red-shadow-alt {
     box-shadow: 5px 5px #D43E5A;
 }
