@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+main {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.december-calendar {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(7, minmax(150px, 1fr)) 
+}
+
+.day {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.no-movie {
+    border: 2px solid gray;
+    background-color: dimgray;
+}
+
+.planned {
+    border: 2px solid gray;
+    background-color: lightgray;
+}
+
+.watched {
+    background-color: rgb(230, 180, 180);
+    border: 2px solid rgb(206, 77, 77);
+}
