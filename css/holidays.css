@@ -1,9 +1,20 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    background-color: #116a6e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 main {
     max-width: 1250px;
     margin: auto;
+}
+
+p {
+    margin: 0;
+    font-size: 21px;
 }
 
 .december-calendar {
@@ -13,21 +24,67 @@ main {
 }
 
 .day {
-    border: 2px solid black;
+    border: 3px solid black;
     padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0 rgba(0,0,0,.2);
+    min-height: 140px;
+}
+
+.day p:first-child {
+    background-color: #FFC300;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.day p:nth-child(3){
+    padding: 5px 0;
+    border-top: 2px solid black;
+}
+
+.day p:nth-child(2){
+    margin-bottom: 5px;
 }
 
 .no-movie {
-    border: 2px solid gray;
-    background-color: dimgray;
+    border: 3px solid #072C2E;
+    background-color: #0A4346;
+}
+
+.no-movie p:first-child {
+    background-color: #072C2E;
+    color: white;
 }
 
 .planned {
-    border: 2px solid gray;
-    background-color: lightgray;
+    border: 3px solid gray;
+    background-color: white;
+    color: gray;
 }
 
 .watched {
-    background-color: rgb(230, 180, 180);
-    border: 2px solid rgb(206, 77, 77);
+    background-color: white;
+    border: 3px solid #ccc;
+}
+
+.watched:nth-child(2n) {
+    background-color: #fe3136;
+    border: 3px solid #f1bfc0;
+}
+
+.watched:nth-child(3n) {
+    background-color: #78c9ba;
+    border: 3px solid #539E91;
+}
+
+.watched:nth-child(4n) {
+    background-color: #f1bfc0;
+    border: 3px solid #fe3136;
+}
+
+.watched:nth-child(5n) {
+    background-color: #539E91;
+    border: 3px solid #78c9ba;
 }
