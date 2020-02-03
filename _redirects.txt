@@ -1,0 +1,3 @@
+# redirects
+
+/books              https://bookishlog.com
