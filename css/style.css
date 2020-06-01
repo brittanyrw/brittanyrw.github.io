@@ -1,4 +1,22 @@
 /* COLORS */
+/* ALERT */
+.blm {
+  background-color: #292932;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  font-size: 80px;
+  position: relative;
+  margin-bottom: 10px; }
+  .blm div.box-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .blm a {
+    color: white;
+    text-decoration: underline; }
+
 /* COLOR SCHEMES */
 body.purple {
   background-color: #e5e5f9; }
