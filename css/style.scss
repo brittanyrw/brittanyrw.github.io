@@ -7,28 +7,6 @@ $green: #e7f7da;
 $yellow: #faf9e6;
 $gray: #292932;
 
-/* ALERT */
-
-.blm {
-    background-color: $gray;
-    color: white;
-    height: 100vh;
-    text-align: center;
-    font-size: 80px;
-    position: relative;
-    margin-bottom: 10px;
-    div.box-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    a {
-        color: white;
-        text-decoration: underline;
-    }
-}
-
 /* COLOR SCHEMES */
 
 body.purple {
@@ -356,6 +334,7 @@ a:focus, a:hover {
 .hero {
     background-size: 29%;
     background-position: 94% 5%;
+    margin-top: 30px;
 }
 
 .about .about-content, .teaching .teaching-content {
