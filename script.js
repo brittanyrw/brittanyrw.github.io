@@ -15,49 +15,8 @@ function randomMusicalLyrics(lyrics){
   );
 }
 
-const colorScheme = ["purple","pink","green","blue","yellow"];
-
 $(document).ready(function(){
 
 	randomMusicalLyrics(lyrics);
 	
-      let lastColor = 5;
-      var randomColor = function(colors) {
-        var getRandomColor = Math.floor(Math.random() * colors.length);
-		console.log('random color:' + getRandomColor);
-        if (getRandomColor != lastColor) {
-          var random = colorScheme[getRandomColor];
-          document.getElementById("body").className = random;
-          lastColor = getRandomColor;
-		  console.log("last color:" + lastColor);
-        } else {
-          randomColor(colors);
-        }
-      };
-
-	$("#color-scheme").on("click", function() {
-      randomColor(colorScheme);
-    });
-
-	$(function() {
-		$('a[href*="#"]:not([href="#"])').click(function() {
-		  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-			  $('html, body').animate({
-				scrollTop: target.offset().top
-			  }, 1000);
-			  target.focus(); 
-			  if (target.is(":focus")){ 
-				return false;
-			  } else {
-				target.attr('tabindex','-1'); 
-				target.focus(); 
-			  };
-			  return false;
-			}
-		  }
-		});
-	  });
   });

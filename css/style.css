@@ -173,7 +173,8 @@ body.green {
 /* GENERAL STYLES */
 * {
   text-transform: lowercase;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 body {
   margin: 10px;
