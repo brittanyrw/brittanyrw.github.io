@@ -1,11 +1,7 @@
 /* COLORS */
 
-$purple: #e5e5f9;
-$pink: #fae6e9;
-$blue: #cbeaf2;
-$green: #e7f7da;
-$yellow: #faf9e6;
-$gray: #292932;
+$main: #cbeaf2;
+$secondary: #292932;
 
 /* GENERAL STYLES */
 
@@ -19,19 +15,19 @@ body {
     margin: 10px;
 	font-family: 'Inconsolata', monospace;
 	font-size: 21px;
-    color: $gray;
-    background-color: $pink;
+    color: $secondary;
+    background-color: $main;
 }
 
 a {
     text-decoration: none;
     outline: 7px solid transparent;
-    color: $gray;
+    color: $secondary;
 }
 
 a:focus, a:hover {
     outline-offset: 3px;
-    outline: 3px solid $gray;
+    outline: 3px solid $secondary;
 }
 
 .projects h2, .teaching h2, .about h2 {
@@ -40,7 +36,7 @@ a:focus, a:hover {
 }
 
 .projects, .about {
-    background-image: url('../imgs/music-note-background-pink.svg');
+    background-image: url('../imgs/music-note-background-blue.svg');
 	background-repeat: no-repeat;
     background-position: 2% 0%;
     background-size: 29%;
@@ -60,9 +56,9 @@ a:focus, a:hover {
 /* Navigation */
 
 .main-navigation header {
-	background-color: $gray;
+	background-color: $secondary;
 	padding: 20px 30px;
-    color: $pink;
+    color: $main;
 }
 
 .main-navigation header h2 {
@@ -106,16 +102,16 @@ a:focus, a:hover {
 }
 
 .secondary-navigation button {
-   background-color: $gray;
-   color: $pink;
+   background-color: $secondary;
+   color: $main;
    font-size: 15px;
    padding: 5px 10px;
    margin-top: 15px;
    outline: 3px solid transparent;
    cursor: pointer;
    border-radius: 7px;
-   box-shadow: 7px 7px 0 $gray;
-   border: 2px solid $pink;
+   box-shadow: 7px 7px 0 $secondary;
+   border: 2px solid $main;
    transition: .5s;
 }
 
@@ -133,7 +129,7 @@ a:focus, a:hover {
 .secondary-navigation li:before, .main-navigation li:before {
     position: absolute;
     font-weight: bold;
-    color: $gray;
+    color: $secondary;
     content: "\266A";
     left: 5px;
     top: 5px;
@@ -175,13 +171,13 @@ a:focus, a:hover {
 /* Hero */
 
 .hero {
-    background-image: url('../imgs/music-note-background-pink.svg');
+    background-image: url('../imgs/music-note-background-blue.svg');
 	background-repeat: no-repeat;
-    border: 7px solid $gray;
+    border: 7px solid $secondary;
     display: grid;
     grid-template-columns: 1fr;
     overflow: hidden;
-    box-shadow: 10px 10px 0 $gray;
+    box-shadow: 10px 10px 0 $secondary;
     border-radius: 7px 7px 0 7px;
 }
 
@@ -195,8 +191,8 @@ a:focus, a:hover {
 	overflow: hidden;
 	position: relative;
     padding: 0;
-    border-top: 7px solid $gray;
-    border-bottom: 3px solid $gray;
+    border-top: 7px solid $secondary;
+    border-bottom: 3px solid $secondary;
 }
 
 .marquee .lyrics {
@@ -234,19 +230,19 @@ padding-left: 10px;
 }
 
 .playbill-container .playbill {
-    border: 7px solid $gray;
+    border: 7px solid $secondary;
     -webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, 1);
     box-shadow: 5px 5px 0 rgba(41, 41, 50, 1);
     max-width: 400px;
     margin: auto;
     position: relative;
-    outline: 7px solid $pink;
-    background-color: $pink;
+    outline: 7px solid $main;
+    background-color: $main;
 }
 
 .playbill-container .playbill header {
-    background-color: $gray;
-    color: $pink;
+    background-color: $secondary;
+    color: $main;
     padding: 20px;
     text-align: center;
 }
@@ -277,19 +273,19 @@ padding-left: 10px;
 }
 
 .playbill-container .playbill .terminal {
-    border: 5px solid $gray;
+    border: 5px solid $secondary;
     border-radius: 5px;
     width: 90%;
     margin: 20px auto;
     max-width: 300px;
     padding: 10px;
-    background-color: $gray;
+    background-color: $secondary;
 }
 
 .playbill-container .playbill .terminal ul {
     list-style: none;
     padding: 0;
-    color: $pink;
+    color: $main;
 }
 
 .playbill-container .playbill .terminal li {
@@ -298,7 +294,7 @@ padding-left: 10px;
 }
 
 .terminal span {
-	background-color: $pink;
+	background-color: $main;
 	height: 17px;
 	width: 8px;
 	display: inline-block;
@@ -314,10 +310,10 @@ padding-left: 10px;
 /* Projects */
 
 .projects {
-    border: 7px solid $gray;
+    border: 7px solid $secondary;
     padding: 30px;
     margin-top: 40px;
-    box-shadow: 10px 10px 0 $gray;
+    box-shadow: 10px 10px 0 $secondary;
     border-radius: 7px 7px 0 0;
 }
 
@@ -349,16 +345,16 @@ padding-left: 10px;
 }
 
 .project .playbill {
-    border: 5px solid $gray;
-    -webkit-box-shadow: 5px 5px 0 $gray;
-    box-shadow: 9px 9px 0 $gray;
-    outline: 3px solid $pink;
+    border: 5px solid $secondary;
+    -webkit-box-shadow: 5px 5px 0 $secondary;
+    box-shadow: 9px 9px 0 $secondary;
+    outline: 3px solid $main;
     border-radius: 7px;
 }
 
 .project .playbill header {
-    background-color: $gray;
-    color: $pink;
+    background-color: $secondary;
+    color: $main;
     text-align: center;
     padding: 20px;
 }
@@ -379,8 +375,8 @@ padding-left: 10px;
 }
 
 .project .playbill .playbill-content .playbill-links a {
-    background-color: $gray;
-	color: $pink;
+    background-color: $secondary;
+	color: $main;
 	-webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, .5);
 	box-shadow: 5px 5px 0 rgba(41, 41, 50, .5);
 	padding: 10px 20px;
@@ -403,11 +399,11 @@ padding-left: 10px;
 .teaching {
     margin: 30px auto;
     padding: 30px;
-    border: 7px solid $gray;
-    background-color: $gray;
-    color: $gray;
-    box-shadow: 10px 10px 0 $gray;
-    outline: 3px solid $pink;
+    border: 7px solid $secondary;
+    background-color: $secondary;
+    color: $secondary;
+    box-shadow: 10px 10px 0 $secondary;
+    outline: 3px solid $main;
     border-radius: 7px 7px 0 7px;
 }
 
@@ -418,18 +414,18 @@ padding-left: 10px;
 }
 
 .teaching-blocks .content-block {
-    border: 2px solid $pink;
-    -webkit-box-shadow: 5px 5px 0 $pink;
-    box-shadow: 9px 9px 0 $pink;
-    outline: 3px solid $gray;
+    border: 2px solid $main;
+    -webkit-box-shadow: 5px 5px 0 $main;
+    box-shadow: 9px 9px 0 $main;
+    outline: 3px solid $secondary;
     border-radius: 7px;
-    background-color: $gray;
-    color: $pink;
+    background-color: $secondary;
+    color: $main;
 }
 
 .teaching-blocks header, .teaching-resources header {
-    background-color: $pink;
-    color: $gray;
+    background-color: $main;
+    color: $secondary;
     text-align: center;
     padding: 20px;
 }
@@ -441,13 +437,13 @@ padding-left: 10px;
 .teaching-resources {
     margin-top: 40px;
     display: grid;
-    border: 2px solid $pink;
-    -webkit-box-shadow: 5px 5px 0 $pink;
-    box-shadow: 9px 9px 0 $pink;
-    outline: 3px solid $gray;
+    border: 2px solid $main;
+    -webkit-box-shadow: 5px 5px 0 $main;
+    box-shadow: 9px 9px 0 $main;
+    outline: 3px solid $secondary;
     border-radius: 7px;
-    background-color: $gray;
-    color: $pink;
+    background-color: $secondary;
+    color: $main;
     
 }
 
@@ -465,14 +461,14 @@ padding-left: 10px;
 }
 
 .teaching-blocks .teaching-description span {
-    background-color: $pink;
-    color: $gray;
+    background-color: $main;
+    color: $secondary;
     padding: 0 5px;
 }
 
 .teaching-blocks .teaching-description a, .teaching-resources .teaching-description a {
-    background-color: $pink;
-	color: $gray;
+    background-color: $main;
+	color: $secondary;
 	-webkit-box-shadow: 5px 5px 0 rgba(229, 229, 249,.5);
 	box-shadow: 5px 5px 0 rgba(229, 229, 249,.5);
 	padding: 10px 20px;
@@ -482,7 +478,7 @@ padding-left: 10px;
 }
 
 .teaching-blocks .teaching-description a:focus, .teaching-resources .teaching-description a:focus {
-    outline: 7px solid $gray;
+    outline: 7px solid $secondary;
     outline-offset: 7px;
 }
 
@@ -497,9 +493,9 @@ padding-left: 10px;
 /* About */
 
 .about {
-    border: 7px solid $gray;
+    border: 7px solid $secondary;
     padding: 30px;
-    box-shadow: 10px 10px 0 $gray;
+    box-shadow: 10px 10px 0 $secondary;
     border-radius: 7px 7px 0 7px;
 }
 
@@ -554,13 +550,13 @@ padding-left: 10px;
     
     .main-navigation{
         grid-area: project-navigation;
-        border-right: 7px solid $gray;
+        border-right: 7px solid $secondary;
     }
     
     .secondary-navigation {
         grid-area: secondary-navigation;
         padding: 20px;
-        border-left: 7px solid $gray;
+        border-left: 7px solid $secondary;
         position: relative;
         padding-top: 280px;
     }
@@ -606,7 +602,7 @@ padding-left: 10px;
 
     .playbill-container .playbill {
         min-height: 480px;
-        background-color: $pink;
+        background-color: $main;
     }
 
     .playbill-container .playbill .playbill-content {
@@ -630,7 +626,7 @@ padding-left: 10px;
         content: '';
         height: 140px;
         width: 120px;
-        background-color: darken($pink,15%);
+        background-color: darken($main,15%);
         z-index: 0;
         right: -30px;
         top: 200px;
@@ -642,8 +638,8 @@ padding-left: 10px;
         content: '';
         height: 100px;
         width: 150px;
-        background-color: $pink;
-        border: 7px solid darken($pink,10%);
+        background-color: $main;
+        border: 7px solid darken($main,10%);
         z-index: 0;
         left: 10px;
         bottom: 30px;
