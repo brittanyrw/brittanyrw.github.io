@@ -1,7 +1,11 @@
 /* COLORS */
 
-$main: #cbeaf2;
-$secondary: #292932;
+$purple: #e5e5f9;
+$pink: #fae6e9;
+$blue: #cbeaf2;
+$green: #e7f7da;
+$yellow: #faf9e6;
+$black: #292932;
 
 /* GENERAL STYLES */
 
@@ -15,19 +19,18 @@ body {
     margin: 10px;
 	font-family: 'Inconsolata', monospace;
 	font-size: 21px;
-    color: $secondary;
-    background-color: $main;
+    color: $black;
 }
 
 a {
     text-decoration: none;
     outline: 7px solid transparent;
-    color: $secondary;
+    color: $black;
 }
 
 a:focus, a:hover {
     outline-offset: 3px;
-    outline: 3px solid $secondary;
+    outline: 3px solid $black;
 }
 
 .projects h2, .teaching h2, .about h2 {
@@ -35,17 +38,42 @@ a:focus, a:hover {
     margin: 0 0 20px 0;
 }
 
-.projects, .about {
-    background-image: url('../imgs/music-note-background-blue.svg');
-	background-repeat: no-repeat;
+.projects-logs, .projects-musicals, .projects-fun, .projects-teaching, .teaching {
+    background-repeat: no-repeat;
     background-position: 2% 0%;
     background-size: 29%;
+}
+
+.projects-logs {
+    background-color: $green;
+    background-image: url('../imgs/music-note-background-green.svg');
+}
+
+.projects-musicals {
+    background-color: $blue;
+    background-image: url('../imgs/music-note-background-blue.svg');
+}
+
+.projects-teaching {
+    background-color: $pink;
+    background-image: url('../imgs/music-note-background-pink.svg');
+}
+
+.projects-fun {
+    background-color: $purple;
+    background-image: url('../imgs/music-note-background-purple.svg');
+}
+
+
+.teaching {
+    background-image: url('../imgs/music-note-background-yellow.svg');
 }
 
 .hero {
     background-size: 29%;
     background-position: 94% 5%;
     margin-top: 30px;
+    background-color: $purple;
 }
 
 .about .about-content, .teaching .teaching-content {
@@ -56,9 +84,9 @@ a:focus, a:hover {
 /* Navigation */
 
 .main-navigation header {
-	background-color: $secondary;
+	background-color: $black;
 	padding: 20px 30px;
-    color: $main;
+    color: $purple;
 }
 
 .main-navigation header h2 {
@@ -102,16 +130,16 @@ a:focus, a:hover {
 }
 
 .secondary-navigation button {
-   background-color: $secondary;
-   color: $main;
+   background-color: $black;
+   color: $purple;
    font-size: 15px;
    padding: 5px 10px;
    margin-top: 15px;
    outline: 3px solid transparent;
    cursor: pointer;
    border-radius: 7px;
-   box-shadow: 7px 7px 0 $secondary;
-   border: 2px solid $main;
+   box-shadow: 7px 7px 0 $black;
+   border: 2px solid $purple;
    transition: .5s;
 }
 
@@ -129,7 +157,7 @@ a:focus, a:hover {
 .secondary-navigation li:before, .main-navigation li:before {
     position: absolute;
     font-weight: bold;
-    color: $secondary;
+    color: $black;
     content: "\266A";
     left: 5px;
     top: 5px;
@@ -171,13 +199,13 @@ a:focus, a:hover {
 /* Hero */
 
 .hero {
-    background-image: url('../imgs/music-note-background-blue.svg');
+    background-image: url('../imgs/music-note-background-purple.svg');
 	background-repeat: no-repeat;
-    border: 7px solid $secondary;
+    border: 7px solid $black;
     display: grid;
     grid-template-columns: 1fr;
     overflow: hidden;
-    box-shadow: 10px 10px 0 $secondary;
+    box-shadow: 10px 10px 0 $black;
     border-radius: 7px 7px 0 7px;
 }
 
@@ -191,8 +219,8 @@ a:focus, a:hover {
 	overflow: hidden;
 	position: relative;
     padding: 0;
-    border-top: 7px solid $secondary;
-    border-bottom: 3px solid $secondary;
+    border-top: 7px solid $black;
+    border-bottom: 3px solid $black;
 }
 
 .marquee .lyrics {
@@ -230,19 +258,19 @@ padding-left: 10px;
 }
 
 .playbill-container .playbill {
-    border: 7px solid $secondary;
+    border: 7px solid $black;
     -webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, 1);
     box-shadow: 5px 5px 0 rgba(41, 41, 50, 1);
     max-width: 400px;
     margin: auto;
     position: relative;
-    outline: 7px solid $main;
-    background-color: $main;
+    outline: 7px solid $purple;
+    background-color: $purple;
 }
 
 .playbill-container .playbill header {
-    background-color: $secondary;
-    color: $main;
+    background-color: $black;
+    color: $purple;
     padding: 20px;
     text-align: center;
 }
@@ -273,19 +301,19 @@ padding-left: 10px;
 }
 
 .playbill-container .playbill .terminal {
-    border: 5px solid $secondary;
+    border: 5px solid $black;
     border-radius: 5px;
     width: 90%;
     margin: 20px auto;
     max-width: 300px;
     padding: 10px;
-    background-color: $secondary;
+    background-color: $black;
 }
 
 .playbill-container .playbill .terminal ul {
     list-style: none;
     padding: 0;
-    color: $main;
+    color: $purple;
 }
 
 .playbill-container .playbill .terminal li {
@@ -294,7 +322,7 @@ padding-left: 10px;
 }
 
 .terminal span {
-	background-color: $main;
+	background-color: $purple;
 	height: 17px;
 	width: 8px;
 	display: inline-block;
@@ -310,10 +338,10 @@ padding-left: 10px;
 /* Projects */
 
 .projects {
-    border: 7px solid $secondary;
+    border: 7px solid $black;
     padding: 30px;
     margin-top: 40px;
-    box-shadow: 10px 10px 0 $secondary;
+    box-shadow: 10px 10px 0 $black;
     border-radius: 7px 7px 0 0;
 }
 
@@ -322,22 +350,15 @@ padding-left: 10px;
     margin: auto;
 }
 
-.projects-wrapper, .project-wip {
+.projects-wrapper {
     display: grid;
     grid-template-rows: 1fr;
     grid-gap: 20px;
 }
 
-.project-wip {
-    margin-top: 20px;
-}
-
-.project-wip a {
-    text-decoration: underline;
-}
-
 .project {
     margin-bottom: 30px;
+    height: 100%;
 }
 
 .project:last-child {
@@ -345,18 +366,50 @@ padding-left: 10px;
 }
 
 .project .playbill {
-    border: 5px solid $secondary;
-    -webkit-box-shadow: 5px 5px 0 $secondary;
-    box-shadow: 9px 9px 0 $secondary;
-    outline: 3px solid $main;
+    border: 5px solid $black;
+    -webkit-box-shadow: 5px 5px 0 $black;
+    box-shadow: 9px 9px 0 $black;
     border-radius: 7px;
+    height: 100%;
+    position: relative;
+}
+
+.projects-logs .playbill {
+    outline: 3px solid $green;
+}
+
+.projects-musicals .playbill {
+    outline: 3px solid $blue;
+} 
+
+.projects-fun .playbill {
+    outline: 3px solid $purple;
+} 
+
+.projects-teaching .playbill {
+    outline: 3px solid $pink;
 }
 
 .project .playbill header {
-    background-color: $secondary;
-    color: $main;
+    background-color: $black;
     text-align: center;
     padding: 20px;
+}
+
+.projects-logs .playbill header {
+    color: $green;
+}
+
+.projects-musicals .playbill header {
+    color: $blue;
+} 
+
+.projects-fun .playbill header {
+    color: $purple;
+} 
+
+.projects-teaching .playbill header {
+    color: $pink;
 }
 
 .project .playbill header h3 {
@@ -371,18 +424,38 @@ padding-left: 10px;
 }
 
 .project .playbill .playbill-content {
-    padding: 20px;
+    padding: 20px 20px 70px 20px;
+}
+
+.project .playbill .playbill-links {
+    position: absolute;
+    bottom: 10px;
 }
 
 .project .playbill .playbill-content .playbill-links a {
-    background-color: $secondary;
-	color: $main;
+    background-color: $black;
 	-webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, .5);
 	box-shadow: 5px 5px 0 rgba(41, 41, 50, .5);
 	padding: 10px 20px;
     transition: .5s;
     display: inline-block;
     margin: 10px 0 20px 0;
+}
+
+.projects-logs .playbill .playbill-content .playbill-links a {
+    color: $green;
+}
+
+.projects-musicals .playbill .playbill-content .playbill-links a {
+    color: $blue;
+} 
+
+.projects-fun .playbill .playbill-content .playbill-links a {
+    color: $purple;
+} 
+
+.projects-teaching .playbill .playbill-content .playbill-links a {
+    color: $pink;
 }
 
 .project .playbill .playbill-content .playbill-links a:hover {
@@ -399,11 +472,10 @@ padding-left: 10px;
 .teaching {
     margin: 30px auto;
     padding: 30px;
-    border: 7px solid $secondary;
-    background-color: $secondary;
-    color: $secondary;
-    box-shadow: 10px 10px 0 $secondary;
-    outline: 3px solid $main;
+    border: 7px solid $black;
+    background-color: $yellow;
+    color: $black;
+    box-shadow: 10px 10px 0 $black;
     border-radius: 7px 7px 0 7px;
 }
 
@@ -414,18 +486,18 @@ padding-left: 10px;
 }
 
 .teaching-blocks .content-block {
-    border: 2px solid $main;
-    -webkit-box-shadow: 5px 5px 0 $main;
-    box-shadow: 9px 9px 0 $main;
-    outline: 3px solid $secondary;
+    border: 5px solid $black;
+    -webkit-box-shadow: 5px 5px 0 $black;
+    box-shadow: 9px 9px 0 $black;
+    outline: 3px solid $yellow;
     border-radius: 7px;
-    background-color: $secondary;
-    color: $main;
+    background-color: $yellow;
+    color: $black;
 }
 
 .teaching-blocks header, .teaching-resources header {
-    background-color: $main;
-    color: $secondary;
+    background-color: $black;
+    color: $yellow;
     text-align: center;
     padding: 20px;
 }
@@ -434,24 +506,7 @@ padding-left: 10px;
     margin: 0;
 }
 
-.teaching-resources {
-    margin-top: 40px;
-    display: grid;
-    border: 2px solid $main;
-    -webkit-box-shadow: 5px 5px 0 $main;
-    box-shadow: 9px 9px 0 $main;
-    outline: 3px solid $secondary;
-    border-radius: 7px;
-    background-color: $secondary;
-    color: $main;
-    
-}
-
-.teaching-resources .teaching-description {
-    padding: 10px 20px;
-}
-
-.teaching-blocks header h4, .teaching-resources header h4 {
+.teaching-blocks header h4 {
     font-weight: normal;
     text-transform: uppercase;
 }
@@ -461,16 +516,16 @@ padding-left: 10px;
 }
 
 .teaching-blocks .teaching-description span {
-    background-color: $main;
-    color: $secondary;
+    background-color: $black;
+    color: $yellow;
     padding: 0 5px;
 }
 
 .teaching-blocks .teaching-description a, .teaching-resources .teaching-description a {
-    background-color: $main;
-	color: $secondary;
-	-webkit-box-shadow: 5px 5px 0 rgba(229, 229, 249,.5);
-	box-shadow: 5px 5px 0 rgba(229, 229, 249,.5);
+    background-color: $black;
+	color: $yellow;
+	-webkit-box-shadow: 5px 5px 0 rgb(41, 41, 50, 50%);;
+	box-shadow: 5px 5px 0 rgb(41, 41, 50, 50%);;
 	padding: 10px 20px;
     transition: .5s;
     display: inline-block;
@@ -478,7 +533,7 @@ padding-left: 10px;
 }
 
 .teaching-blocks .teaching-description a:focus, .teaching-resources .teaching-description a:focus {
-    outline: 7px solid $secondary;
+    outline: 7px solid $black;
     outline-offset: 7px;
 }
 
@@ -493,10 +548,13 @@ padding-left: 10px;
 /* About */
 
 .about {
-    border: 7px solid $secondary;
+    border: 7px solid $black;
     padding: 30px;
-    box-shadow: 10px 10px 0 $secondary;
+    box-shadow: 10px 10px 0 $black;
     border-radius: 7px 7px 0 7px;
+    background-color: $black;
+    outline: 3px solid white;
+    color: white;
 }
 
 .social-media-links ul{
@@ -518,8 +576,24 @@ padding-left: 10px;
     transition: .5s;
 }
 
-.social-media-links a:hover {
-    color: rgba(41, 41, 50, .5);
+.social-media-links li:nth-child(1) a {
+    color: $purple;
+}
+
+.social-media-links li:nth-child(2) a {
+    color: $blue;
+}
+
+.social-media-links li:nth-child(3) a {
+    color: $yellow;
+}
+
+.social-media-links li:nth-child(4) a {
+    color: $green;
+}
+
+.social-media-links li a:hover {
+    color: white;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
@@ -550,13 +624,13 @@ padding-left: 10px;
     
     .main-navigation{
         grid-area: project-navigation;
-        border-right: 7px solid $secondary;
+        border-right: 7px solid $black;
     }
     
     .secondary-navigation {
         grid-area: secondary-navigation;
         padding: 20px;
-        border-left: 7px solid $secondary;
+        border-left: 7px solid $black;
         position: relative;
         padding-top: 280px;
     }
@@ -602,7 +676,7 @@ padding-left: 10px;
 
     .playbill-container .playbill {
         min-height: 480px;
-        background-color: $main;
+        background-color: $purple;
     }
 
     .playbill-container .playbill .playbill-content {
@@ -626,7 +700,7 @@ padding-left: 10px;
         content: '';
         height: 140px;
         width: 120px;
-        background-color: darken($main,15%);
+        background-color: darken($purple,15%);
         z-index: 0;
         right: -30px;
         top: 200px;
@@ -638,8 +712,8 @@ padding-left: 10px;
         content: '';
         height: 100px;
         width: 150px;
-        background-color: $main;
-        border: 7px solid darken($main,10%);
+        background-color: $purple;
+        border: 7px solid darken($purple,10%);
         z-index: 0;
         left: 10px;
         bottom: 30px;

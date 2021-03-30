@@ -12,7 +12,6 @@ body {
   font-family: "Inconsolata", monospace;
   font-size: 21px;
   color: #292932;
-  background-color: #cbeaf2;
 }
 
 a {
@@ -31,17 +30,41 @@ a:focus, a:hover {
   margin: 0 0 20px 0;
 }
 
-.projects, .about {
-  background-image: url("../imgs/music-note-background-blue.svg");
+.projects-logs, .projects-musicals, .projects-fun, .projects-teaching, .teaching {
   background-repeat: no-repeat;
   background-position: 2% 0%;
   background-size: 29%;
+}
+
+.projects-logs {
+  background-color: #e7f7da;
+  background-image: url("../imgs/music-note-background-green.svg");
+}
+
+.projects-musicals {
+  background-color: #cbeaf2;
+  background-image: url("../imgs/music-note-background-blue.svg");
+}
+
+.projects-teaching {
+  background-color: #fae6e9;
+  background-image: url("../imgs/music-note-background-pink.svg");
+}
+
+.projects-fun {
+  background-color: #e5e5f9;
+  background-image: url("../imgs/music-note-background-purple.svg");
+}
+
+.teaching {
+  background-image: url("../imgs/music-note-background-yellow.svg");
 }
 
 .hero {
   background-size: 29%;
   background-position: 94% 5%;
   margin-top: 30px;
+  background-color: #e5e5f9;
 }
 
 .about .about-content, .teaching .teaching-content {
@@ -53,7 +76,7 @@ a:focus, a:hover {
 .main-navigation header {
   background-color: #292932;
   padding: 20px 30px;
-  color: #cbeaf2;
+  color: #e5e5f9;
 }
 
 .main-navigation header h2 {
@@ -98,7 +121,7 @@ a:focus, a:hover {
 
 .secondary-navigation button {
   background-color: #292932;
-  color: #cbeaf2;
+  color: #e5e5f9;
   font-size: 15px;
   padding: 5px 10px;
   margin-top: 15px;
@@ -106,7 +129,7 @@ a:focus, a:hover {
   cursor: pointer;
   border-radius: 7px;
   box-shadow: 7px 7px 0 #292932;
-  border: 2px solid #cbeaf2;
+  border: 2px solid #e5e5f9;
   transition: 0.5s;
 }
 
@@ -163,7 +186,7 @@ a:focus, a:hover {
 }
 /* Hero */
 .hero {
-  background-image: url("../imgs/music-note-background-blue.svg");
+  background-image: url("../imgs/music-note-background-purple.svg");
   background-repeat: no-repeat;
   border: 7px solid #292932;
   display: grid;
@@ -226,13 +249,13 @@ a:focus, a:hover {
   max-width: 400px;
   margin: auto;
   position: relative;
-  outline: 7px solid #cbeaf2;
-  background-color: #cbeaf2;
+  outline: 7px solid #e5e5f9;
+  background-color: #e5e5f9;
 }
 
 .playbill-container .playbill header {
   background-color: #292932;
-  color: #cbeaf2;
+  color: #e5e5f9;
   padding: 20px;
   text-align: center;
 }
@@ -275,7 +298,7 @@ a:focus, a:hover {
 .playbill-container .playbill .terminal ul {
   list-style: none;
   padding: 0;
-  color: #cbeaf2;
+  color: #e5e5f9;
 }
 
 .playbill-container .playbill .terminal li {
@@ -284,7 +307,7 @@ a:focus, a:hover {
 }
 
 .terminal span {
-  background-color: #cbeaf2;
+  background-color: #e5e5f9;
   height: 17px;
   width: 8px;
   display: inline-block;
@@ -314,22 +337,15 @@ a:focus, a:hover {
   margin: auto;
 }
 
-.projects-wrapper, .project-wip {
+.projects-wrapper {
   display: grid;
   grid-template-rows: 1fr;
   grid-gap: 20px;
 }
 
-.project-wip {
-  margin-top: 20px;
-}
-
-.project-wip a {
-  text-decoration: underline;
-}
-
 .project {
   margin-bottom: 30px;
+  height: 100%;
 }
 
 .project:last-child {
@@ -340,15 +356,47 @@ a:focus, a:hover {
   border: 5px solid #292932;
   -webkit-box-shadow: 5px 5px 0 #292932;
   box-shadow: 9px 9px 0 #292932;
-  outline: 3px solid #cbeaf2;
   border-radius: 7px;
+  height: 100%;
+  position: relative;
+}
+
+.projects-logs .playbill {
+  outline: 3px solid #e7f7da;
+}
+
+.projects-musicals .playbill {
+  outline: 3px solid #cbeaf2;
+}
+
+.projects-fun .playbill {
+  outline: 3px solid #e5e5f9;
+}
+
+.projects-teaching .playbill {
+  outline: 3px solid #fae6e9;
 }
 
 .project .playbill header {
   background-color: #292932;
-  color: #cbeaf2;
   text-align: center;
   padding: 20px;
+}
+
+.projects-logs .playbill header {
+  color: #e7f7da;
+}
+
+.projects-musicals .playbill header {
+  color: #cbeaf2;
+}
+
+.projects-fun .playbill header {
+  color: #e5e5f9;
+}
+
+.projects-teaching .playbill header {
+  color: #fae6e9;
 }
 
 .project .playbill header h3 {
@@ -363,18 +411,38 @@ a:focus, a:hover {
 }
 
 .project .playbill .playbill-content {
-  padding: 20px;
+  padding: 20px 20px 70px 20px;
+}
+
+.project .playbill .playbill-links {
+  position: absolute;
+  bottom: 10px;
 }
 
 .project .playbill .playbill-content .playbill-links a {
   background-color: #292932;
-  color: #cbeaf2;
   -webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
   box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
   padding: 10px 20px;
   transition: 0.5s;
   display: inline-block;
   margin: 10px 0 20px 0;
+}
+
+.projects-logs .playbill .playbill-content .playbill-links a {
+  color: #e7f7da;
+}
+
+.projects-musicals .playbill .playbill-content .playbill-links a {
+  color: #cbeaf2;
+}
+
+.projects-fun .playbill .playbill-content .playbill-links a {
+  color: #e5e5f9;
+}
+
+.projects-teaching .playbill .playbill-content .playbill-links a {
+  color: #fae6e9;
 }
 
 .project .playbill .playbill-content .playbill-links a:hover {
@@ -390,10 +458,9 @@ a:focus, a:hover {
   margin: 30px auto;
   padding: 30px;
   border: 7px solid #292932;
-  background-color: #292932;
+  background-color: #faf9e6;
   color: #292932;
   box-shadow: 10px 10px 0 #292932;
-  outline: 3px solid #cbeaf2;
   border-radius: 7px 7px 0 7px;
 }
 
@@ -404,18 +471,18 @@ a:focus, a:hover {
 }
 
 .teaching-blocks .content-block {
-  border: 2px solid #cbeaf2;
-  -webkit-box-shadow: 5px 5px 0 #cbeaf2;
-  box-shadow: 9px 9px 0 #cbeaf2;
-  outline: 3px solid #292932;
+  border: 5px solid #292932;
+  -webkit-box-shadow: 5px 5px 0 #292932;
+  box-shadow: 9px 9px 0 #292932;
+  outline: 3px solid #faf9e6;
   border-radius: 7px;
-  background-color: #292932;
-  color: #cbeaf2;
+  background-color: #faf9e6;
+  color: #292932;
 }
 
 .teaching-blocks header, .teaching-resources header {
-  background-color: #cbeaf2;
-  color: #292932;
+  background-color: #292932;
+  color: #faf9e6;
   text-align: center;
   padding: 20px;
 }
@@ -424,23 +491,7 @@ a:focus, a:hover {
   margin: 0;
 }
 
-.teaching-resources {
-  margin-top: 40px;
-  display: grid;
-  border: 2px solid #cbeaf2;
-  -webkit-box-shadow: 5px 5px 0 #cbeaf2;
-  box-shadow: 9px 9px 0 #cbeaf2;
-  outline: 3px solid #292932;
-  border-radius: 7px;
-  background-color: #292932;
-  color: #cbeaf2;
-}
-
-.teaching-resources .teaching-description {
-  padding: 10px 20px;
-}
-
-.teaching-blocks header h4, .teaching-resources header h4 {
+.teaching-blocks header h4 {
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -450,16 +501,16 @@ a:focus, a:hover {
 }
 
 .teaching-blocks .teaching-description span {
-  background-color: #cbeaf2;
-  color: #292932;
+  background-color: #292932;
+  color: #faf9e6;
   padding: 0 5px;
 }
 
 .teaching-blocks .teaching-description a, .teaching-resources .teaching-description a {
-  background-color: #cbeaf2;
-  color: #292932;
-  -webkit-box-shadow: 5px 5px 0 rgba(229, 229, 249, 0.5);
-  box-shadow: 5px 5px 0 rgba(229, 229, 249, 0.5);
+  background-color: #292932;
+  color: #faf9e6;
+  -webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
+  box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
   padding: 10px 20px;
   transition: 0.5s;
   display: inline-block;
@@ -485,6 +536,9 @@ a:focus, a:hover {
   padding: 30px;
   box-shadow: 10px 10px 0 #292932;
   border-radius: 7px 7px 0 7px;
+  background-color: #292932;
+  outline: 3px solid white;
+  color: white;
 }
 
 .social-media-links ul {
@@ -506,8 +560,24 @@ a:focus, a:hover {
   transition: 0.5s;
 }
 
-.social-media-links a:hover {
-  color: rgba(41, 41, 50, 0.5);
+.social-media-links li:nth-child(1) a {
+  color: #e5e5f9;
+}
+
+.social-media-links li:nth-child(2) a {
+  color: #cbeaf2;
+}
+
+.social-media-links li:nth-child(3) a {
+  color: #faf9e6;
+}
+
+.social-media-links li:nth-child(4) a {
+  color: #e7f7da;
+}
+
+.social-media-links li a:hover {
+  color: white;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -582,7 +652,7 @@ a:focus, a:hover {
 
   .playbill-container .playbill {
     min-height: 480px;
-    background-color: #cbeaf2;
+    background-color: #e5e5f9;
   }
 
   .playbill-container .playbill .playbill-content {
@@ -606,7 +676,7 @@ a:focus, a:hover {
     content: "";
     height: 140px;
     width: 120px;
-    background-color: #8ed1e3;
+    background-color: #a7a7eb;
     z-index: 0;
     right: -30px;
     top: 200px;
@@ -618,8 +688,8 @@ a:focus, a:hover {
     content: "";
     height: 100px;
     width: 150px;
-    background-color: #cbeaf2;
-    border: 7px solid #a2dae8;
+    background-color: #e5e5f9;
+    border: 7px solid #bcbcef;
     z-index: 0;
     left: 10px;
     bottom: 30px;
