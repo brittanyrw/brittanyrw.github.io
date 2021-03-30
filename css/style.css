@@ -25,6 +25,10 @@ a:focus, a:hover {
   outline: 3px solid #292932;
 }
 
+.main-navigation a {
+  display: inline-block;
+}
+
 .projects h2, .teaching h2, .about h2 {
   font-size: 40px;
   margin: 0 0 20px 0;
@@ -87,7 +91,7 @@ a:focus, a:hover {
   padding: 20px;
 }
 
-.secondary-navigation a, .main-navigation a {
+.secondary-navigation a {
   display: block;
 }
 
@@ -96,12 +100,13 @@ a:focus, a:hover {
 }
 
 .secondary-navigation h3 {
-  font-size: 30px;
+  font-size: 50px;
   margin: 0;
 }
 
 .secondary-navigation p {
   margin: 5px 5px 20px 0;
+  font-size: 30px;
 }
 
 .secondary-navigation ul, .main-navigation ul {
@@ -142,6 +147,11 @@ a:focus, a:hover {
   padding-left: 30px;
   position: relative;
   padding: 5px 5px 5px 30px;
+}
+
+.main-navigation li {
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
 .secondary-navigation li:before, .main-navigation li:before {
@@ -574,6 +584,10 @@ a:focus, a:hover {
 
 .social-media-links li:nth-child(4) a {
   color: #e7f7da;
+}
+
+.social-media-links li:nth-child(5) a {
+  color: #fae6e9;
 }
 
 .social-media-links li a:hover {
