@@ -10,476 +10,475 @@ $black: #292932;
 /* GENERAL STYLES */
 
 * {
-    text-transform: lowercase;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  text-transform: lowercase;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 10px;
-	font-family: 'Inconsolata', monospace;
-	font-size: 21px;
-    color: $black;
+  margin: 10px;
+  font-family: "Inconsolata", monospace;
+  font-size: 21px;
+  color: $black;
+  @media screen and (min-width: 426px) {
+    margin: 25px;
+  }
 }
 
 a {
-    text-decoration: none;
-    outline: 7px solid transparent;
-    color: $black;
-}
+  text-decoration: none;
+  outline: 7px solid transparent;
+  color: $black;
 
-a:focus, a:hover {
+  &:focus,
+  &:hover {
     outline-offset: 3px;
     outline: 3px solid $black;
+  }
 }
 
-.main-navigation a {
-    display: inline-block;
-}
+/* NAVIGATION */
 
-.projects h2, .teaching h2, .about h2 {
-    font-size: 40px;
-    margin: 0 0 20px 0;
-}
-
-.projects-logs, .projects-musicals, .projects-fun, .projects-teaching, .teaching {
-    background-repeat: no-repeat;
-    background-position: 2% 0%;
-    background-size: 29%;
-}
-
-.projects-logs {
-    background-color: $green;
-    background-image: url('../imgs/music-note-background-green.svg');
-}
-
-.projects-musicals {
-    background-color: $blue;
-    background-image: url('../imgs/music-note-background-blue.svg');
-}
-
-.projects-teaching {
-    background-color: $pink;
-    background-image: url('../imgs/music-note-background-pink.svg');
-}
-
-.projects-fun {
-    background-color: $purple;
-    background-image: url('../imgs/music-note-background-purple.svg');
-}
-
-
-.teaching {
-    background-image: url('../imgs/music-note-background-yellow.svg');
-}
-
-.hero {
-    background-size: 29%;
-    background-position: 94% 5%;
-    margin-top: 30px;
-    background-color: $purple;
-}
-
-.about .about-content, .teaching .teaching-content {
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* Navigation */
-
-.main-navigation header {
-	background-color: $black;
-	padding: 20px 30px;
+.main-navigation {
+  header {
+    background-color: $black;
+    padding: 20px 30px;
     color: $purple;
-}
+    h2 {
+      margin: 0;
+    }
+  }
 
-.main-navigation header h2 {
-    margin: 0;
-}
-
-.main-navigation nav {
+  nav {
     padding: 20px;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        padding-left: 30px;
+        position: relative;
+        padding: 5px 5px 5px 30px;
+        font-size: 25px;
+        margin-bottom: 10px;
+        &:before {
+          position: absolute;
+          font-weight: bold;
+          color: $black;
+          content: "\266A";
+          left: 5px;
+          top: 5px;
+        }
+      }
+    }
+
+    a {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (min-width: 997px) {
+    grid-area: project-navigation;
+    border-right: 7px solid $black;
+  }
 }
 
-.secondary-navigation a { 
-    display: block;
-}
+.side-header {
+  padding: 20px;
 
-.secondary-navigation {
-    padding: 20px;
-}
-
-.secondary-navigation h3 {
+  h3 {
     font-size: 50px;
     margin: 0;
-}
+  }
 
-.secondary-navigation p {
+  p {
     margin: 5px 5px 20px 0;
     font-size: 30px;
-}
+  }
 
-.secondary-navigation ul, .main-navigation ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+  .me {
+    @media screen and (min-width: 997px) {
+      writing-mode: vertical-rl;
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      min-height: 200px;
+      position: absolute;
+      right: 25px;
+      top: 35px;
+    }
+  }
 
-.secondary-navigation li.color-scheme{
-   padding: 0;
-   text-align: center;
-}
+  @media all and (-ms-high-contrast: none) {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 3;
+    -ms-grid-col-span: 1;
+  }
 
-.secondary-navigation li.color-scheme:before {
-    display: none;
-}
-
-.secondary-navigation button {
-   background-color: $black;
-   color: $purple;
-   font-size: 15px;
-   padding: 5px 10px;
-   margin-top: 15px;
-   outline: 3px solid transparent;
-   cursor: pointer;
-   border-radius: 7px;
-   box-shadow: 7px 7px 0 $black;
-   border: 2px solid $purple;
-   transition: .5s;
-}
-
-.secondary-navigation button:hover {
-    box-shadow: 7px 7px 0 rgba(41, 41, 50, .9);
-    transition: .5s;
-}
-
-.secondary-navigation li, .main-navigation li {
-    padding-left: 30px;
+  @media screen and (min-width: 997px) {
+    grid-area: side-header;
+    padding: 20px;
+    border-left: 7px solid $black;
     position: relative;
-    padding: 5px 5px 5px 30px;
+    padding-top: 280px;
+  }
 }
 
-.main-navigation li {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
+/* HERO */
 
-.secondary-navigation li:before, .main-navigation li:before {
-    position: absolute;
-    font-weight: bold;
-    color: $black;
-    content: "\266A";
-    left: 5px;
-    top: 5px;
-}
+.hero {
+  background-size: 29%;
+  background-position: 94% 5%;
+  margin-top: 30px;
+  background-color: $purple;
+  background-image: url("../imgs/music-note-background-purple.svg");
+  background-repeat: no-repeat;
+  border: 7px solid $black;
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  box-shadow: 10px 10px 0 $black;
+  border-radius: 7px 7px 0 7px;
 
-@media all and (-ms-high-contrast:none) {
-    .grid-container {
-      display: -ms-grid;
-      -ms-grid-columns: 0.4fr 1fr 0.2fr;
-      -ms-grid-rows: 1fr;
+  @media screen and (min-width: 997px) {
+    grid-template-columns: 0.3fr 1fr 0.2fr;
+    grid-template-areas: "project-navigation hero-playbill side-header";
+    grid-template-rows: 1fr;
+    background-position: 25% 49%;
+    background-size: 49%;
+  }
+
+  .hero-playbill {
+    @media screen and (min-width: 997px) {
+      grid-area: hero-playbill;
     }
-  
-    .project-navigation {
-      -ms-grid-row: 1;
-      grid-row: 1;
-      -ms-grid-row-span: 1;
-      -ms-grid-col: 1;
-      -ms-grid-col-span: 1;
+    .marquee {
+      height: 35px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      padding: 0;
+      border-top: 7px solid $black;
+      border-bottom: 3px solid $black;
+      @media screen and (min-width: 997px) {
+        border-top: 0;
+        height: 30px;
+      }
+      .lyrics {
+        display: block;
+        width: 359%;
+        overflow: hidden;
+        -webkit-animation: marquee 40s linear infinite;
+        animation: marquee 40s linear infinite;
+        span {
+          display: inline;
+          font-size: 16px;
+          padding-left: 10px;
+        }
+      }
     }
-  
-    .hero-playbill {
+    @media all and (-ms-high-contrast: none) {
       -ms-grid-row: 1;
       grid-row: 1;
       -ms-grid-row-span: 1;
       -ms-grid-col: 2;
       -ms-grid-col-span: 1;
     }
-  
-    .secondary-navigation {
-      -ms-grid-row: 1;
-      grid-row: 1;
-      -ms-grid-row-span: 1;
-      -ms-grid-col: 3;
-      -ms-grid-col-span: 1;
-    }
-  
   }
+  .playbill-container {
+    padding: 40px 20px;
+    position: relative;
+    @media screen and (min-width: 997px) {
+      -webkit-transform: rotate(-7deg);
+      -ms-transform: rotate(-7deg);
+      transform: rotate(-7deg);
+    }
+    .playbill {
+      border: 7px solid $black;
+      -webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, 1);
+      box-shadow: 5px 5px 0 rgba(41, 41, 50, 1);
+      max-width: 400px;
+      margin: auto;
+      position: relative;
+      outline: 7px solid $purple;
+      background-color: $purple;
+      @media screen and (min-width: 997px) {
+        min-height: 480px;
+        background-color: $purple;
+      }
+      &:after {
+        @media screen and (min-width: 997px) {
+          position: absolute;
+          content: "";
+          height: 140px;
+          width: 120px;
+          background-color: darken($purple, 15%);
+          z-index: 0;
+          right: -30px;
+          top: 200px;
+          opacity: 0.5;
+        }
+      }
+      &:before {
+        @media screen and (min-width: 997px) {
+          position: absolute;
+          content: "";
+          height: 100px;
+          width: 150px;
+          background-color: $purple;
+          border: 7px solid darken($purple, 10%);
+          z-index: 0;
+          left: 10px;
+          bottom: 30px;
+        }
+      }
+      header {
+        background-color: $black;
+        color: $purple;
+        padding: 20px;
+        text-align: center;
+        h2,
+        h3 {
+          margin: 0;
+          text-transform: uppercase;
+        }
+        h2 {
+          font-size: 40px;
+        }
+        h3 {
+          font-weight: 400;
+          font-size: 20px;
+        }
+      }
+      .playbill-content {
+        padding: 10px;
+        @media screen and (min-width: 997px) {
+          padding: 0 10px 10px 40px;
+        }
 
-/* Hero */
-
-.hero {
-    background-image: url('../imgs/music-note-background-purple.svg');
-	background-repeat: no-repeat;
-    border: 7px solid $black;
-    display: grid;
-    grid-template-columns: 1fr;
-    overflow: hidden;
-    box-shadow: 10px 10px 0 $black;
-    border-radius: 7px 7px 0 7px;
-}
-
-.marquee .lyrics span {
-    display: inline;
-}
-
-.marquee {
-    height: 35px;
-    width: 100%;
-	overflow: hidden;
-	position: relative;
-    padding: 0;
-    border-top: 7px solid $black;
-    border-bottom: 3px solid $black;
-}
-
-.marquee .lyrics {
-    display: block;
-    width: 359%;
-    overflow: hidden;
-    -webkit-animation: marquee 40s linear infinite;
-    animation: marquee 40s linear infinite;
-}
-  
-.marquee span {
-font-size: 16px;
-padding-left: 10px;
+        h1 {
+          font-size: 70px;
+          margin: 15px 0;
+          text-align: center;
+          text-transform: uppercase;
+          @media screen and (min-width: 997px) {
+            text-align: left;
+          }
+        }
+      }
+      .terminal {
+        border: 5px solid $black;
+        border-radius: 5px;
+        width: 90%;
+        margin: 20px auto;
+        max-width: 300px;
+        padding: 10px;
+        background-color: $black;
+        @media screen and (min-width: 997px) {
+          position: absolute;
+          right: -15%;
+          bottom: 0%;
+          padding: 20px;
+          z-index: 999;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          color: $purple;
+          @media screen and (min-width: 997px) {
+            margin: 0;
+          }
+          li {
+            font-size: 14px;
+            margin: 2px auto;
+            @media screen and (min-width: 997px) {
+              margin-bottom: 5px;
+            }
+            span {
+              background-color: $purple;
+              height: 17px;
+              width: 8px;
+              display: inline-block;
+              -webkit-animation: blink 2s infinite;
+              animation: blink 2s infinite;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @keyframes marquee {
-    0% {
-        transform: translateX(0);
-        -moz-transform: translateX(0);
-        -o-transform: translateX(0);
-        -webkit-transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(-100%);
-        -moz-transform: translateX(-100%);
-        -o-transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-    }
-}
-
-.playbill-container {
-    padding: 40px 20px;
-    position: relative;
-}
-
-.playbill-container .playbill {
-    border: 7px solid $black;
-    -webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, 1);
-    box-shadow: 5px 5px 0 rgba(41, 41, 50, 1);
-    max-width: 400px;
-    margin: auto;
-    position: relative;
-    outline: 7px solid $purple;
-    background-color: $purple;
-}
-
-.playbill-container .playbill header {
-    background-color: $black;
-    color: $purple;
-    padding: 20px;
-    text-align: center;
-}
-
-.playbill-container .playbill .playbill-content {
-    padding: 10px;
-}
-
-.playbill-container .playbill header h2, .playbill-container .playbill header h3{
-    margin: 0;
-    text-transform: uppercase;
-}
-
-.playbill-container .playbill header h2 {
-    font-size: 40px;
-}
-
-.playbill-container .playbill header h3 {
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.playbill-container h1 {
-    font-size: 70px;
-    margin: 15px 0;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.playbill-container .playbill .terminal {
-    border: 5px solid $black;
-    border-radius: 5px;
-    width: 90%;
-    margin: 20px auto;
-    max-width: 300px;
-    padding: 10px;
-    background-color: $black;
-}
-
-.playbill-container .playbill .terminal ul {
-    list-style: none;
-    padding: 0;
-    color: $purple;
-}
-
-.playbill-container .playbill .terminal li {
-    font-size: 14px;
-    margin: 2px auto;
-}
-
-.terminal span {
-	background-color: $purple;
-	height: 17px;
-	width: 8px;
-	display: inline-block;
-	-webkit-animation: blink 2s infinite;
-	animation: blink 2s infinite;
+  100% {
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
 }
 
 @keyframes blink {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
 
-/* Projects */
+/* PROJECT SECTION */
 
 .projects {
-    border: 7px solid $black;
-    padding: 30px;
-    margin-top: 40px;
-    box-shadow: 10px 10px 0 $black;
-    border-radius: 7px 7px 0 0;
-}
-
-.project-container {
+  border: 7px solid $black;
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 10px 10px 0 $black;
+  border-radius: 7px 7px 0 0;
+  .project-container {
     max-width: 1000px;
     margin: auto;
-}
+    h2 {
+      font-size: 40px;
+      margin: 0 0 20px 0;
+    }
+    .projects-wrapper {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-gap: 20px;
+      @media screen and (min-width: 997px) {
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr;
+      }
+      .project {
+        margin-bottom: 30px;
+        height: 100%;
+        .playbill {
+          border: 5px solid $black;
+          -webkit-box-shadow: 5px 5px 0 $black;
+          box-shadow: 9px 9px 0 $black;
+          border-radius: 7px;
+          height: 100%;
+          position: relative;
+          header {
+            background-color: $black;
+            text-align: center;
+            padding: 20px;
+            h3 {
+              font-size: 30px;
+              margin: 0 0 10px 0;
+            }
+            p {
+              margin: 0;
+              font-size: 18px;
+              letter-spacing: 1.1px;
+            }
+          }
+          .playbill-content {
+            padding: 20px 20px 70px 20px;
+            .playbill-links {
+              position: absolute;
+              bottom: 10px;
+              a {
+                background-color: $black;
+                -webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
+                box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
+                padding: 10px 20px;
+                transition: 0.5s;
+                display: inline-block;
+                margin: 10px 0 20px 0;
+                &:hover {
+                  -webkit-box-shadow: none;
+                  box-shadow: none;
+                  -webkit-transition: 0.5s;
+                  -o-transition: 0.5s;
+                  transition: 0.5s;
+                }
+              }
+            }
+          }
+        }
+      }
+      .project:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 
-.projects-wrapper {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
-}
+  &.projects-logs,
+  &.projects-musicals,
+  &.projects-fun,
+  &.projects-teaching,
+  &.projects-workshops {
+    background-repeat: no-repeat;
+    background-position: 2% 0%;
+    background-size: 29%;
+  }
 
-.project {
-    margin-bottom: 30px;
-    height: 100%;
-}
-
-.project:last-child {
-    margin-bottom: 0;
-}
-
-.project .playbill {
-    border: 5px solid $black;
-    -webkit-box-shadow: 5px 5px 0 $black;
-    box-shadow: 9px 9px 0 $black;
-    border-radius: 7px;
-    height: 100%;
-    position: relative;
-}
-
-.projects-logs .playbill {
-    outline: 3px solid $green;
-}
-
-.projects-musicals .playbill {
-    outline: 3px solid $blue;
-} 
-
-.projects-fun .playbill {
-    outline: 3px solid $purple;
-} 
-
-.projects-teaching .playbill {
-    outline: 3px solid $pink;
-}
-
-.project .playbill header {
-    background-color: $black;
-    text-align: center;
-    padding: 20px;
-}
-
-.projects-logs .playbill header {
-    color: $green;
-}
-
-.projects-musicals .playbill header {
-    color: $blue;
-} 
-
-.projects-fun .playbill header {
-    color: $purple;
-} 
-
-.projects-teaching .playbill header {
-    color: $pink;
-}
-
-.project .playbill header h3 {
-    font-size: 30px;
-    margin: 0 0 10px 0;
-}
-
-.project .playbill header p {
-    margin: 0;
-    font-size: 18px;
-    letter-spacing: 1.1px;
-}
-
-.project .playbill .playbill-content {
-    padding: 20px 20px 70px 20px;
-}
-
-.project .playbill .playbill-links {
-    position: absolute;
-    bottom: 10px;
-}
-
-.project .playbill .playbill-content .playbill-links a {
-    background-color: $black;
-	-webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, .5);
-	box-shadow: 5px 5px 0 rgba(41, 41, 50, .5);
-	padding: 10px 20px;
-    transition: .5s;
-    display: inline-block;
-    margin: 10px 0 20px 0;
-}
-
-.projects-logs .playbill .playbill-content .playbill-links a {
-    color: $green;
-}
-
-.projects-musicals .playbill .playbill-content .playbill-links a {
-    color: $blue;
-} 
-
-.projects-fun .playbill .playbill-content .playbill-links a {
-    color: $purple;
-} 
-
-.projects-teaching .playbill .playbill-content .playbill-links a {
-    color: $pink;
-}
-
-.project .playbill .playbill-content .playbill-links a:hover {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-}
-
-
-/* Teaching */
-
-.teaching {
+  &.projects-logs {
+    background-color: $green;
+    background-image: url("../imgs/music-note-background-green.svg");
+    .playbill {
+      outline: 3px solid $green;
+      header {
+        color: $green;
+      }
+      .playbill-links a {
+        color: $green;
+      }
+    }
+  }
+  &.projects-musicals {
+    background-color: $blue;
+    background-image: url("../imgs/music-note-background-blue.svg");
+    .playbill {
+      outline: 3px solid $blue;
+      header {
+        color: $blue;
+      }
+      .playbill-links a {
+        color: $blue;
+      }
+    }
+  }
+  &.projects-fun {
+    background-color: $purple;
+    background-image: url("../imgs/music-note-background-purple.svg");
+    .playbill {
+      outline: 3px solid $purple;
+      header {
+        color: $purple;
+      }
+      .playbill-links a {
+        color: $purple;
+      }
+    }
+  }
+  &.projects-teaching {
+    background-color: $pink;
+    background-image: url("../imgs/music-note-background-pink.svg");
+    .playbill {
+      outline: 3px solid $pink;
+      header {
+        color: $pink;
+      }
+      .playbill-links a {
+        color: $pink;
+      }
+    }
+  }
+  &.projects-workshops {
+    background-color: $yellow;
+    background-image: url("../imgs/music-note-background-yellow.svg");
     margin: 30px auto;
     padding: 30px;
     border: 7px solid $black;
@@ -487,268 +486,142 @@ padding-left: 10px;
     color: $black;
     box-shadow: 10px 10px 0 $black;
     border-radius: 7px 7px 0 7px;
+    .workshops-content {
+      max-width: 1000px;
+      margin: auto;
+      .workshops-blocks {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        @media all and (-ms-high-contrast: none) {
+          display: -ms-grid;
+          -ms-grid-columns: 1fr 1fr 1fr;
+          -ms-grid-rows: 1fr;
+          -ms-grid-gap: 20px;
+        }
+        @media screen and (min-width: 997px) {
+          -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        .content-block {
+          border: 5px solid $black;
+          -webkit-box-shadow: 5px 5px 0 $black;
+          box-shadow: 9px 9px 0 $black;
+          outline: 3px solid $yellow;
+          border-radius: 7px;
+          background-color: $yellow;
+          color: $black;
+          header {
+            background-color: $black;
+            color: $yellow;
+            text-align: center;
+            padding: 20px;
+            h3,
+            h4 {
+              margin: 0;
+            }
+
+            h4 {
+              font-weight: normal;
+              text-transform: uppercase;
+            }
+          }
+          .workshops-description {
+            padding: 20px;
+            span {
+              background-color: $black;
+              color: $yellow;
+              padding: 0 5px;
+            }
+            a {
+              background-color: $black;
+              color: $yellow;
+              -webkit-box-shadow: 5px 5px 0 rgb(41, 41, 50, 50%);
+              box-shadow: 5px 5px 0 rgb(41, 41, 50, 50%);
+              padding: 10px 20px;
+              transition: 0.5s;
+              display: inline-block;
+              margin: 10px 0 20px 0;
+              &:focus {
+                outline: 7px solid $black;
+                outline-offset: 7px;
+              }
+
+              &:hover {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                -webkit-transition: 0.5s;
+                -o-transition: 0.5s;
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+      }
+    }
+    h2 {
+      font-size: 40px;
+      margin: 0 0 20px 0;
+    }
+  }
 }
 
-.teaching-blocks {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
-}
-
-.teaching-blocks .content-block {
-    border: 5px solid $black;
-    -webkit-box-shadow: 5px 5px 0 $black;
-    box-shadow: 9px 9px 0 $black;
-    outline: 3px solid $yellow;
-    border-radius: 7px;
-    background-color: $yellow;
-    color: $black;
-}
-
-.teaching-blocks header, .teaching-resources header {
-    background-color: $black;
-    color: $yellow;
-    text-align: center;
-    padding: 20px;
-}
-
-.teaching-blocks header h3, .teaching-blocks header h4, .teaching-resources header h3, .teaching-resources header h4 {
-    margin: 0;
-}
-
-.teaching-blocks header h4 {
-    font-weight: normal;
-    text-transform: uppercase;
-}
-
-.teaching-blocks .teaching-description {
-    padding: 20px;
-}
-
-.teaching-blocks .teaching-description span {
-    background-color: $black;
-    color: $yellow;
-    padding: 0 5px;
-}
-
-.teaching-blocks .teaching-description a, .teaching-resources .teaching-description a {
-    background-color: $black;
-	color: $yellow;
-	-webkit-box-shadow: 5px 5px 0 rgb(41, 41, 50, 50%);;
-	box-shadow: 5px 5px 0 rgb(41, 41, 50, 50%);;
-	padding: 10px 20px;
-    transition: .5s;
-    display: inline-block;
-    margin: 10px 0 20px 0;
-}
-
-.teaching-blocks .teaching-description a:focus, .teaching-resources .teaching-description a:focus {
-    outline: 7px solid $black;
-    outline-offset: 7px;
-}
-
-.teaching-blocks .teaching-description a:hover, .teaching-resources .teaching-description a:hover {
-	-webkit-box-shadow: none;
-	box-shadow: none;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-}
-
-/* About */
+/* ABOUT */
 
 .about {
-    border: 7px solid $black;
-    padding: 30px;
-    box-shadow: 10px 10px 0 $black;
-    border-radius: 7px 7px 0 7px;
-    background-color: $black;
-    outline: 3px solid white;
-    color: white;
-}
-
-.social-media-links ul{
-    list-style: none;
-    padding: 0;
-}
-
-.social-media-links li {
-    display: inline-block;
-}
-
-.social-media-links i {
-    font-size: 30px;
-}
-
-.social-media-links a {
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-}
-
-.social-media-links li:nth-child(1) a {
-    color: $purple;
-}
-
-.social-media-links li:nth-child(2) a {
-    color: $blue;
-}
-
-.social-media-links li:nth-child(3) a {
-    color: $yellow;
-}
-
-.social-media-links li:nth-child(4) a {
-    color: $green;
-}
-
-.social-media-links li:nth-child(5) a {
-    color: $pink;
-}
-
-.social-media-links li a:hover {
-    color: white;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-}
-
-
-
-@media all and (-ms-high-contrast:none) {
-    .teaching-blocks {
-      display: -ms-grid;
-      -ms-grid-columns: 1fr 1fr 1fr;
-      -ms-grid-rows: 1fr;
-      -ms-grid-gap: 20px;
+  border: 7px solid $black;
+  padding: 30px;
+  box-shadow: 10px 10px 0 $black;
+  border-radius: 7px 7px 0 7px;
+  background-color: $black;
+  outline: 3px solid white;
+  color: white;
+  .about-content {
+    max-width: 1000px;
+    margin: auto;
+    h2 {
+      font-size: 40px;
+      margin: 0 0 20px 0;
     }
-  
-  }
-
-  /* Media Queries */
-
-
-  @media screen and (min-width: 426px){
-      body {
-          margin: 25px;
+    .social-media-links {
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          display: inline-block;
+          &:hover {
+            color: orange;
+          }
+          a {
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            transition: 0.5s;
+            i {
+              font-size: 30px;
+            }
+            &:hover {
+              i {
+                color: white;
+              }
+            }
+          }
+        }
+        li:nth-child(1) a {
+          color: $purple;
+        }
+        li:nth-child(2) a {
+          color: $blue;
+        }
+        li:nth-child(3) a {
+          color: $yellow;
+        }
+        li:nth-child(4) a {
+          color: $green;
+        }
+        li:nth-child(5) a {
+          color: $pink;
+        }
       }
+    }
   }
-
-  @media screen and (min-width: 997px){
-    
-    .main-navigation{
-        grid-area: project-navigation;
-        border-right: 7px solid $black;
-    }
-    
-    .secondary-navigation {
-        grid-area: secondary-navigation;
-        padding: 20px;
-        border-left: 7px solid $black;
-        position: relative;
-        padding-top: 280px;
-    }
-
-    .secondary-navigation .me {
-        writing-mode: vertical-rl;
-        -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
-        min-height: 200px;
-        position: absolute;
-        right: 25px;
-        top: 35px;
-    }
-
-    .secondary-navigation button {
-        position: absolute;
-        bottom: 25px;
-    }
-    
-    .hero {
-        grid-template-columns: 0.3fr 1fr 0.2fr;
-        grid-template-areas: "project-navigation hero-playbill secondary-navigation";
-        grid-template-rows: 1fr;
-        background-position: 25% 49%;
-        background-size: 49%;
-    }
-    
-    .marquee {
-        border-top: 0;
-        height: 30px;
-    }
-
-    .hero-playbill {
-        grid-area: hero-playbill;
-    }
-    
-    .playbill-container {
-        -webkit-transform: rotate(-7deg);
-            -ms-transform: rotate(-7deg);
-                transform: rotate(-7deg);
-    }
-
-    .playbill-container .playbill {
-        min-height: 480px;
-        background-color: $purple;
-    }
-
-    .playbill-container .playbill .playbill-content {
-        padding: 0 10px 10px 40px;
-    }
-
-    .playbill-container .playbill-content h1 {
-        text-align: left;
-    }
-
-    .playbill-container .playbill .terminal {
-        position: absolute;
-        right: -15%;
-        bottom: 0%;
-        padding: 20px;
-        z-index: 999;
-    }
-
-    .playbill-container .playbill:after {
-        position: absolute;
-        content: '';
-        height: 140px;
-        width: 120px;
-        background-color: darken($purple,15%);
-        z-index: 0;
-        right: -30px;
-        top: 200px;
-        opacity: 0.5;
-    }
-
-    .playbill-container .playbill:before {
-        position: absolute;
-        content: '';
-        height: 100px;
-        width: 150px;
-        background-color: $purple;
-        border: 7px solid darken($purple,10%);
-        z-index: 0;
-        left: 10px;
-        bottom: 30px;
-    }
-
-    .playbill-container .playbill .terminal .terminal-content li {
-        margin-bottom: 5px;
-    }
-
-    .playbill-container .playbill .terminal ul {
-        margin: 0;
-    }
-
-    .projects-wrapper {
-        -ms-grid-columns: 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .teaching-blocks {
-        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    
 }
