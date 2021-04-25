@@ -495,7 +495,7 @@ a:focus, a:hover {
 @media all and (-ms-high-contrast: none) {
   .projects.projects-workshops .workshops-content .workshops-blocks {
     display: -ms-grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
     -ms-grid-rows: 1fr;
     -ms-grid-gap: 20px;
   }
@@ -503,7 +503,7 @@ a:focus, a:hover {
 @media screen and (min-width: 997px) {
   .projects.projects-workshops .workshops-content .workshops-blocks {
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 .projects.projects-workshops .workshops-content .workshops-blocks .content-block {
@@ -537,7 +537,10 @@ a:focus, a:hover {
   color: #faf9e6;
   padding: 0 5px;
 }
-.projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description a {
+.projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description h4 {
+  margin: 10px 0;
+}
+.projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description a.button {
   background-color: #292932;
   color: #faf9e6;
   -webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
@@ -547,16 +550,23 @@ a:focus, a:hover {
   display: inline-block;
   margin: 10px 0 20px 0;
 }
-.projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description a:focus {
+.projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description a.button:focus {
   outline: 7px solid #292932;
   outline-offset: 7px;
 }
-.projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description a:hover {
+.projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description a.button:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+.projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description ul {
+  padding: 0;
+  list-style: none;
+}
+.projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description ul a {
+  text-decoration: underline;
 }
 .projects.projects-workshops h2 {
   font-size: 40px;

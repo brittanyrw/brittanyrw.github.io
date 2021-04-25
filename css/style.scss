@@ -495,13 +495,13 @@ a {
         grid-gap: 20px;
         @media all and (-ms-high-contrast: none) {
           display: -ms-grid;
-          -ms-grid-columns: 1fr 1fr 1fr;
+          -ms-grid-columns: 1fr 1fr;
           -ms-grid-rows: 1fr;
           -ms-grid-gap: 20px;
         }
         @media screen and (min-width: 997px) {
           -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
         }
         .content-block {
           border: 5px solid $black;
@@ -533,7 +533,10 @@ a {
               color: $yellow;
               padding: 0 5px;
             }
-            a {
+            h4 {
+              margin: 10px 0;
+            }
+            a.button {
               background-color: $black;
               color: $yellow;
               -webkit-box-shadow: 5px 5px 0 rgb(41, 41, 50, 50%);
@@ -553,6 +556,13 @@ a {
                 -webkit-transition: 0.5s;
                 -o-transition: 0.5s;
                 transition: 0.5s;
+              }
+            }
+            ul {
+              padding: 0;
+              list-style: none;
+              a {
+                text-decoration: underline;
               }
             }
           }
