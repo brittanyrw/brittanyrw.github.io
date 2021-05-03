@@ -561,12 +561,14 @@ a:focus, a:hover {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description ul {
-  padding: 0;
-  list-style: none;
+.projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description ul li {
+  margin-bottom: 10px;
 }
 .projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description ul a {
   text-decoration: underline;
+}
+.projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description ul span {
+  margin-right: 10px;
 }
 .projects.projects-workshops h2 {
   font-size: 40px;

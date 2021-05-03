@@ -559,10 +559,14 @@ a {
               }
             }
             ul {
-              padding: 0;
-              list-style: none;
+              li {
+                margin-bottom: 10px;
+              }
               a {
                 text-decoration: underline;
+              }
+              span {
+                margin-right: 10px;
               }
             }
           }
