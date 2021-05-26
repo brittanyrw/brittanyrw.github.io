@@ -30,6 +30,9 @@ a:focus, a:hover {
 }
 
 /* NAVIGATION */
+.main-navigation {
+  position: relative;
+}
 .main-navigation header {
   background-color: #292932;
   padding: 20px 30px;
@@ -343,6 +346,8 @@ a:focus, a:hover {
   margin-top: 40px;
   box-shadow: 10px 10px 0 #292932;
   border-radius: 7px 7px 0 0;
+  position: relative;
+  overflow: hidden;
 }
 .projects .project-container {
   max-width: 1000px;
@@ -374,6 +379,7 @@ a:focus, a:hover {
   border-radius: 7px;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 .projects .project-container .projects-wrapper .project .playbill header {
   background-color: #292932;
@@ -628,6 +634,65 @@ a:focus, a:hover {
 }
 .about .about-content .social-media-links ul li:nth-child(5) a {
   color: #fae6e9;
+}
+
+.six, .wicked, .color-purple, .newsies, .heathers, .burr {
+  position: absolute;
+}
+
+.six {
+  bottom: 35px;
+  right: 233px;
+  width: 150px;
+}
+
+.wicked {
+  bottom: -29px;
+  height: 200px;
+  right: -7px;
+}
+
+.burr {
+  width: 120px;
+  bottom: -5px;
+  right: 18px;
+}
+
+.newsies {
+  top: 0;
+  left: -126px;
+  width: 400px;
+}
+
+.color-purple {
+  bottom: 0;
+  right: -31px;
+  height: 155px;
+}
+
+.heathers {
+  bottom: -18px;
+  width: 350px;
+  left: 28%;
+}
+
+.secret-code {
+  display: none;
+  bottom: -20px;
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 1200px) {
+  .secret-code {
+    display: block;
+  }
+}
+.musical-img {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

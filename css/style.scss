@@ -40,6 +40,7 @@ a {
 /* NAVIGATION */
 
 .main-navigation {
+  position: relative;
   header {
     background-color: $black;
     padding: 20px 30px;
@@ -344,6 +345,8 @@ a {
   margin-top: 40px;
   box-shadow: 10px 10px 0 $black;
   border-radius: 7px 7px 0 0;
+  position: relative;
+  overflow: hidden;
   .project-container {
     max-width: 1000px;
     margin: auto;
@@ -369,6 +372,7 @@ a {
           border-radius: 7px;
           height: 100%;
           position: relative;
+          overflow: hidden;
           header {
             background-color: $black;
             text-align: center;
@@ -638,4 +642,63 @@ a {
       }
     }
   }
+}
+
+.six, .wicked, .color-purple, .newsies, .heathers, .burr {
+  position: absolute;
+}
+
+.six {
+  bottom: 35px;
+  right: 233px;
+  width: 150px;
+}
+
+.wicked {
+  bottom: -29px;
+  height: 200px;
+  right: -7px;
+}
+
+.burr {
+  width: 120px;
+  bottom: -5px;
+  right: 18px;
+}
+
+.newsies {
+  top: 0;
+  left: -126px;
+  width: 400px;
+}
+
+.color-purple {
+  bottom: 0;
+  right: -31px;
+  height: 155px;
+}
+
+.heathers {
+  bottom: -18px;
+  width: 350px;
+  left: 28%;
+}
+
+.secret-code {
+  display: none;
+  bottom: -20px;
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 1200px){
+  .secret-code {
+    display: block;
+  }
+}
+.musical-img {
+  display: none;
 }
