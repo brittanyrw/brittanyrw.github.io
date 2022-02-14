@@ -614,6 +614,9 @@ a:focus, a:hover {
 .about .about-content .social-media-links ul li a:hover i {
   color: white;
 }
+.about .about-content .social-media-links ul li a img {
+  height: 24px;
+}
 .about .about-content .social-media-links ul li:nth-child(1) a {
   color: #e5e5f9;
 }
