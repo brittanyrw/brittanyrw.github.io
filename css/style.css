@@ -633,4 +633,11 @@ a:focus, a:hover {
   color: #fae6e9;
 }
 
+@media (prefers-reduced-motion) {
+  .hero .hero-playbill .marquee .lyrics, .hero .playbill-container .playbill .terminal ul li span {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

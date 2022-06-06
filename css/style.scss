@@ -642,3 +642,10 @@ a {
     }
   }
 }
+
+@media (prefers-reduced-motion) {
+  .hero .hero-playbill .marquee .lyrics, .hero .playbill-container .playbill .terminal ul li span {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
