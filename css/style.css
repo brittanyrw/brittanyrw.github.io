@@ -1,5 +1,16 @@
-@charset "UTF-8";
-/* COLORS */
+/* GENERAL STYLES */
+
+:root {
+  --purple: #e5e5f9;
+  --pink: #fae6e9;
+  --blue: #cbeaf2;
+  --green: #e7f7da;
+  --yellow: #faf9e6;
+  --black: #292932;
+  --black-7-border: 7px solid #292932;
+  --black-3-border: 3px solid var(--black);
+}
+
 /* GENERAL STYLES */
 * {
   text-transform: lowercase;
@@ -11,7 +22,7 @@ body {
   margin: 10px;
   font-family: "Inconsolata", monospace;
   font-size: 21px;
-  color: #292932;
+  color: var(--black);
 }
 @media screen and (min-width: 426px) {
   body {
@@ -22,18 +33,18 @@ body {
 a {
   text-decoration: none;
   outline: 7px solid transparent;
-  color: #292932;
+  color: var(--black);
 }
 a:focus, a:hover {
   outline-offset: 3px;
-  outline: 3px solid #292932;
+  outline: 3px solid var(--black);
 }
 
 /* NAVIGATION */
 .main-navigation header {
-  background-color: #292932;
+  background-color: var(--black);
   padding: 20px 30px;
-  color: #e5e5f9;
+  color: var(--purple);
 }
 .main-navigation header h2 {
   margin: 0;
@@ -56,7 +67,7 @@ a:focus, a:hover {
 .main-navigation nav ul li:before {
   position: absolute;
   font-weight: bold;
-  color: #292932;
+  color: var(--black);
   content: "♪";
   left: 5px;
   top: 5px;
@@ -67,7 +78,7 @@ a:focus, a:hover {
 @media screen and (min-width: 997px) {
   .main-navigation {
     grid-area: project-navigation;
-    border-right: 7px solid #292932;
+    border-right: 7px solid var(--black);
   }
 }
 
@@ -107,7 +118,7 @@ a:focus, a:hover {
   .side-header {
     grid-area: side-header;
     padding: 20px;
-    border-left: 7px solid #292932;
+    border-left: 7px solid var(--black);
     position: relative;
     padding-top: 280px;
   }
@@ -118,14 +129,14 @@ a:focus, a:hover {
   background-size: 29%;
   background-position: 94% 5%;
   margin-top: 30px;
-  background-color: #e5e5f9;
+  background-color: var(--purple);
   background-image: url("../imgs/music-note-background-purple.svg");
   background-repeat: no-repeat;
-  border: 7px solid #292932;
+  border: 7px solid var(--black);
   display: grid;
   grid-template-columns: 1fr;
   overflow: hidden;
-  box-shadow: 10px 10px 0 #292932;
+  box-shadow: 10px 10px 0 var(--black);
   border-radius: 7px 7px 0 7px;
 }
 @media screen and (min-width: 997px) {
@@ -148,8 +159,8 @@ a:focus, a:hover {
   overflow: hidden;
   position: relative;
   padding: 0;
-  border-top: 7px solid #292932;
-  border-bottom: 3px solid #292932;
+  border-top: 7px solid var(--black);
+  border-bottom: 3px solid var(--black);
 }
 @media screen and (min-width: 997px) {
   .hero .hero-playbill .marquee {
@@ -190,19 +201,19 @@ a:focus, a:hover {
   }
 }
 .hero .playbill-container .playbill {
-  border: 7px solid #292932;
-  -webkit-box-shadow: 5px 5px 0 #292932;
-  box-shadow: 5px 5px 0 #292932;
+  border: 7px solid var(--black);
+  -webkit-box-shadow: 5px 5px 0 var(--black);
+  box-shadow: 5px 5px 0 var(--black);
   max-width: 400px;
   margin: auto;
   position: relative;
-  outline: 7px solid #e5e5f9;
-  background-color: #e5e5f9;
+  outline: 7px solid var(--purple);
+  background-color: var(--purple);
 }
 @media screen and (min-width: 997px) {
   .hero .playbill-container .playbill {
     min-height: 480px;
-    background-color: #e5e5f9;
+    background-color: var(--purple);
   }
 }
 @media screen and (min-width: 997px) {
@@ -224,7 +235,7 @@ a:focus, a:hover {
     content: "";
     height: 100px;
     width: 150px;
-    background-color: #e5e5f9;
+    background-color: var(--purple);
     border: 7px solid #bcbcef;
     z-index: 0;
     left: 10px;
@@ -232,8 +243,8 @@ a:focus, a:hover {
   }
 }
 .hero .playbill-container .playbill header {
-  background-color: #292932;
-  color: #e5e5f9;
+  background-color: var(--black);
+  color: var(--purple);
   padding: 20px;
   text-align: center;
 }
@@ -269,13 +280,13 @@ a:focus, a:hover {
   }
 }
 .hero .playbill-container .playbill .terminal {
-  border: 5px solid #292932;
+  border: 5px solid var(--black);
   border-radius: 5px;
   width: 90%;
   margin: 20px auto;
   max-width: 300px;
   padding: 10px;
-  background-color: #292932;
+  background-color: var(--black);
 }
 @media screen and (min-width: 997px) {
   .hero .playbill-container .playbill .terminal {
@@ -289,7 +300,7 @@ a:focus, a:hover {
 .hero .playbill-container .playbill .terminal ul {
   list-style: none;
   padding: 0;
-  color: #e5e5f9;
+  color: var(--purple);
 }
 @media screen and (min-width: 997px) {
   .hero .playbill-container .playbill .terminal ul {
@@ -306,7 +317,7 @@ a:focus, a:hover {
   }
 }
 .hero .playbill-container .playbill .terminal ul li span {
-  background-color: #e5e5f9;
+  background-color: var(--purple);
   height: 17px;
   width: 8px;
   display: inline-block;
@@ -338,10 +349,10 @@ a:focus, a:hover {
 }
 /* PROJECT SECTION */
 .projects {
-  border: 7px solid #292932;
+  border: 7px solid var(--black);
   padding: 30px;
   margin-top: 40px;
-  box-shadow: 10px 10px 0 #292932;
+  box-shadow: 10px 10px 0 var(--black);
   border-radius: 7px 7px 0 0;
 }
 .projects .project-container {
@@ -368,15 +379,15 @@ a:focus, a:hover {
   height: 100%;
 }
 .projects .project-container .projects-wrapper .project .playbill {
-  border: 5px solid #292932;
-  -webkit-box-shadow: 5px 5px 0 #292932;
-  box-shadow: 9px 9px 0 #292932;
+  border: 5px solid var(--black);
+  -webkit-box-shadow: 5px 5px 0 var(--black);
+  box-shadow: 9px 9px 0 var(--black);
   border-radius: 7px;
   height: 100%;
   position: relative;
 }
 .projects .project-container .projects-wrapper .project .playbill header {
-  background-color: #292932;
+  background-color: var(--black);
   text-align: center;
   padding: 20px;
 }
@@ -397,7 +408,7 @@ a:focus, a:hover {
   bottom: 10px;
 }
 .projects .project-container .projects-wrapper .project .playbill .playbill-content .playbill-links a {
-  background-color: #292932;
+  background-color: var(--black);
   -webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
   box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
   padding: 10px 20px;
@@ -421,66 +432,66 @@ a:focus, a:hover {
   background-size: 29%;
 }
 .projects.projects-logs {
-  background-color: #e7f7da;
+  background-color: var(--green);
   background-image: url("../imgs/music-note-background-green.svg");
 }
 .projects.projects-logs .playbill {
-  outline: 3px solid #e7f7da;
+  outline: 3px solid var(--green);
 }
 .projects.projects-logs .playbill header {
-  color: #e7f7da;
+  color: var(--green);
 }
 .projects.projects-logs .playbill .playbill-links a {
-  color: #e7f7da;
+  color: var(--green);
 }
 .projects.projects-musicals {
-  background-color: #cbeaf2;
+  background-color: var(--blue);
   background-image: url("../imgs/music-note-background-blue.svg");
 }
 .projects.projects-musicals .playbill {
-  outline: 3px solid #cbeaf2;
+  outline: 3px solid var(--blue);
 }
 .projects.projects-musicals .playbill header {
-  color: #cbeaf2;
+  color: var(--blue);
 }
 .projects.projects-musicals .playbill .playbill-links a {
-  color: #cbeaf2;
+  color: var(--blue);
 }
 .projects.projects-fun {
-  background-color: #e5e5f9;
+  background-color: var(--purple);
   background-image: url("../imgs/music-note-background-purple.svg");
 }
 .projects.projects-fun .playbill {
-  outline: 3px solid #e5e5f9;
+  outline: 3px solid var(--purple);
 }
 .projects.projects-fun .playbill header {
-  color: #e5e5f9;
+  color: var(--purple);
 }
 .projects.projects-fun .playbill .playbill-links a {
-  color: #e5e5f9;
+  color: var(--purple);
 }
 .projects.projects-teaching {
-  background-color: #fae6e9;
+  background-color: var(--pink);
   background-image: url("../imgs/music-note-background-pink.svg");
 }
 .projects.projects-teaching .playbill {
-  outline: 3px solid #fae6e9;
+  outline: 3px solid var(--pink);
 }
 .projects.projects-teaching .playbill header {
-  color: #fae6e9;
+  color: var(--pink);
 }
 .projects.projects-teaching .playbill .playbill-links a {
-  color: #fae6e9;
+  color: var(--pink);
 }
 .projects.projects-workshops {
-  background-color: #faf9e6;
+  background-color: var(--yellow);
   background-image: url("../imgs/music-note-background-yellow.svg");
   margin: 30px auto;
   padding: 30px;
-  border: 7px solid #292932;
-  background-color: #faf9e6;
-  color: #292932;
-  box-shadow: 10px 10px 0 #292932;
+  border: 7px solid var(--black);
+  background-color: var(--yellow);
+  color: var(--black);
+  box-shadow: 10px 10px 0 var(--black);
   border-radius: 7px 7px 0 7px;
 }
 .projects.projects-workshops .workshops-content {
@@ -507,17 +518,17 @@ a:focus, a:hover {
   }
 }
 .projects.projects-workshops .workshops-content .workshops-blocks .content-block {
-  border: 5px solid #292932;
-  -webkit-box-shadow: 5px 5px 0 #292932;
-  box-shadow: 9px 9px 0 #292932;
-  outline: 3px solid #faf9e6;
+  border: 5px solid var(--black);
+  -webkit-box-shadow: 5px 5px 0 var(--black);
+  box-shadow: 9px 9px 0 var(--black);
+  outline: 3px solid var(--yellow);
   border-radius: 7px;
-  background-color: #faf9e6;
-  color: #292932;
+  background-color: var(--yellow);
+  color: var(--black);
 }
 .projects.projects-workshops .workshops-content .workshops-blocks .content-block header {
-  background-color: #292932;
-  color: #faf9e6;
+  background-color: var(--black);
+  color: var(--yellow);
   text-align: center;
   padding: 20px;
 }
@@ -533,16 +544,16 @@ a:focus, a:hover {
   padding: 20px;
 }
 .projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description span {
-  background-color: #292932;
-  color: #faf9e6;
+  background-color: var(--black);
+  color: var(--yellow);
   padding: 0 5px;
 }
 .projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description h4 {
   margin: 10px 0;
 }
 .projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description a.button {
-  background-color: #292932;
-  color: #faf9e6;
+  background-color: var(--black);
+  color: var(--yellow);
   -webkit-box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
   box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
   padding: 10px 20px;
@@ -551,7 +562,7 @@ a:focus, a:hover {
   margin: 10px 0 20px 0;
 }
 .projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description a.button:focus {
-  outline: 7px solid #292932;
+  outline: 7px solid var(--black);
   outline-offset: 7px;
 }
 .projects.projects-workshops .workshops-content .workshops-blocks .content-block .workshops-description a.button:hover {
@@ -577,11 +588,11 @@ a:focus, a:hover {
 
 /* ABOUT */
 .about {
-  border: 7px solid #292932;
+  border: 7px solid var(--black);
   padding: 30px;
-  box-shadow: 10px 10px 0 #292932;
+  box-shadow: 10px 10px 0 var(--black);
   border-radius: 7px 7px 0 7px;
-  background-color: #292932;
+  background-color: var(--black);
   outline: 3px solid white;
   color: white;
 }
@@ -618,19 +629,19 @@ a:focus, a:hover {
   height: 24px;
 }
 .about .about-content .social-media-links ul li:nth-child(1) a {
-  color: #e5e5f9;
+  color: var(--purple);
 }
 .about .about-content .social-media-links ul li:nth-child(2) a {
-  color: #cbeaf2;
+  color: var(--blue);
 }
 .about .about-content .social-media-links ul li:nth-child(3) a {
-  color: #faf9e6;
+  color: var(--yellow);
 }
 .about .about-content .social-media-links ul li:nth-child(4) a {
-  color: #e7f7da;
+  color: var(--green);
 }
 .about .about-content .social-media-links ul li:nth-child(5) a {
-  color: #fae6e9;
+  color: var(--pink);
 }
 
 @media (prefers-reduced-motion) {
