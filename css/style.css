@@ -368,6 +368,10 @@ a:focus, a:hover {
   max-width: 1000px;
   margin: auto;
 }
+
+#videos .project-container {
+  max-width: 1200px;
+}
 .projects .project-container h2 {
   font-size: 40px;
   margin: 0 0 20px 0;
@@ -381,6 +385,10 @@ a:focus, a:hover {
   .projects .project-container .projects-wrapper {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+
+  #videos .projects .project-container .projects-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .projects .project-container .projects-wrapper .project {
