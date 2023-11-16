@@ -386,10 +386,6 @@ a:focus, a:hover {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
-
-  #videos .projects .project-container .projects-wrapper {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 .projects .project-container .projects-wrapper .project {
   margin-bottom: 30px;
