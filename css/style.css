@@ -348,12 +348,21 @@ a:focus, a:hover {
   }
 }
 /* PROJECT SECTION */
+
+.playbill-image {
+  width: 100%;
+}
+
 .projects {
   border: 7px solid var(--black);
   padding: 30px;
   margin-top: 40px;
   box-shadow: 10px 10px 0 var(--black);
   border-radius: 7px 7px 0 0;
+}
+
+#videos .playbill-content {
+  padding: 20px;
 }
 .projects .project-container {
   max-width: 1000px;
