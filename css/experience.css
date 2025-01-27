@@ -8,9 +8,10 @@
 
 .experience .projects .project-container .projects-wrapper .project .playbill .playbill-content img {
     width: 100%;
+    border-bottom: 3px solid var(--black);
 }
 
-.experience #events .playbill-links, .experience #workshops .playbill-links, .experience #videos .playbill-links {
+.experience #talks .playbill-links, .experience #workshops .playbill-links, .experience #videos .playbill-links {
     position: relative;
     margin: 20px 20px 0 20px;
 }
