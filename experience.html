@@ -34,8 +34,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/experience.css" />
   </head>
-  <body id="body">
+  <body id="body" class="experience">
     <section class="hero">
       <section class="side-header">
         <div class="me">
@@ -104,11 +105,11 @@
         </header>
         <nav>
           <ul>
-            <li><a href="/#videos">videos</a></li>
-            <li><a href="/#workshops">workshops</a></li>
-            <li><a href="/#writing">writing</a></li>
-            <li><a href="/#events">events</a></li>
-            <li><a href="/#other">other</a></li>
+            <li><a href="/experience#videos">videos</a></li>
+            <li><a href="/experience#workshops">workshops</a></li>
+            <li><a href="/experience#writing">writing</a></li>
+            <li><a href="/experience#events">events</a></li>
+            <li><a href="/experience#other">other</a></li>
           </ul>
         </nav>
       </section>
@@ -120,30 +121,72 @@
           <div class="project">
             <div class="playbill">
               <header>
-                <h3>Law & Order: Broadway</h3>
-                <p>data visualization</p>
+                <h3>Create your Dream Portfolio</h3>
+                <p>Codebar</p>
               </header>
               <div class="playbill-content">
                 <div class="terminal">
                   <div class="terminal-content">
-                    <p>
-                      Data visualization showing how Broadway actors have been involved in the Law & Order franchise.
-                    </p>
-                    <ul>
-                      <li>Built with: Vue.js, MongoDB</li>
-                    </ul>
+                    <img src="/imgs/codebar.jpg" />
                   </div>
                 </div>
                 <div class="playbill-links">
                   <a
-                    href="https://lawandorderbroadway.com/"
+                    href="https://www.youtube.com/watch?v=cLXClnuxrbA"
                     target="_blank"
-                    >Website</a
+                    >Youtube</a
+                  >
+                  <a href="https://lawandorderbroadway.com/" target="_blank"
+                    >Slides</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="playbill">
+              <header>
+                <h3>Musical Intro to Contentful</h3>
+                <p>RenderATL</p>
+              </header>
+              <div class="playbill-content">
+                <div class="terminal">
+                  <div class="terminal-content">
+                    <img src="/imgs/musicalintroworkshop.png" />
+                  </div>
+                </div>
+                <div class="playbill-links">
+                  <a
+                    href="https://docs.google.com/presentation/d/1ItjxX-3fvLxtb5tD3Q1yAusrX6w_xB1kKskWYtiDLso/edit?usp=sharing
+                    "
+                    target="_blank"
+                    >Slides</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="playbill">
+              <header>
+                <h3>Intro to Git & GitHub Workshop</h3>
+                <p>Various DC meetups</p>
+              </header>
+              <div class="playbill-content">
+                <div class="terminal">
+                  <div class="terminal-content">
+                    <img src="/imgs/gitworkshop.png" />
+                  </div>
+                </div>
+                <div class="playbill-links">
+                  <a href="https://github.com/brittanyrw/git" target="_blank"
+                    >GitHub</a
                   >
                   <a
-                    href="https://github.com/brittanyrw/law-and-order-broadway-edition"
+                    href="https://docs.google.com/presentation/d/12vEMSEoO95UNabwHH7Hi7sbKTEHXRTj2KaEmXTiMwyg/edit?usp=sharing
+                    "
                     target="_blank"
-                    >Code</a
+                    >Slides</a
                   >
                 </div>
               </div>
@@ -152,217 +195,285 @@
         </div>
       </section>
     </section>
-    <section class="projects projects-fun" id="writing">
-      <section class="project-container">
+    <section class="projects projects-workshops" id="writing">
+      <div class="workshops-content">
         <h2>Writing</h2>
-        <div class="projects-wrapper">
-          <div class="project">
-            <div class="playbill">
-              <header>
-                <h3>Millennials Slay</h3>
-                <p>Industries millennials have 'killed'.</p>
-              </header>
-              <div class="playbill-content">
-                <div class="terminal">
-                  <div class="terminal-content">
-                    <p>
-                      A directory of industries, traditions and products that millennials have supposedly killed over the years.
-                    </p>
-                    <ul>
-                      <li>Built with: Vue.js.</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="playbill-links">
+        <div class="workshops-blocks">
+          <div class="content-block">
+            <header>
+              <h3>Developer Relations</h3>
+              <h4>Blog Posts</h4>
+            </header>
+            <div class="workshops-description">
+              <p>Collection of blog posts and articles.</p>
+              <ul>
+                <li>
+                  <span>Contentful:</span>Monthly Developer Newsletter
+                  (2021-2025)
+                  <p>
+                    examples:
+                    <a href="/imgs/nov-dev-newsletter.pdf" target="_blank"
+                      >one</a
+                    >
+                    <a href="/imgs/sep-dev-newsletter.pdf" target="_blank"
+                      >two</a
+                    >
+                    <a
+                      href="https://www.contentful.com/blog/dev-newsletter-january-2023/"
+                      target="_blank"
+                      >three</a
+                    >
+                  </p>
+                </li>
+                <li>
                   <a
-                    href="https://millennialslay.lol/"
+                    href="https://www.contentful.com/blog/graphql-tools-for-getting-started-with-contentful/"
                     target="_blank"
-                    >Website</a
+                    ><span>Contentful:</span>GraphQL tools for getting started
+                    with Contentful</a
                   >
-                </div>
-              </div>
+                </li>
+                <li>
+                  <a
+                    href="https://dev.to/musicalwebdev/how-to-build-a-project-using-vue-js-and-contentful-29gg"
+                    target="_blank"
+                    ><span>Contentful:</span>How to build a project using Vue.js
+                    and Contentful</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://dev.to/contentful/i-joined-the-contentful-developer-relations-team-3ne6"
+                    target="_blank"
+                    ><span>Contentful:</span>I Joined the Contentful Developer
+                    Relations Team</a
+                  >
+                </li>
+              </ul>
             </div>
-          </div>          
+          </div>
+          <div class="content-block">
+            <header>
+              <h3>Other</h3>
+              <h4>Blog Posts & More</h4>
+            </header>
+            <div class="workshops-description">
+              <ul>
+                <li>
+                  <a
+                    href="https://powertofly.com/up/the-art-of-public-speaking"
+                    target="_blank"
+                    ><span>Power to Fly:</span>Master the art of public speaking
+                    (2024)</a
+                  >
+                </li>
+                <li>
+                  <a href="https://medium.com/@brittanyrw" target="_blank"
+                    ><span>Medium:</span>100 Days of Code (2017)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </section>
     <section class="projects projects-teaching" id="events">
       <section class="project-container">
-        <h2>Events & Talks</h2>
+        <h2>Talks & Podcasts</h2>
         <div class="projects-wrapper">
           <div class="project">
             <div class="playbill">
               <header>
-                <h3>EmojiScreen</h3>
-                <p>Open Source Project</p>
+                <h3>Mixing DevRel and Community</h3>
+                <p>Certified Fresh Events</p>
               </header>
               <div class="playbill-content">
                 <div class="terminal">
                   <div class="terminal-content">
-                    <p>
-                      EmojiScreen is a listing of movies, TV shows and musicals
-                      depicted through emojis.
-                    </p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qc7Cx7nBITA?si=qWPKsBC7KCkLM1uW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img src="/imgs/cfe.jpg" />
+                    <div class="playbill-links">
+                      <a
+                        href="https://www.youtube.com/watch?v=qc7Cx7nBITA"
+                        target="_blank"
+                        >Youtube</a
+                      >
+                    </div>
                   </div>
-                </div>
-                <div class="playbill-links">
-                  <a href="https://emojiscreen.com/" target="_blank">Website</a>
-                  <a
-                    href="https://github.com/brittanyrw/emojiscreen"
-                    target="_blank"
-                    >Code</a
-                  >
                 </div>
               </div>
             </div>
           </div>
+          <div class="project">
+            <div class="playbill">
+              <header>
+                <h3>EmojiScreen and Hacktoberfest</h3>
+                <p>GitHub Education</p>
+              </header>
+              <div class="playbill-content">
+                <div class="terminal">
+                  <div class="terminal-content">
+                    <img src="/imgs/github.png" />
+                    <div class="playbill-links">
+                      <a
+                        href="https://www.twitch.tv/videos/1944147198"
+                        target="_blank"
+                        >Twitch</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="playbill">
+              <header>
+                <h3>Women of Jamstack podcast</h3>
+                <p>CodingCatDev</p>
+              </header>
+              <div class="playbill-content">
+                <div class="terminal">
+                  <div class="terminal-content">
+                    <img src="/imgs/jamstack.png" />
+                    <div class="playbill-links">
+                      <a
+                        href="https://www.youtube.com/watch?v=NoxddRpApOs"
+                        target="_blank"
+                        >Youtube</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="project">
+            <div class="playbill">
+              <header>
+                <h3>Contentful - A Headless CMS</h3>
+                <p>VueJS Forge</p>
+              </header>
+              <div class="playbill-content">
+                <div class="terminal">
+                  <div class="terminal-content">
+                    <img src="/imgs/vuejsforge.png" />
+                    <div class="playbill-links">
+                      <a
+                        href="https://www.youtube.com/watch?v=oeD7ig8bzHU"
+                        target="_blank"
+                        >Youtube</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="playbill">
+              <header>
+                <h3>Engineering at Contentful</h3>
+                <p>Contentful</p>
+              </header>
+              <div class="playbill-content">
+                <div class="terminal">
+                  <div class="terminal-content">
+                    <img src="/imgs/engineering.png" />
+                    <div class="playbill-links">
+                      <a
+                        href="https://www.youtube.com/watch?v=oeD7ig8bzHU"
+                        target="_blank"
+                        >Youtube</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>                              
         </div>
       </section>
     </section>
     <section class="projects projects-logs" id="videos">
-        <section class="project-container">
-          <h2>Videos</h2>
-          <div class="projects-wrapper">
-            <div class="project">
-              <div class="playbill">
-                <header>
-                  <h3>Theater Log</h3>
-                  <p>Theater Show Tracker</p>
-                </header>
-                <div class="playbill-content">
-                  <div class="terminal">
-                    <div class="terminal-content">
-                      <p>
-                        Theater Log is a personal musical and play tracker,
-                        documenting every show I have seen live since 2010.
-                      </p>
-                      <video controls width="100%">
-                        <source src="/imgs/vue-starter.mp4" type="video/mp4" />
-                      
-                        Download the
-                        <a href="/imgs/vue-starter.mp4">MP4</a>
-                        video.
-                      </video>
-                    </div>
+      <section class="project-container">
+        <h2>Videos</h2>
+        <div class="projects-wrapper">
+          <div class="project">
+            <div class="playbill">
+              <header>
+                <h3>Vue Starter Project</h3>
+                <p>Contentful</p>
+              </header>
+              <div class="playbill-content">
+                <div class="terminal">
+                  <div class="terminal-content">
+                    <video controls width="100%">
+                      <source src="/imgs/vue-starter.mp4" type="video/mp4" />
                   </div>
-                  <div class="playbill-links">
-                    <a href="https://theaterlog.com" target="_blank">Vue Starter Guide</a>
-                    <a
-                      href="https://github.com/brittanyrw/theaterlog"
-                      target="_blank"
-                      >Code</a
-                    >
+                </div>
+                <div class="playbill-links">
+                  <a href="https://theaterlog.com" target="_blank"
+                    >website</a
+                  >
+                  <a
+                    href="https://github.com/brittanyrw/theaterlog"
+                    target="_blank"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="playbill">
+              <header>
+                <h3>Marketing Template</h3>
+                <p>Contentful</p>
+              </header>
+              <div class="playbill-content">
+                <div class="terminal">
+                  <div class="terminal-content">
+                    <video controls width="100%">
+                        <source
+                          src="/imgs/startertemplate-marketing.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- <video controls width="100%" controls poster=
-            "/imgs/homepage.gif"> -->
-            <div class="project">
-              <video controls width="100%">
-                  <source src="/imgs/startertemplate-marketing.mp4" type="video/mp4" />
-                
-                  Download the
-                  <a href="/imgs/startertemplate-marketing.mp4">MP4</a>
-                  video.
-                </video>
-            </div>
-            <div class="project">
-              <video controls width="100%">
-                  <source src="/imgs/contentful-nextjs.mp4" type="video/mp4" />
-                
-                  Download the
-                  <a href="/imgs/contentful-nextjs.mp4">MP4</a>
-                  video.
-                </video>
-            </div>
-            <div class="project">
-              <video controls width="100%">
-                  <source src="/imgs/contentful-gatsby.mp4" type="video/mp4" />
-                
-                  Download the
-                  <a href="/imgs/contentful-gatsby.mp4">MP4</a>
-                  video.
-                </video>
-            </div>
-            <div class="project">
-              <video controls width="100%">
-                  <source src="/imgs/developer-showcase.mp4" type="video/mp4" />
-                
-                  Download the
-                  <a href="/imgs/developer-showcase.mp4">MP4</a>
-                  video.
-                </video>
-            </div>
-            <div class="project">
-              <video controls width="100%">
-                  <source src="/imgs/algolia-webinar.mp4" type="video/mp4" />
-                
-                  Download the
-                  <a href="/imgs/algolia-webinar.mp4">MP4</a>
-                  video.
-                </video>
-            </div>
-            <div class="project">
-              <video controls width="100%">
-                  <source src="/imgs/vercel-webinar.mp4" type="video/mp4" />
-                
-                  Download the
-                  <a href="/imgs/vercel-webinar.mp4">MP4</a>
-                  video.
-                </video>
-            </div>                                                                                         
           </div>
-        </section>
+          <div class="project">
+            <div class="playbill">
+              <header>
+                <h3>Next.js Starter</h3>
+                <p>Contentful</p>
+              </header>
+              <div class="playbill-content">
+                <div class="terminal">
+                  <div class="terminal-content">
+                    <video controls width="100%">
+                        <source src="/imgs/contentful-nextjs.mp4" type="video/mp4" />
+                      </video>
+                  </div>
+                </div>
+                <div class="playbill-links">
+                  <a href="https://www.contentful.com/nextjs-starter/" target="_blank"
+                    >website</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>                    
+        </div>
       </section>
+    </section>
     <section class="projects projects-workshops" id="other">
       <div class="workshops-content">
-        <h2>Other</h2>
+        <h2>Writing</h2>
         <div class="workshops-blocks">
-          <div class="content-block">
-            <header>
-              <h3>Women Who Code DC</h3>
-              <h4>Front-End Lead</h4>
-            </header>
-            <div class="workshops-description">
-              <div class="content-wrapper">
-                <p>
-                  Worked in a team of five to host and teach
-                  <span>two front-end web development meetups per month</span> in
-                  the DC area with a focus of supporting women and non-binary
-                  people in tech.
-                </p>    
-              </div>
-              <h4>Workshops</h4>
-              <ul>
-                <li>
-                  <span>2020:</span>Intro to Git & GitHub: Make Your First Pull Request
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="content-block">
-            <header>
-              <h3>Various Conferences</h3>
-              <h4>Workshop Instructor</h4>
-            </header>
-            <div class="workshops-description">
-              <p>List of workhops I have taught at different conferences.</p>
-              <h4>Workshops</h4>
-              <ul>
-                <li>
-                  <a href="https://github.com/brittanyrw/git"><span>2021:</span>Intro to Git and GitHub</a>
-                </li>
-                <li>
-                  <a href="https://github.com/brittanyrw/Build-a-Game-With-JavaScript"><span>2017:</span>Build a Game with JavaScript Workshop</a>
-                </li>
-                <li>
-                  <a href="https://github.com/brittanyrw/year-in-music"><span>2022, 2023 & 2024:</span>A Musical Introduction to Content Management</a>
-                </li>
-              </ul>
-            </div>
-          </div>
           <div class="content-block">
             <header>
               <h3>Thinkful Workshops</h3>
@@ -382,22 +493,64 @@
                 <li>Intro to ES6</li>
               </ul>
             </div>
-          </div>  
+          </div>
           <div class="content-block">
             <header>
-              <h3>Writing</h3>
-              <h4>Blog Posts & More</h4>
+              <h3>Other</h3>
+              <h4>Webinars & Other Content</h4>
             </header>
             <div class="workshops-description">
-              <p>Collection of blog posts and articles.</p>
               <ul>
-                <li><a href="https://www.contentful.com/blog/tag/developer-newsletter/" target="_blank"><span>Contentful:</span>Monthly Developer Newsletter (2021-2025)</a></li>                  
-                <li><a href="https://dev.to/musicalwebdev/how-to-build-a-project-using-vue-js-and-contentful-29gg" target="_blank"><span>Contentful:</span>How to build a project using Vue.js and Contentful (2021)</a></li>                
-                <li><a href="https://dev.to/contentful/i-joined-the-contentful-developer-relations-team-3ne6" target="_blank"><span>Contentful:</span>I Joined the Contentful Developer Relations Team (2021)</a></li>                
-                <li><a href="https://medium.com/@brittanyrw" target="_blank"><span>Medium:</span>100 Days of Code (2017)</a></li>
+                <li>
+                    <a href="/imgs/graphql-cheat-sheet.pdf" target="_blank"><span>Contentful:</span>GraphQL Cheet Sheet</a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.contentful.com/resources/building-an-ecommerce-front-end-with-algolia-and-contentful/"
+                    target="_blank"
+                    ><span>Contentful:</span>Building an ecommerce front-end
+                    with Algolia and Contentful</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.contentful.com/resources/accelerate-site-speed-with-contentful-vercel/"
+                    target="_blank"
+                    ><span>Contentful:</span>Accelerate site speed with
+                    Contentful and Vercel</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/brittanyrw/Build-a-Game-With-JavaScript"
+                    ><span>2017:</span>Build a Game with JavaScript Workshop</a
+                  >
+                </li>
               </ul>
             </div>
-          </div>        
+          </div>
+          <div class="content-block">
+            <header>
+              <h3>Women Who Code DC</h3>
+              <h4>Front-End Lead</h4>
+            </header>
+            <div class="workshops-description">
+              <div class="content-wrapper">
+                <p>
+                  Worked in a team of five to host and teach
+                  <span>two front-end web development meetups per month</span>
+                  in the DC area.
+                </p>
+              </div>
+              <h4>Workshops</h4>
+              <ul>
+                <li>
+                  <span>2020:</span>Intro to Git & GitHub: Make Your First Pull
+                  Request
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
