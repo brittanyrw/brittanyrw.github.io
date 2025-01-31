@@ -1,0 +1,687 @@
+/* colors */
+:root {
+  --purple: #e5e5f9;
+  --pink: #fae6e9;
+  --blue: #cbeaf2;
+  --green: #e7f7da;
+  --yellow: #faf9e6;
+  --black: #292932;
+  --black-7-border: 7px solid #292932;
+  --black-3-border: 3px solid var(--black);
+}
+
+/* general styles */
+* {
+  text-transform: lowercase;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--black);
+  font-size: 21px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 426px) {
+  body {
+    margin: 25px;
+  }
+}
+
+a {
+  text-decoration: none;
+  outline: 7px solid transparent;
+  color: var(--black);
+}
+
+a:focus,
+a:hover {
+  outline-offset: 3px;
+  outline: 3px solid var(--black);
+}
+
+/* layout */
+.project-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+}
+
+@media screen and (min-width: 997px) {
+  .projects-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-group {
+  position: relative;
+  padding: 2rem;
+  transition: background-color 0.3s ease;
+  border: 7px solid var(--black);
+  margin-top: 40px;
+  box-shadow: 10px 10px 0 var(--black);
+  border-radius: 7px 7px 0 0;
+}
+
+.project-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-group h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-inconsolata), monospace;
+  position: relative;
+  z-index: 2;
+}
+
+.background-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 500px;
+  height: 500px;
+  pointer-events: none;
+}
+
+.background-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.highlight {
+  display: inline-block;
+  background: var(--black);
+  color: white;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: var(--font-inconsolata), monospace;
+}
+
+.workshop-link {
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.workshop-link:hover {
+  color: var(--black);
+}
+
+/* footer */
+.about {
+  border: 7px solid var(--black);
+  padding: 30px;
+  box-shadow: 10px 10px 0 var(--black);
+  border-radius: 7px 7px 0 7px;
+  background-color: var(--black);
+  outline: 3px solid white;
+  color: white;
+  margin-top: 40px;
+}
+
+.about .about-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about .svg-inline--fa {
+  margin: .5em .5em .5em 0;
+  height: 1.5em;
+}
+
+.about .about-content h2 {
+  font-size: 40px;
+  margin: 0 0 20px 0;
+}
+
+.about .about-content .social-media-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .about-content .social-media-links ul li {
+  display: inline-block;
+}
+
+.about .about-content .social-media-links ul li:hover {
+  color: orange;
+}
+
+.about .about-content .social-media-links ul li a {
+  transition: 0.5s;
+}
+
+.about .about-content .social-media-links ul li a i {
+  font-size: 30px;
+}
+
+.about .about-content .social-media-links ul li a:hover i {
+  color: white;
+}
+
+.about .about-content .social-media-links ul li a img {
+  height: 24px;
+}
+
+.about .about-content .social-media-links ul li:nth-child(1) a {
+  color: var(--purple);
+}
+
+.about .about-content .social-media-links ul li:nth-child(2) a {
+  color: var(--blue);
+}
+
+.about .about-content .social-media-links ul li:nth-child(3) a {
+  color: var(--yellow);
+}
+
+.about .about-content .social-media-links ul li:nth-child(4) a {
+  color: var(--green);
+}
+
+.about .about-content .social-media-links ul li:nth-child(5) a {
+  color: var(--pink);
+}
+
+/* nav */
+
+.main-navigation header {
+  background-color: var(--black);
+  padding: 20px 30px;
+  color: var(--purple);
+}
+
+.main-navigation header h2 {
+  margin: 0;
+}
+
+.main-navigation nav {
+  padding: 20px;
+}
+
+.main-navigation nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation nav ul li {
+  padding-left: 30px;
+  position: relative;
+  padding: 5px 5px 5px 30px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.main-navigation nav ul li:before {
+  position: absolute;
+  font-weight: bold;
+  color: var(--black);
+  content: "♪";
+  left: 5px;
+  top: 5px;
+}
+
+.main-navigation nav a {
+  display: inline-block;
+}
+
+@media screen and (min-width: 997px) {
+  .main-navigation {
+    grid-area: project-navigation;
+    border-right: 7px solid var(--black);
+  }
+}
+
+.side-header {
+  padding: 20px;
+}
+
+.side-header h3 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.side-header p {
+  margin: 5px 5px 20px 0;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 997px) {
+  .side-header .me {
+    writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    min-height: 200px;
+    position: absolute;
+    right: 25px;
+    top: 35px;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  .side-header {
+    grid-area: side-header;
+    padding: 20px;
+    border-left: 7px solid var(--black);
+    position: relative;
+    padding-top: 280px;
+  }
+}
+
+/* hero */
+.hero {
+  background-size: 29%;
+  background-position: 94% 5%;
+  margin-top: 30px;
+  background-color: var(--purple);
+  background-image: url("../public/music-note-background-purple.svg");
+  background-repeat: no-repeat;
+  border: 7px solid var(--black);
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  box-shadow: 10px 10px 0 var(--black);
+  border-radius: 7px 7px 0 7px;
+}
+
+@media screen and (min-width: 997px) {
+  .hero {
+    grid-template-columns: 0.3fr 1fr 0.2fr;
+    grid-template-areas: "project-navigation hero-playbill side-header";
+    grid-template-rows: 1fr;
+    background-position: 25% 49%;
+    background-size: 49%;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  .hero .hero-playbill {
+    grid-area: hero-playbill;
+  }
+}
+
+.hero .hero-playbill .marquee {
+  height: 35px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  border-top: 7px solid var(--black);
+  border-bottom: 3px solid var(--black);
+}
+
+@media screen and (min-width: 997px) {
+  .hero .hero-playbill .marquee {
+    border-top: 0;
+    height: 30px;
+  }
+}
+
+.hero .hero-playbill .marquee .lyrics {
+  display: block;
+  width: 359%;
+  overflow: hidden;
+  animation: marquee 40s linear infinite;
+}
+
+.hero .hero-playbill .marquee .lyrics span {
+  display: inline;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.hero .playbill-container {
+  padding: 40px 20px;
+  position: relative;
+}
+
+@media screen and (min-width: 997px) {
+  .hero .playbill-container {
+    transform: rotate(-7deg);
+  }
+}
+
+.hero .playbill-container .playbill {
+  border: 7px solid var(--black);
+  box-shadow: 5px 5px 0 var(--black);
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+  outline: 7px solid var(--purple);
+  background-color: var(--purple);
+}
+
+@media screen and (min-width: 997px) {
+  .hero .playbill-container .playbill {
+    min-height: 480px;
+    background-color: var(--purple);
+  }
+}
+
+@media screen and (min-width: 997px) {
+  .hero .playbill-container .playbill:after {
+    position: absolute;
+    content: "";
+    height: 140px;
+    width: 120px;
+    background-color: #a7a7eb;
+    z-index: 0;
+    right: -30px;
+    top: 200px;
+    opacity: 0.5;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  .hero .playbill-container .playbill:before {
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 150px;
+    background-color: var(--purple);
+    border: 7px solid #bcbcef;
+    z-index: 0;
+    left: 10px;
+    bottom: 30px;
+  }
+}
+
+.hero .playbill-container .playbill header {
+  background-color: var(--black);
+  color: var(--purple);
+  padding: 20px;
+  text-align: center;
+}
+
+.hero .playbill-container .playbill header h2,
+.hero .playbill-container .playbill header h3 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.hero .playbill-container .playbill header h2 {
+  font-size: 40px;
+}
+
+.hero .playbill-container .playbill header h3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.hero .playbill-container .playbill .playbill-content {
+  padding: 10px;
+}
+
+@media screen and (min-width: 997px) {
+  .hero .playbill-container .playbill .playbill-content {
+    padding: 0 10px 10px 40px;
+  }
+}
+
+.hero .playbill-container .playbill .playbill-content h1 {
+  font-size: 70px;
+  margin: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 997px) {
+  .hero .playbill-container .playbill .playbill-content h1 {
+    text-align: left;
+  }
+}
+
+.hero .playbill-container .playbill .terminal {
+  border: 5px solid var(--black);
+  border-radius: 5px;
+  width: 90%;
+  margin: 20px auto;
+  max-width: 300px;
+  padding: 10px;
+  background-color: var(--black);
+}
+
+@media screen and (min-width: 997px) {
+  .hero .playbill-container .playbill .terminal {
+    position: absolute;
+    right: -15%;
+    bottom: 0%;
+    padding: 20px;
+    z-index: 999;
+  }
+}
+
+.hero .playbill-container .playbill .terminal ul {
+  list-style: none;
+  padding: 0;
+  color: var(--purple);
+}
+
+@media screen and (min-width: 997px) {
+  .hero .playbill-container .playbill .terminal ul {
+    margin: 0;
+  }
+}
+
+.hero .playbill-container .playbill .terminal ul li {
+  font-size: 14px;
+  margin: 2px auto;
+}
+
+@media screen and (min-width: 997px) {
+  .hero .playbill-container .playbill .terminal ul li {
+    margin-bottom: 5px;
+  }
+}
+
+.hero .playbill-container .playbill .terminal ul li span {
+  background-color: var(--purple);
+  height: 17px;
+  width: 8px;
+  display: inline-block;
+  animation: blink 2s infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion) {
+
+  .hero .hero-playbill .marquee .lyrics,
+  .hero .playbill-container .playbill .terminal ul li span {
+    animation: none;
+  }
+}
+
+/* projects */
+.projects {
+  border: 7px solid var(--black);
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 10px 10px 0 var(--black);
+  border-radius: 7px 7px 0 0;
+}
+
+.project-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-container h2 {
+  font-size: 40px;
+  margin: 0 0 20px 0;
+}
+
+.project-container .projects-wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+}
+
+@media screen and (min-width: 997px) {
+  .project-container .projects-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-container .projects-wrapper .project {
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.project-container .projects-wrapper .project .playbill {
+  border: 5px solid var(--black);
+  box-shadow: 9px 9px 0 var(--black);
+  border-radius: 7px;
+  height: 100%;
+  position: relative;
+}
+
+.project-container .projects-wrapper .project .playbill header {
+  background-color: var(--black);
+  text-align: center;
+  padding: 20px;
+}
+
+.project-container .projects-wrapper .project .playbill header h3 {
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
+
+.project-container .projects-wrapper .project .playbill header p {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 1.1px;
+}
+
+.project-container .projects-wrapper .project .playbill .playbill-content {
+  padding: 20px 20px 70px 20px;
+}
+
+.project-container .projects-wrapper .project .playbill .playbill-content .playbill-links {
+  position: absolute;
+  bottom: 10px;
+}
+
+.project-container .projects-wrapper .project .playbill .playbill-content .playbill-links a {
+  background-color: var(--black);
+  box-shadow: 5px 5px 0 rgba(41, 41, 50, 0.5);
+  padding: 10px 20px;
+  transition: 0.5s;
+  display: inline-block;
+  margin: 10px 0px 20px 20px;
+}
+
+.project-container .projects-wrapper .project .playbill .playbill-content .playbill-links a:hover {
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+.project-container .projects-wrapper .project:last-child {
+  margin-bottom: 0;
+}
+
+.log-projects .playbill {
+  outline: 3px solid var(--green);
+}
+
+.log-projects .playbill header {
+  color: var(--green);
+}
+
+.log-projects .playbill .playbill-links a {
+  color: var(--green);
+}
+
+.musical-projects .playbill {
+  outline: 3px solid var(--blue);
+}
+
+.musical-projects .playbill header {
+  color: var(--blue);
+}
+
+.musical-projects .playbill .playbill-links a {
+  color: var(--blue);
+}
+
+.fun-projects .playbill {
+  outline: 3px solid var(--purple);
+}
+
+.fun-projects .playbill header {
+  color: var(--purple);
+}
+
+.fun-projects .playbill .playbill-links a {
+  color: var(--purple);
+}
+
+.teaching-projects .playbill {
+  outline: 3px solid var(--pink);
+}
+
+.teaching-projects .playbill header {
+  color: var(--pink);
+}
+
+.teaching-projects .playbill .playbill-links a {
+  color: var(--pink);
+}
+
+.workshops-projects .playbill {
+  outline: 3px solid var(--yellow);
+}
+
+.workshops-projects .playbill header {
+  color: var(--yellow);
+}
+
+.workshops-projects .playbill .playbill-links a {
+  color: var(--yellow);
+}
+
+/* Experiences */
+#experience .project-container {
+  max-width: 1200px;
+}
+
+#experience .project {
+  height: auto;
+}
+
+#experience .projects-wrapper {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
+}
+
+#experience header {
+  color: white;
+}
