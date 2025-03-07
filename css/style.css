@@ -651,4 +651,6 @@ a:focus, a:hover {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+.videos-block {
+  grid-column: span 2;
+}
